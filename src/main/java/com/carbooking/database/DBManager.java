@@ -10,7 +10,6 @@ public class DBManager {
     private static Connection connection;
 
     public static Connection getConnection() {
-//        if (connection == null ) {
         try {
             if (connection == null || connection.isClosed()) {
                 try {
