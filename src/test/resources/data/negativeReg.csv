@@ -1,0 +1,2 @@
+fullName,email,phone,expectedError
+ест@#$%,test@example.com,123456passwd,+1234567890,fullName contains invalid characters

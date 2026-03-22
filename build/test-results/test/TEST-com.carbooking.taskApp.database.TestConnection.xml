@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.carbooking.taskApp.database.TestConnection" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-09T19:14:59.288Z" hostname="VITROM" time="0.648">
+  <properties/>
+  <testcase name="testDBConnection" classname="com.carbooking.taskApp.database.TestConnection" time="0.643"/>
+  <system-out><![CDATA[DB connection OK
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

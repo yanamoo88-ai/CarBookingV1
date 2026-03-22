@@ -1,0 +1,63 @@
+plugins {
+    id 'java'
+ }
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.31.0'
+    implementation 'org.testng:testng:7.10.2'
+    implementation 'ch.qos.logback:logback-classic:1.5.18'
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+    testCompileOnly 'org.projectlombok:lombok:1.18.30'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+    implementation 'io.rest-assured:rest-assured:5.5.0'
+    implementation 'mysql:mysql-connector-java:8.0.33'
+    implementation 'com.google.code.gson:gson:2.11.0'
+    testImplementation 'io.qameta.allure:allure-testng:2.24.0'
+    }
+//allure {
+//    adapter {
+//        aspectjVersion = '1.9.22' // Важно для перехвата шагов теста
+//        frameworks {
+//            testng {
+//                enabled = true
+//            }
+//        }
+//    }
+//}
+
+test {
+    useTestNG()
+}
+
+def qaTask(String taskName) {
+    def defaultSuitePath = "src/test/resources/suites/${taskName}.xml"
+
+    tasks.register(taskName, Test) {
+        doFirst {
+            def suiteFile = file(defaultSuitePath)
+            if (!suiteFile.exists()) {
+                throw new GradleException("TestNG suite file not found: $defaultSuitePath")
+            } else {
+                println "Running TestNG suite from: $defaultSuitePath"
+            }
+        }
+
+        useTestNG {
+            suites defaultSuitePath
+        }
+
+        if (project.hasProperty('browser')) {
+            systemProperty 'browser', "${browser}"
+        }
+    }
+}
+
+qaTask('positiveAuth')
