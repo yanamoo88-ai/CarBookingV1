@@ -1,5 +1,9 @@
 package com.carbooking.dto;
-import lombok.*;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Builder
@@ -11,8 +15,7 @@ import lombok.*;
         private String brand;
         private String model;
         private String numberPlate;
-        private Integer categoryId; // foreign key к car_categories
-        private String imageUrl; // ссылка на фото
-        private String status; // ссылка на фото
-
+    private Integer categoryId; // foreign key  car_categories
+        private String imageUrl;
+        private String status;
     }

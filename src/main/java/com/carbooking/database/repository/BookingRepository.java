@@ -2,7 +2,11 @@ package com.carbooking.database.repository;
 
 import com.carbooking.database.DBManager;
 import com.carbooking.dto.BookingDto;
-import java.sql.*;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class BookingRepository {
 
@@ -26,7 +30,7 @@ public class BookingRepository {
                         .build();
             }
         } catch (SQLException e) {
-            System.err.println("Ошибка при поиске бронирования: " + e.getMessage());
+            System.err.println("Error searching for booking: " + e.getMessage());
         }
         return null;
     }

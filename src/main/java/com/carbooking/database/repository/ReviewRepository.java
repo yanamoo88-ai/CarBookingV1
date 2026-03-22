@@ -2,6 +2,7 @@ package com.carbooking.database.repository;
 
 import com.carbooking.database.DBManager;
 import com.carbooking.dto.ReviewDto;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +28,7 @@ public class ReviewRepository {
                         .build();
             }
         } catch (SQLException e) {
-            System.err.println("Ошибка при поиске отзыва: " + e.getMessage());
+            System.err.println("Error while searching for review:" + e.getMessage());
         }
         return null;
     }
@@ -50,7 +51,7 @@ public class ReviewRepository {
                         .build());
             }
         } catch (SQLException e) {
-            System.out.println("Ошибка при получении списка отзывов: " + e.getMessage());
+            System.out.println("Error retrieving the list of reviews: " + e.getMessage());
         }
         return reviews;
     }

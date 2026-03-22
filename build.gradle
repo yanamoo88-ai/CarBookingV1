@@ -21,6 +21,7 @@ dependencies {
     implementation 'mysql:mysql-connector-java:8.0.33'
     implementation 'com.google.code.gson:gson:2.11.0'
     testImplementation 'io.qameta.allure:allure-testng:2.24.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:6.3.2'
     }
 //allure {
 //    adapter {
@@ -61,3 +62,5 @@ def qaTask(String taskName) {
 }
 
 qaTask('positiveAuth')
+//registerTask('smoke','src/test/resources/smoke.xml')
+//registerTask('regression','src/test/resources/regression.xml')

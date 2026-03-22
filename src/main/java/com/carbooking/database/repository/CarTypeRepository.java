@@ -27,7 +27,7 @@ public class CarTypeRepository {
                         .build();
             }
         } catch (SQLException e) {
-            System.err.println("Ошибка при поиске типа авто: " + e.getMessage());
+            System.err.println("Error in searching for car type: " + e.getMessage());
         }
         return null;
     }

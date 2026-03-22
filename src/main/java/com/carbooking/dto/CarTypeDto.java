@@ -1,6 +1,10 @@
 package com.carbooking.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.math.BigDecimal;
 
 @Data
@@ -11,8 +15,8 @@ public class CarTypeDto {
     private Integer id;
     private String name;
     private String description;
-    private BigDecimal pricePerDay; // соответствует price_per_day
-    private String imageUrl;        // соответствует image_url
+    private BigDecimal pricePerDay;
+    private String imageUrl;
 }
 
 

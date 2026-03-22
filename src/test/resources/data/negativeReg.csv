@@ -1,2 +1,9 @@
 fullName,email,phone,expectedError
-ест@#$%,test@example.com,123456passwd,+1234567890,fullName contains invalid characters
+,ivan@example.com,+1234567890,fullName cannot be empty
+Иван Петров,,+1234567890,email cannot be empty
+Иван Петров,ivan@example.com,,phone cannot be empty
+Тест@#$%,test@example.com,+1234567890,fullName contains invalid characters
+Иван Петров,invalid-email,+1234567890,invalid email format
+Иван Петров,duplicate@test.com,+1234567890,email already exists
+ОченьДлинноеИмяКотороеПревышаетЛимитВПятьдесятСимволовОченьДлинноеИмяКотороеПревышаетЛимит,long@test.com,+1234567890,fullName too long
+Иван Петров,test@test.com,abc123,invalid phone format

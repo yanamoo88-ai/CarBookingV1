@@ -2,7 +2,11 @@ package com.carbooking.database.repository;
 
 import com.carbooking.database.DBManager;
 import com.carbooking.dto.UserDto;
-import java.sql.*;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class UserRepository {
     public UserDto findByEmail(String email) {
@@ -23,7 +27,7 @@ public class UserRepository {
                         .build();
             }
         } catch (SQLException e) {
-            System.err.println("Ошибка при поиске пользователя: " + e.getMessage());
+            System.err.println("Error searching for user: " + e.getMessage());
         }
         return null;
     }

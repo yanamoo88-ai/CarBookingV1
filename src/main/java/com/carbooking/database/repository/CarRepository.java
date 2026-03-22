@@ -3,7 +3,10 @@ package com.carbooking.database.repository;
 import com.carbooking.database.DBManager;
 import com.carbooking.dto.CarDto;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +37,7 @@ public class CarRepository {
                 cars.add(car);
             }
         } catch (SQLException e) {
-            System.err.println("Ошибка в findAll: " + e.getMessage());
+            System.err.println("Error in findAll: " + e.getMessage());
             e.printStackTrace();
         }
         return cars; // Возвращаем заполненный список
@@ -60,7 +63,7 @@ public class CarRepository {
                         .build();
             }
         } catch (SQLException e) {
-            System.err.println("Ошибка в findById: " + e.getMessage());
+            System.err.println("Error findById: " + e.getMessage());
         }
         return null;
     }
