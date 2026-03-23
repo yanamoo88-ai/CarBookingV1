@@ -12,27 +12,16 @@ public class UserDatabaseTest {
 
     @Test
     public void testGetUserByEmailFromDb() {
-        // 1. Подготовка: указываем email, который ТОЧНО есть в вашей таблице users
-        String targetEmail = "test807@test.me";
+                String targetEmail = "test807@test.me";
 
-        // 2. Действие: вызываем метод репозитория
-        UserDto user = userRepository.findByEmail(targetEmail);
+            UserDto user = userRepository.findByEmail(targetEmail);
 
-        // 3. Проверки (Assertions):
-        // Проверяем, что база вообще нашла запись
-        Assert.assertNotNull(user, "Ошибка: Пользователь с email " + targetEmail + " не найден в базе данных!");
+               Assert.assertNotNull(user, "Error: User with email " + targetEmail + " not found in the database!");
 
         // Проверяем, что поле fullName не пустое (значит, маппинг сработал)
-        Assert.assertNotNull(user.getFullName(), "Ошибка: Поле fullName пустое, проверьте маппинг колонки full_name");
+        Assert.assertNotNull(user.getFull_name(), "Error: The full_name field is empty");
 
-        System.out.println("Тест пройден успешно! Найден пользователь: " + user.getFullName());
+        System.out.println("Test completed successfully! User found:" + user.getFull_name());
     }
 }
 
-
-//Этот тест выполняет сквозную проверку (End-to-End) взаимодействия вашего кода с реальной базой данных.
-// Вот его основные задачи:
-// * Проверка соединения: Убеждается, что DBManager может установить сессию с MySQL.
-// * Корректность SQL-запроса: Проверяет, что синтаксис SELECT * FROM users... в вашем репозитории написан без ошибок.
-// * Маппинг данных (Mapping): Проверяет, что данные из колонок БД (full_name, email) правильно переносятся в поля Java-объекта UserDto.
-// * Целостность данных: Подтверждает, что объект, который вы получили в коде, не является пустым (null) и содержит ожидаемые значения.

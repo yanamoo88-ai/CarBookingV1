@@ -16,9 +16,9 @@ public class CarTypeDatabaseTest {
 
         CarTypeDto carType = carTypeRepository.findById(targetId);
 
-        Assert.assertNotNull(carType, "Тип автомобиля не найден!");
-        Assert.assertNotNull(carType.getName(), "Название типа не может быть пустым");
+        Assert.assertNotNull(carType, "Car type not found!");
+        Assert.assertNotNull(carType.getName(), "Car type not found!");
 
-        System.out.println("Тип авто: " + carType.getName() + ", Цена в день: " + carType.getPricePerDay());
+        System.out.println("Car type: " + carType.getName() + ", Price per day: " + carType.getPricePerDay());
     }
 }

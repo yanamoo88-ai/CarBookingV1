@@ -14,42 +14,43 @@ public class TestNGListener implements ITestListener {
     @Override
     public void onTestStart(ITestResult result) {
         log.info("\n" + "=".repeat(70));
-        log.info("🚀 ТЕСТ НАЧАТ: {}", result.getMethod().getMethodName());
+        log.info("****  TEST STARTED: {}", result.getMethod().getMethodName());
         log.info("=".repeat(70));
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        log.info("✅ ТЕСТ ПРОЙДЕН: {}", result.getMethod().getMethodName());
+        log.info("✅ TEST PASSED: {}", result.getMethod().getMethodName());
         log.info("-".repeat(70));
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        log.error("❌ ТЕСТ ПРОВАЛЕН: {}", result.getMethod().getMethodName());
-        log.error("Причина: {}", result.getThrowable().getMessage());
+        log.error("❌ TEST FAILED: {}", result.getMethod().getMethodName());
+        log.error("Reason" +
+                ": {}", result.getThrowable().getMessage());
         log.error("-".repeat(70));
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        log.warn("⚠️ ТЕСТ ПРОПУЩЕН: {}", result.getMethod().getMethodName());
+        log.warn("⚠️ TEST MISSED: {}", result.getMethod().getMethodName());
     }
 
     @Override
     public void onStart(ITestContext context) {
         log.info("\n" + "=".repeat(70));
-        log.info("🏁 ЗАПУСК ТЕСТОВ: {}", context.getName());
+        log.info("**** TEST LAUNCH: {}", context.getName());
         log.info("=".repeat(70));
     }
 
     @Override
     public void onFinish(ITestContext context) {
         log.info("\n" + "=".repeat(70));
-        log.info("🏁 ВСЕ ТЕСТЫ ЗАВЕРШЕНЫ");
-        log.info("✅ Успешно: {}", context.getPassedTests().size());
-        log.info("❌ Провалено: {}", context.getFailedTests().size());
-        log.info("⚠️ Пропущено: {}", context.getSkippedTests().size());
+        log.info("!!! ALL TESTS COMPLETED");
+        log.info("✅ Successfully: {}", context.getPassedTests().size());
+        log.info("❌ ERROR: {}", context.getFailedTests().size());
+        log.info("⚠️ Missed: {}", context.getSkippedTests().size());
         log.info("=".repeat(70));
     }
 }

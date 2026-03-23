@@ -20,7 +20,7 @@ public class UserRepository {
             if (resultSet.next()) {
                 return UserDto.builder()
                         .id(resultSet.getInt("id"))
-                        .fullName(resultSet.getString("full_name")) // Читаем full_name из БД
+                        .full_name(resultSet.getString("full_name")) // Читаем full_name из БД
                         .email(resultSet.getString("email"))
                         .phone(resultSet.getString("phone"))
                         .role(resultSet.getString("role"))

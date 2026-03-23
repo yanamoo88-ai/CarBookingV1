@@ -1,6 +1,2 @@
-fullName,email,phone
-Иван Петров,ivan@example.com,+1234567890
-Мария Иванова,maria@example.com,+7987654321
-Алексей Смирнов,alex@example.com,+1122334455
-Елена Козлова,elena@example.com,+9988776655
-Дмитрий Павлов,dmitry@example.com,+5566778899
+fullName,email,password
+Мария Иваноff,maria2@example.com,12345passwd

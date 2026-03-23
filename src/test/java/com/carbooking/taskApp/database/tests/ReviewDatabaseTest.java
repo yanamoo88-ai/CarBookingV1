@@ -15,15 +15,9 @@ public class ReviewDatabaseTest {
         Integer targetId = 1;
         ReviewDto review = reviewRepository.findById(targetId);
 
-        Assert.assertNotNull(review, "Отзыв не найден!");
-        Assert.assertNotNull(review.getUserId(), "Поле user_id не должно быть пустым"); // Проверка нового поля
+        Assert.assertNotNull(review, "Review not found!");
+        Assert.assertNotNull(review.getUserId(), "The user_id field must not be empty"); // Проверка нового поля
 
-        System.out.println("Отзыв найден! Оставлен пользователем с ID: " + review.getUserId());
+        System.out.println("Review found! Left by user with ID: " + review.getUserId());
     }
 }
-
-//Ваш SQL-скрипт содержит триггер check_review_eligibility,
-// который запрещает оставлять отзыв, если поездка не завершена (status != 'completed')
-// или если user_id в отзыве не совпадает с user_id в бронировании.
-//Это значит, что при ручном наполнении базы для тестов,
-// данные должны быть логически согласованы, иначе база выдаст ошибку 45000.

@@ -12,15 +12,14 @@ public class BookingDatabaseTest {
 
     @Test
     public void testGetBookingByIdFromDb() {
-        // Укажите ID существующего бронирования из вашей базы данных
+
         Integer targetId = 1;
 
         BookingDto booking = bookingRepository.findById(targetId);
 
-        // Проверки согласно документации проекта
-        Assert.assertNotNull(booking, "Бронирование с ID " + targetId + " не найдено!");
-        Assert.assertNotNull(booking.getUserId(), "User ID в бронировании не должен быть пустым");
+               Assert.assertNotNull(booking, "Booking with ID" + targetId + " not found!");
+        Assert.assertNotNull(booking.getUserId(), "User The booking ID must not be empty");
 
-        System.out.println("Тест пройден! Бронирование найдено. Статус: " + booking.getStatus());
+        System.out.println("Test passed! Booking found. Status: " + booking.getStatus());
     }
 }
