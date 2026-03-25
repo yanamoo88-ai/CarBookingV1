@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.carbooking.taskApp.api.tests.CarCategoriesTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2026-03-25T17:00:38.701Z" hostname="VITROM" time="0.324">
+  <properties/>
+  <testcase name="testGetCarCategories_ShouldContainExpectedCategories" classname="com.carbooking.taskApp.api.tests.CarCategoriesTest" time="0.163">
+    <failure message="java.lang.AssertionError: There must be a category Luxury expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: There must be a category Luxury expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.carbooking.taskApp.api.tests.CarCategoriesTest.testGetCarCategories_ShouldContainExpectedCategories(CarCategoriesTest.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="testGetCarCategories_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.CarCategoriesTest" time="0.146"/>
+  <system-out><![CDATA[18:00:38.716 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m - ✅ BaseApiTest initialised
+18:00:38.716 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m -  BaseURI: https://dev.pshacks.org/api/v3
+18:00:38.716 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:38.716 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarCategories_ShouldContainExpectedCategories
+18:00:38.716 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:38.718 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Sending a GET request to  /car-categories
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/car-categories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/car-categories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/car-categories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pN1ivqLHXEt2%2FTAoRlA5IJpOuixcr9PKMxrzdASzy7pSQdJ2FD5YE5ay3ht7bQvdMgDSTC9ozL8Rb96evSggFBb6M3QkzkCKtwZvUFH8IQ%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f791a78d49f4b-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 1,
+        "name": "Economy",
+        "description": "Small hatchbacks, low fuel consumption",
+        "price_per_day": "50.00",
+        "image_url": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 2,
+        "name": "Comfort",
+        "description": "Sedans with climate control and soft suspension",
+        "price_per_day": "80.00",
+        "image_url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 3,
+        "name": "Lux",
+        "description": "Premium SUVs and sports cars",
+        "price_per_day": "120.00",
+        "image_url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pN1ivqLHXEt2%2FTAoRlA5IJpOuixcr9PKMxrzdASzy7pSQdJ2FD5YE5ay3ht7bQvdMgDSTC9ozL8Rb96evSggFBb6M3QkzkCKtwZvUFH8IQ%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f791a78d49f4b-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 1,
+        "name": "Economy",
+        "description": "Small hatchbacks, low fuel consumption",
+        "price_per_day": "50.00",
+        "image_url": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 2,
+        "name": "Comfort",
+        "description": "Sedans with climate control and soft suspension",
+        "price_per_day": "80.00",
+        "image_url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 3,
+        "name": "Lux",
+        "description": "Premium SUVs and sports cars",
+        "price_per_day": "120.00",
+        "image_url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pN1ivqLHXEt2%2FTAoRlA5IJpOuixcr9PKMxrzdASzy7pSQdJ2FD5YE5ay3ht7bQvdMgDSTC9ozL8Rb96evSggFBb6M3QkzkCKtwZvUFH8IQ%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f791a78d49f4b-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 1,
+        "name": "Economy",
+        "description": "Small hatchbacks, low fuel consumption",
+        "price_per_day": "50.00",
+        "image_url": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 2,
+        "name": "Comfort",
+        "description": "Sedans with climate control and soft suspension",
+        "price_per_day": "80.00",
+        "image_url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 3,
+        "name": "Lux",
+        "description": "Premium SUVs and sports cars",
+        "price_per_day": "120.00",
+        "image_url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    }
+]
+18:00:38.879 ?[39mDEBUG?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m -  ]]>&#x1f4c4;<![CDATA[ Тело: [{"id":1,"name":"Economy","description":"Small hatchbacks, low fuel consumption","price_per_day":"50.00","image_url":"https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80","created_at":"2026-03-13T12:57:35.782Z"},{"id":2,"name":"Comfort","description":"Sedans with climate control and soft suspension","price_per_day":"80.00","image_url":"https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80","created_at":"2026-03-13T12:57:35.782Z"},{"id":3,"name":"Lux","description":"Premium SUVs and sports cars","price_per_day":"120.00","image_url":"https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80","created_at":"2026-03-13T12:57:35.782Z"}]
+18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Checking the category: Economy
+18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Category found Economy
+18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Checking the category: Comfort
+18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Category found Comfort
+18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Checking the category: Luxury
+18:00:38.879 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetCarCategories_ShouldContainExpectedCategories
+18:00:38.879 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: There must be a category Luxury expected [true] but found [false]
+18:00:38.879 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarCategories_ShouldReturn200
+18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Sending a GET request to /car-categories
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/car-categories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/car-categories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/car-categories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YzAeQ7%2BvWVNUmPd7Z%2B9S57RI9zNmEv6po66FJEmWvQQrgNjGUa%2BPp7Sv3gtze5xPrh5u0Bb7M4KjA5SaqYB0JwNgyXxba4LmhxGmZlltyw%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f791b8f17f65d-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 1,
+        "name": "Economy",
+        "description": "Small hatchbacks, low fuel consumption",
+        "price_per_day": "50.00",
+        "image_url": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 2,
+        "name": "Comfort",
+        "description": "Sedans with climate control and soft suspension",
+        "price_per_day": "80.00",
+        "image_url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 3,
+        "name": "Lux",
+        "description": "Premium SUVs and sports cars",
+        "price_per_day": "120.00",
+        "image_url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YzAeQ7%2BvWVNUmPd7Z%2B9S57RI9zNmEv6po66FJEmWvQQrgNjGUa%2BPp7Sv3gtze5xPrh5u0Bb7M4KjA5SaqYB0JwNgyXxba4LmhxGmZlltyw%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f791b8f17f65d-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 1,
+        "name": "Economy",
+        "description": "Small hatchbacks, low fuel consumption",
+        "price_per_day": "50.00",
+        "image_url": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 2,
+        "name": "Comfort",
+        "description": "Sedans with climate control and soft suspension",
+        "price_per_day": "80.00",
+        "image_url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 3,
+        "name": "Lux",
+        "description": "Premium SUVs and sports cars",
+        "price_per_day": "120.00",
+        "image_url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YzAeQ7%2BvWVNUmPd7Z%2B9S57RI9zNmEv6po66FJEmWvQQrgNjGUa%2BPp7Sv3gtze5xPrh5u0Bb7M4KjA5SaqYB0JwNgyXxba4LmhxGmZlltyw%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f791b8f17f65d-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 1,
+        "name": "Economy",
+        "description": "Small hatchbacks, low fuel consumption",
+        "price_per_day": "50.00",
+        "image_url": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 2,
+        "name": "Comfort",
+        "description": "Sedans with climate control and soft suspension",
+        "price_per_day": "80.00",
+        "image_url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 3,
+        "name": "Lux",
+        "description": "Premium SUVs and sports cars",
+        "price_per_day": "120.00",
+        "image_url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    }
+]
+18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Response length: 753
+18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Test good!
+18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarCategories_ShouldReturn200
+18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - testGetCars_CombinedFilters_ShouldWork</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<div class="breadcrumbs">
+<a class="breadcrumb" href="../index.html">all</a> &gt; 
+<a class="breadcrumb" href="index.html">com.carbooking.taskApp.api.tests.CarApiTest</a> &gt; 
+<span class="breadcrumb">testGetCars_CombinedFilters_ShouldWork</span>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a class="successGroup" href="#">Gradle Test Run :test</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Gradle Test Run :test</h2>
+<h1>testGetCars_CombinedFilters_ShouldWork</h1>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a class="" href="#">summary</a>
+</li>
+<li>
+<a class="" href="#">standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>summary</h2>
+<div>
+<div class="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox">
+<div class="counter">0</div>
+<p>skipped</p>
+</div>
+</td>
+<td>
+<div class="infoBox duration">
+<div class="counter">0.199s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="tab">
+<h2>standard output</h2>
+<span class="code">
+<pre id="root-0-test-stdout-testGetCars_CombinedFilters_ShouldWork">18:00:37.883 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+&#x1f4cc; ШАГ: Comb filter
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars?type=SEDAN&amp;minPrice=30&amp;maxPrice=150&amp;available=true
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars?type=SEDAN&amp;minPrice=30&amp;maxPrice=150&amp;available=true
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;a64-DryI2OYEUGokpoT/usit3kYO9/o&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=IqF5zy%2BulHEWQhnmdk9YimzP6vOMKJn2Dd0Oy74Lc%2Fk%2BxygjLbeJAESo61FPAV1Xa3BSllifbRWkTldcm52oPhlUOPAZmXFjDIdbKiSLhw%3D%3D&quot;}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f7915493d71d0-FRA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+
+[
+    {
+        &quot;id&quot;: 2,
+        &quot;category_id&quot;: 1,
+        &quot;number_plate&quot;: &quot;B456ET77&quot;,
+        &quot;brand&quot;: &quot;Hyundai&quot;,
+        &quot;model&quot;: &quot;Solaris&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/2/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;category_name&quot;: &quot;Economy&quot;,
+        &quot;price_per_day&quot;: &quot;50.00&quot;
+    },
+    {
+        &quot;id&quot;: 7,
+        &quot;category_id&quot;: 1,
+        &quot;number_plate&quot;: &quot;КА7780ХЕ&quot;,
+        &quot;brand&quot;: &quot;Honda&quot;,
+        &quot;model&quot;: &quot;Civic&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/7/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-16T20:52:40.281Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-16T20:52:40.281Z&quot;,
+        &quot;category_name&quot;: &quot;Economy&quot;,
+        &quot;price_per_day&quot;: &quot;50.00&quot;
+    },
+    {
+        &quot;id&quot;: 6,
+        &quot;category_id&quot;: 2,
+        &quot;number_plate&quot;: &quot;ХА5555ОО&quot;,
+        &quot;brand&quot;: &quot;Mitsubishi&quot;,
+        &quot;model&quot;: &quot;Lancer&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/6/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-16T20:50:40.040Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-16T20:50:40.040Z&quot;,
+        &quot;category_name&quot;: &quot;Comfort&quot;,
+        &quot;price_per_day&quot;: &quot;80.00&quot;
+    },
+    {
+        &quot;id&quot;: 3,
+        &quot;category_id&quot;: 2,
+        &quot;number_plate&quot;: &quot;K777MM77&quot;,
+        &quot;brand&quot;: &quot;Toyota&quot;,
+        &quot;model&quot;: &quot;Camry&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/3/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;category_name&quot;: &quot;Comfort&quot;,
+        &quot;price_per_day&quot;: &quot;80.00&quot;
+    },
+    {
+        &quot;id&quot;: 8,
+        &quot;category_id&quot;: 2,
+        &quot;number_plate&quot;: &quot;ОО1234КЕ&quot;,
+        &quot;brand&quot;: &quot;Renault&quot;,
+        &quot;model&quot;: &quot;Captur&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/8/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-16T20:58:21.419Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-16T20:58:21.419Z&quot;,
+        &quot;category_name&quot;: &quot;Comfort&quot;,
+        &quot;price_per_day&quot;: &quot;80.00&quot;
+    },
+    {
+        &quot;id&quot;: 9,
+        &quot;category_id&quot;: 3,
+        &quot;number_plate&quot;: &quot;HE6675KO&quot;,
+        &quot;brand&quot;: &quot;Mersedes&quot;,
+        &quot;model&quot;: &quot;S-class&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/9/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-16T21:00:07.363Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-16T21:00:07.363Z&quot;,
+        &quot;category_name&quot;: &quot;Lux&quot;,
+        &quot;price_per_day&quot;: &quot;120.00&quot;
+    },
+    {
+        &quot;id&quot;: 10,
+        &quot;category_id&quot;: 3,
+        &quot;number_plate&quot;: &quot;KA0001AA&quot;,
+        &quot;brand&quot;: &quot;Rolls Royce &quot;,
+        &quot;model&quot;: &quot;Phantom&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/10/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-16T21:03:07.683Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-16T21:03:07.683Z&quot;,
+        &quot;category_name&quot;: &quot;Lux&quot;,
+        &quot;price_per_day&quot;: &quot;120.00&quot;
+    },
+    {
+        &quot;id&quot;: 5,
+        &quot;category_id&quot;: 3,
+        &quot;number_plate&quot;: &quot;АК5567СС&quot;,
+        &quot;brand&quot;: &quot;BMW&quot;,
+        &quot;model&quot;: &quot;5&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/5/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-16T20:48:29.220Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-16T20:48:29.220Z&quot;,
+        &quot;category_name&quot;: &quot;Lux&quot;,
+        &quot;price_per_day&quot;: &quot;120.00&quot;
+    },
+    {
+        &quot;id&quot;: 4,
+        &quot;category_id&quot;: 3,
+        &quot;number_plate&quot;: &quot;X001XX77&quot;,
+        &quot;brand&quot;: &quot;Porsche&quot;,
+        &quot;model&quot;: &quot;Taycan&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/4/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;category_name&quot;: &quot;Lux&quot;,
+        &quot;price_per_day&quot;: &quot;120.00&quot;
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;a64-DryI2OYEUGokpoT/usit3kYO9/o&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=IqF5zy%2BulHEWQhnmdk9YimzP6vOMKJn2Dd0Oy74Lc%2Fk%2BxygjLbeJAESo61FPAV1Xa3BSllifbRWkTldcm52oPhlUOPAZmXFjDIdbKiSLhw%3D%3D&quot;}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f7915493d71d0-FRA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+
+[
+    {
+        &quot;id&quot;: 2,
+        &quot;category_id&quot;: 1,
+        &quot;number_plate&quot;: &quot;B456ET77&quot;,
+        &quot;brand&quot;: &quot;Hyundai&quot;,
+        &quot;model&quot;: &quot;Solaris&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/2/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;category_name&quot;: &quot;Economy&quot;,
+        &quot;price_per_day&quot;: &quot;50.00&quot;
+    },
+    {
+        &quot;id&quot;: 7,
+        &quot;category_id&quot;: 1,
+        &quot;number_plate&quot;: &quot;КА7780ХЕ&quot;,
+        &quot;brand&quot;: &quot;Honda&quot;,
+        &quot;model&quot;: &quot;Civic&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/7/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-16T20:52:40.281Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-16T20:52:40.281Z&quot;,
+        &quot;category_name&quot;: &quot;Economy&quot;,
+        &quot;price_per_day&quot;: &quot;50.00&quot;
+    },
+    {
+        &quot;id&quot;: 6,
+        &quot;category_id&quot;: 2,
+        &quot;number_plate&quot;: &quot;ХА5555ОО&quot;,
+        &quot;brand&quot;: &quot;Mitsubishi&quot;,
+        &quot;model&quot;: &quot;Lancer&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/6/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-16T20:50:40.040Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-16T20:50:40.040Z&quot;,
+        &quot;category_name&quot;: &quot;Comfort&quot;,
+        &quot;price_per_day&quot;: &quot;80.00&quot;
+    },
+    {
+        &quot;id&quot;: 3,
+        &quot;category_id&quot;: 2,
+        &quot;number_plate&quot;: &quot;K777MM77&quot;,
+        &quot;brand&quot;: &quot;Toyota&quot;,
+        &quot;model&quot;: &quot;Camry&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/3/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;category_name&quot;: &quot;Comfort&quot;,
+        &quot;price_per_day&quot;: &quot;80.00&quot;
+    },
+    {
+        &quot;id&quot;: 8,
+        &quot;category_id&quot;: 2,
+        &quot;number_plate&quot;: &quot;ОО1234КЕ&quot;,
+        &quot;brand&quot;: &quot;Renault&quot;,
+        &quot;model&quot;: &quot;Captur&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/8/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-16T20:58:21.419Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-16T20:58:21.419Z&quot;,
+        &quot;category_name&quot;: &quot;Comfort&quot;,
+        &quot;price_per_day&quot;: &quot;80.00&quot;
+    },
+    {
+        &quot;id&quot;: 9,
+        &quot;category_id&quot;: 3,
+        &quot;number_plate&quot;: &quot;HE6675KO&quot;,
+        &quot;brand&quot;: &quot;Mersedes&quot;,
+        &quot;model&quot;: &quot;S-class&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/9/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-16T21:00:07.363Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-16T21:00:07.363Z&quot;,
+        &quot;category_name&quot;: &quot;Lux&quot;,
+        &quot;price_per_day&quot;: &quot;120.00&quot;
+    },
+    {
+        &quot;id&quot;: 10,
+        &quot;category_id&quot;: 3,
+        &quot;number_plate&quot;: &quot;KA0001AA&quot;,
+        &quot;brand&quot;: &quot;Rolls Royce &quot;,
+        &quot;model&quot;: &quot;Phantom&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/10/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-16T21:03:07.683Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-16T21:03:07.683Z&quot;,
+        &quot;category_name&quot;: &quot;Lux&quot;,
+        &quot;price_per_day&quot;: &quot;120.00&quot;
+    },
+    {
+        &quot;id&quot;: 5,
+        &quot;category_id&quot;: 3,
+        &quot;number_plate&quot;: &quot;АК5567СС&quot;,
+        &quot;brand&quot;: &quot;BMW&quot;,
+        &quot;model&quot;: &quot;5&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/5/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-16T20:48:29.220Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-16T20:48:29.220Z&quot;,
+        &quot;category_name&quot;: &quot;Lux&quot;,
+        &quot;price_per_day&quot;: &quot;120.00&quot;
+    },
+    {
+        &quot;id&quot;: 4,
+        &quot;category_id&quot;: 3,
+        &quot;number_plate&quot;: &quot;X001XX77&quot;,
+        &quot;brand&quot;: &quot;Porsche&quot;,
+        &quot;model&quot;: &quot;Taycan&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/4/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;category_name&quot;: &quot;Lux&quot;,
+        &quot;price_per_day&quot;: &quot;120.00&quot;
+    }
+]
+18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - &#x1f4e5; API ответ: статус 200
+18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Result: 9
+</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-testGetCars_CombinedFilters_ShouldWork">Copy</button>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 9.3.0</a> at 25 Mar 2026, 18:01:55</p>
+</div>
+</div>
+</body>
+</html>

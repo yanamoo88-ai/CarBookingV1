@@ -1,0 +1,2275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.carbooking.taskApp.api.tests.CarApiTest" tests="12" skipped="0" failures="2" errors="0" timestamp="2026-03-25T17:00:35.507Z" hostname="VITROM" time="3.205">
+  <properties/>
+  <testcase name="testGetAllCars_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.971"/>
+  <testcase name="testGetCarById_InvalidIdFormat_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.51"/>
+  <testcase name="testGetCarById_NegativeId_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.13"/>
+  <testcase name="testGetCarById_NonExistingId_ShouldReturn404" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.167"/>
+  <testcase name="testGetCarById_WithoutAuth_ShouldWork" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.142"/>
+  <testcase name="testGetCarById_ZeroId_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.152"/>
+  <testcase name="testGetCarByNonExistentId_ShouldReturn404" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.128"/>
+  <testcase name="testGetCarTypes_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.145"/>
+  <testcase name="testGetCars_CombinedFilters_ShouldWork" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.199"/>
+  <testcase name="testGetCars_NoCarsAvailable_ShouldReturn200WithEmptyList" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.217">
+    <failure message="java.lang.AssertionError: ФИЛЬТР НЕ РАБОТАЕТ! Ожидался пустой список, но пришло машин: 9 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: ФИЛЬТР НЕ РАБОТАЕТ! Ожидался пустой список, но пришло машин: 9 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.carbooking.taskApp.api.tests.CarApiTest.testGetCars_NoCarsAvailable_ShouldReturn200WithEmptyList(CarApiTest.java:161)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="testGetCars_WithDateFilter_ShouldShowCarsFreeOnDates" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.19"/>
+  <testcase name="testGetCars_WithPagination_ShouldReturnLimitedResults" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.215">
+    <failure message="java.lang.AssertionError: No more should return 5 cars expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: No more should return 5 cars expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.carbooking.taskApp.api.tests.CarApiTest.testGetCars_WithPagination_ShouldReturnLimitedResults(CarApiTest.java:195)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[18:00:35.501 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m - ✅ BaseApiTest initialised
+18:00:35.501 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m -  BaseURI: https://dev.pshacks.org/api/v3
+18:00:35.501 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:35.501 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetAllCars_ShouldReturn200
+18:00:35.501 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:35.501 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Request for a list of all cars
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:36 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=NuGOEBZVghB9nSBshPCxVx91iXwffy%2BO5VZlSOfObW%2FVuwBy3TZT1ZC4XuNd1tOqAU07xTPqr4Hobs2PvRSnrhsZ19Wzdk%2B3gxoI%2Fw3dRQ%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f790679f8dbbd-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 2,
+        "category_id": 1,
+        "number_plate": "B456ET77",
+        "brand": "Hyundai",
+        "model": "Solaris",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/2/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 7,
+        "category_id": 1,
+        "number_plate": "КА7780ХЕ",
+        "brand": "Honda",
+        "model": "Civic",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/7/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:52:40.281Z",
+        "updated_at": "2026-03-16T20:52:40.281Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 6,
+        "category_id": 2,
+        "number_plate": "ХА5555ОО",
+        "brand": "Mitsubishi",
+        "model": "Lancer",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/6/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:50:40.040Z",
+        "updated_at": "2026-03-16T20:50:40.040Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 3,
+        "category_id": 2,
+        "number_plate": "K777MM77",
+        "brand": "Toyota",
+        "model": "Camry",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/3/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 8,
+        "category_id": 2,
+        "number_plate": "ОО1234КЕ",
+        "brand": "Renault",
+        "model": "Captur",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/8/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:58:21.419Z",
+        "updated_at": "2026-03-16T20:58:21.419Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 9,
+        "category_id": 3,
+        "number_plate": "HE6675KO",
+        "brand": "Mersedes",
+        "model": "S-class",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/9/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:00:07.363Z",
+        "updated_at": "2026-03-16T21:00:07.363Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 10,
+        "category_id": 3,
+        "number_plate": "KA0001AA",
+        "brand": "Rolls Royce ",
+        "model": "Phantom",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/10/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:03:07.683Z",
+        "updated_at": "2026-03-16T21:03:07.683Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 5,
+        "category_id": 3,
+        "number_plate": "АК5567СС",
+        "brand": "BMW",
+        "model": "5",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/5/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:48:29.220Z",
+        "updated_at": "2026-03-16T20:48:29.220Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 4,
+        "category_id": 3,
+        "number_plate": "X001XX77",
+        "brand": "Porsche",
+        "model": "Taycan",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/4/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:36 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=NuGOEBZVghB9nSBshPCxVx91iXwffy%2BO5VZlSOfObW%2FVuwBy3TZT1ZC4XuNd1tOqAU07xTPqr4Hobs2PvRSnrhsZ19Wzdk%2B3gxoI%2Fw3dRQ%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f790679f8dbbd-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 2,
+        "category_id": 1,
+        "number_plate": "B456ET77",
+        "brand": "Hyundai",
+        "model": "Solaris",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/2/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 7,
+        "category_id": 1,
+        "number_plate": "КА7780ХЕ",
+        "brand": "Honda",
+        "model": "Civic",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/7/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:52:40.281Z",
+        "updated_at": "2026-03-16T20:52:40.281Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 6,
+        "category_id": 2,
+        "number_plate": "ХА5555ОО",
+        "brand": "Mitsubishi",
+        "model": "Lancer",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/6/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:50:40.040Z",
+        "updated_at": "2026-03-16T20:50:40.040Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 3,
+        "category_id": 2,
+        "number_plate": "K777MM77",
+        "brand": "Toyota",
+        "model": "Camry",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/3/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 8,
+        "category_id": 2,
+        "number_plate": "ОО1234КЕ",
+        "brand": "Renault",
+        "model": "Captur",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/8/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:58:21.419Z",
+        "updated_at": "2026-03-16T20:58:21.419Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 9,
+        "category_id": 3,
+        "number_plate": "HE6675KO",
+        "brand": "Mersedes",
+        "model": "S-class",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/9/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:00:07.363Z",
+        "updated_at": "2026-03-16T21:00:07.363Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 10,
+        "category_id": 3,
+        "number_plate": "KA0001AA",
+        "brand": "Rolls Royce ",
+        "model": "Phantom",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/10/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:03:07.683Z",
+        "updated_at": "2026-03-16T21:03:07.683Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 5,
+        "category_id": 3,
+        "number_plate": "АК5567СС",
+        "brand": "BMW",
+        "model": "5",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/5/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:48:29.220Z",
+        "updated_at": "2026-03-16T20:48:29.220Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 4,
+        "category_id": 3,
+        "number_plate": "X001XX77",
+        "brand": "Porsche",
+        "model": "Taycan",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/4/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    }
+]
+18:00:35.725 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+18:00:36.472 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Car with ID is available: 2
+18:00:36.485 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetAllCars_ShouldReturn200
+18:00:36.485 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:36.485 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:36.485 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_InvalidIdFormat_ShouldReturn400
+18:00:36.485 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:36.489 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Negative test: incorrect ID format
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars/abc123
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars/abc123
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Wed, 25 Mar 2026 17:00:37 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ewZj9l6VD%2B8AhYCRrs55nBTKsMnyNoW77d34rcNiwiXex2Mk4%2FNWDoQNFvTDWkZ1I5VO7pn9MAPditqQeEz393omBxQPibagOzfvtXtfPg%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f790c89b319af-FRA
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot GET /api/v3/cars/abc123</pre>
+  </body>
+</html>
+HTTP/1.1 404 Not Found
+Date: Wed, 25 Mar 2026 17:00:37 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ewZj9l6VD%2B8AhYCRrs55nBTKsMnyNoW77d34rcNiwiXex2Mk4%2FNWDoQNFvTDWkZ1I5VO7pn9MAPditqQeEz393omBxQPibagOzfvtXtfPg%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f790c89b319af-FRA
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot GET /api/v3/cars/abc123</pre>
+  </body>
+</html>
+18:00:36.995 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
+18:00:36.995 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ℹ️ The API returned 404 – that is acceptable too
+18:00:37.007 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_InvalidIdFormat_ShouldReturn400
+18:00:37.007 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:37.007 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:37.007 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_NegativeId_ShouldReturn400
+18:00:37.007 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:37.009 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Negative test: negative ID
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars/-5
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars/-5
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Wed, 25 Mar 2026 17:00:37 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UfcCquIaYoIte5m7%2Bzqv3KMabWHwiEoJ3Cxjz%2BckGiMEj7JB%2BXkrU21Ns13kboojUm7nd44OruNom9X5SzN7uAy99lGbQ7x8PuQCE3pobA%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f790fd9a84f70-FRA
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot GET /api/v3/cars/-5</pre>
+  </body>
+</html>
+HTTP/1.1 404 Not Found
+Date: Wed, 25 Mar 2026 17:00:37 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UfcCquIaYoIte5m7%2Bzqv3KMabWHwiEoJ3Cxjz%2BckGiMEj7JB%2BXkrU21Ns13kboojUm7nd44OruNom9X5SzN7uAy99lGbQ7x8PuQCE3pobA%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f790fd9a84f70-FRA
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot GET /api/v3/cars/-5</pre>
+  </body>
+</html>
+18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
+18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Test Good!
+18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_NegativeId_ShouldReturn400
+18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_NonExistingId_ShouldReturn404
+18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Negative test: request for a non-existent machine
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars/999999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars/999999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Wed, 25 Mar 2026 17:00:37 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=SSIolzL4UMniZI8KzxGPPlJhUmKjgGnvqb40kqHstBcooIR%2FPUCy2Dl7RgIYjJzhU%2B%2BoVuO1qgWW%2Fe6SyYZYchXdMwGpbHKM2B0Bf7eXwj8Bj22xc2IcSaoC7czVnoRbYmw%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f7910ad885d4d-FRA
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot GET /api/v3/cars/999999</pre>
+  </body>
+</html>
+HTTP/1.1 404 Not Found
+Date: Wed, 25 Mar 2026 17:00:37 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=SSIolzL4UMniZI8KzxGPPlJhUmKjgGnvqb40kqHstBcooIR%2FPUCy2Dl7RgIYjJzhU%2B%2BoVuO1qgWW%2Fe6SyYZYchXdMwGpbHKM2B0Bf7eXwj8Bj22xc2IcSaoC7czVnoRbYmw%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f7910ad885d4d-FRA
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot GET /api/v3/cars/999999</pre>
+  </body>
+</html>
+18:00:37.304 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
+18:00:37.304 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ API Returned 404 - correct
+18:00:37.309 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_NonExistingId_ShouldReturn404
+18:00:37.309 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:37.309 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:37.309 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_WithoutAuth_ShouldWork
+18:00:37.309 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:37.311 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Check: is authorisation required to view the car
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=PGNeJIE%2BuxoloeWf4mlXHSQ%2BDo8TjljqZe%2FpupCDZae7XohjaVg45tzkiC2MFtaFyE9ZW%2Fznkv1aLfJ%2Bn5tFGpmsqo3N3ZdB8c1EIY%2BKIw%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f7911ce80d385-FRA
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot GET /api/v3/cars/1</pre>
+  </body>
+</html>
+HTTP/1.1 404 Not Found
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=PGNeJIE%2BuxoloeWf4mlXHSQ%2BDo8TjljqZe%2FpupCDZae7XohjaVg45tzkiC2MFtaFyE9ZW%2Fznkv1aLfJ%2Bn5tFGpmsqo3N3ZdB8c1EIY%2BKIw%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f7911ce80d385-FRA
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot GET /api/v3/cars/1</pre>
+  </body>
+</html>
+18:00:37.451 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
+18:00:37.451 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_WithoutAuth_ShouldWork
+18:00:37.451 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:37.451 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:37.451 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_ZeroId_ShouldReturn400
+18:00:37.451 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:37.456 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Negative test: ID = 0
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars/0
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars/0
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=iMBVCdFzAvWRk%2Ft%2F3YaRTj74hUzdnLegL3vo3aD4IRoAmVNH2%2BFthzb4JdUEleNG80Hi5BnnIOhwjbPCG84BSKeiAnDyQ%2FW2gG%2BI5DxRVw%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f7912a96d77d1-FRA
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot GET /api/v3/cars/0</pre>
+  </body>
+</html>
+HTTP/1.1 404 Not Found
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=iMBVCdFzAvWRk%2Ft%2F3YaRTj74hUzdnLegL3vo3aD4IRoAmVNH2%2BFthzb4JdUEleNG80Hi5BnnIOhwjbPCG84BSKeiAnDyQ%2FW2gG%2BI5DxRVw%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f7912a96d77d1-FRA
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot GET /api/v3/cars/0</pre>
+  </body>
+</html>
+18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
+18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Test OK
+18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_ZeroId_ShouldReturn400
+18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarByNonExistentId_ShouldReturn404
+18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Negative test: request for the machine with ID 999999
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars/999999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars/999999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=l4E5lvSagF5%2Fiz8Qpvm0H77tyYsJWxaG3zwR0pixavHVyewSCXFR2r1Gjn%2BGJ2GtQ3EWY5YiLpP3quT6sSjoZ5vtOAGz15wi%2FRGV%2BvN9%2FQ%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f79139b3a755e-FRA
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot GET /api/v3/cars/999999</pre>
+  </body>
+</html>
+HTTP/1.1 404 Not Found
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=l4E5lvSagF5%2Fiz8Qpvm0H77tyYsJWxaG3zwR0pixavHVyewSCXFR2r1Gjn%2BGJ2GtQ3EWY5YiLpP3quT6sSjoZ5vtOAGz15wi%2FRGV%2BvN9%2FQ%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f79139b3a755e-FRA
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Cannot GET /api/v3/cars/999999</pre>
+  </body>
+</html>
+18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
+18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarByNonExistentId_ShouldReturn404
+18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarTypes_ShouldReturn200
+18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Obtaining vehicle categories
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/car-categories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/car-categories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4rCfoUauFi2wDdrwy7LBOAowiJlrWMcQ4%2BQRj84VFyw87IIaC%2B2vcoCGyKF0CfbCIXi7H7M6HOjVFR2Rb9bQiOq5CcgNZ%2F4Vv9VsN940KQ%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f79145a81d2a1-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 1,
+        "name": "Economy",
+        "description": "Small hatchbacks, low fuel consumption",
+        "price_per_day": "50.00",
+        "image_url": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 2,
+        "name": "Comfort",
+        "description": "Sedans with climate control and soft suspension",
+        "price_per_day": "80.00",
+        "image_url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 3,
+        "name": "Lux",
+        "description": "Premium SUVs and sports cars",
+        "price_per_day": "120.00",
+        "image_url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4rCfoUauFi2wDdrwy7LBOAowiJlrWMcQ4%2BQRj84VFyw87IIaC%2B2vcoCGyKF0CfbCIXi7H7M6HOjVFR2Rb9bQiOq5CcgNZ%2F4Vv9VsN940KQ%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f79145a81d2a1-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 1,
+        "name": "Economy",
+        "description": "Small hatchbacks, low fuel consumption",
+        "price_per_day": "50.00",
+        "image_url": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 2,
+        "name": "Comfort",
+        "description": "Sedans with climate control and soft suspension",
+        "price_per_day": "80.00",
+        "image_url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    },
+    {
+        "id": 3,
+        "name": "Lux",
+        "description": "Premium SUVs and sports cars",
+        "price_per_day": "120.00",
+        "image_url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+        "created_at": "2026-03-13T12:57:35.782Z"
+    }
+]
+18:00:37.876 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+18:00:37.876 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Categories: 3
+18:00:37.883 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarTypes_ShouldReturn200
+18:00:37.883 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:37.883 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:37.883 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCars_CombinedFilters_ShouldWork
+18:00:37.883 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:37.883 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Comb filter
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars?type=SEDAN&minPrice=30&maxPrice=150&available=true
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars?type=SEDAN&minPrice=30&maxPrice=150&available=true
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=IqF5zy%2BulHEWQhnmdk9YimzP6vOMKJn2Dd0Oy74Lc%2Fk%2BxygjLbeJAESo61FPAV1Xa3BSllifbRWkTldcm52oPhlUOPAZmXFjDIdbKiSLhw%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f7915493d71d0-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 2,
+        "category_id": 1,
+        "number_plate": "B456ET77",
+        "brand": "Hyundai",
+        "model": "Solaris",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/2/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 7,
+        "category_id": 1,
+        "number_plate": "КА7780ХЕ",
+        "brand": "Honda",
+        "model": "Civic",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/7/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:52:40.281Z",
+        "updated_at": "2026-03-16T20:52:40.281Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 6,
+        "category_id": 2,
+        "number_plate": "ХА5555ОО",
+        "brand": "Mitsubishi",
+        "model": "Lancer",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/6/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:50:40.040Z",
+        "updated_at": "2026-03-16T20:50:40.040Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 3,
+        "category_id": 2,
+        "number_plate": "K777MM77",
+        "brand": "Toyota",
+        "model": "Camry",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/3/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 8,
+        "category_id": 2,
+        "number_plate": "ОО1234КЕ",
+        "brand": "Renault",
+        "model": "Captur",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/8/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:58:21.419Z",
+        "updated_at": "2026-03-16T20:58:21.419Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 9,
+        "category_id": 3,
+        "number_plate": "HE6675KO",
+        "brand": "Mersedes",
+        "model": "S-class",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/9/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:00:07.363Z",
+        "updated_at": "2026-03-16T21:00:07.363Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 10,
+        "category_id": 3,
+        "number_plate": "KA0001AA",
+        "brand": "Rolls Royce ",
+        "model": "Phantom",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/10/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:03:07.683Z",
+        "updated_at": "2026-03-16T21:03:07.683Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 5,
+        "category_id": 3,
+        "number_plate": "АК5567СС",
+        "brand": "BMW",
+        "model": "5",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/5/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:48:29.220Z",
+        "updated_at": "2026-03-16T20:48:29.220Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 4,
+        "category_id": 3,
+        "number_plate": "X001XX77",
+        "brand": "Porsche",
+        "model": "Taycan",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/4/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=IqF5zy%2BulHEWQhnmdk9YimzP6vOMKJn2Dd0Oy74Lc%2Fk%2BxygjLbeJAESo61FPAV1Xa3BSllifbRWkTldcm52oPhlUOPAZmXFjDIdbKiSLhw%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f7915493d71d0-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 2,
+        "category_id": 1,
+        "number_plate": "B456ET77",
+        "brand": "Hyundai",
+        "model": "Solaris",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/2/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 7,
+        "category_id": 1,
+        "number_plate": "КА7780ХЕ",
+        "brand": "Honda",
+        "model": "Civic",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/7/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:52:40.281Z",
+        "updated_at": "2026-03-16T20:52:40.281Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 6,
+        "category_id": 2,
+        "number_plate": "ХА5555ОО",
+        "brand": "Mitsubishi",
+        "model": "Lancer",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/6/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:50:40.040Z",
+        "updated_at": "2026-03-16T20:50:40.040Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 3,
+        "category_id": 2,
+        "number_plate": "K777MM77",
+        "brand": "Toyota",
+        "model": "Camry",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/3/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 8,
+        "category_id": 2,
+        "number_plate": "ОО1234КЕ",
+        "brand": "Renault",
+        "model": "Captur",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/8/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:58:21.419Z",
+        "updated_at": "2026-03-16T20:58:21.419Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 9,
+        "category_id": 3,
+        "number_plate": "HE6675KO",
+        "brand": "Mersedes",
+        "model": "S-class",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/9/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:00:07.363Z",
+        "updated_at": "2026-03-16T21:00:07.363Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 10,
+        "category_id": 3,
+        "number_plate": "KA0001AA",
+        "brand": "Rolls Royce ",
+        "model": "Phantom",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/10/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:03:07.683Z",
+        "updated_at": "2026-03-16T21:03:07.683Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 5,
+        "category_id": 3,
+        "number_plate": "АК5567СС",
+        "brand": "BMW",
+        "model": "5",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/5/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:48:29.220Z",
+        "updated_at": "2026-03-16T20:48:29.220Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 4,
+        "category_id": 3,
+        "number_plate": "X001XX77",
+        "brand": "Porsche",
+        "model": "Taycan",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/4/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    }
+]
+18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Result: 9
+18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCars_CombinedFilters_ShouldWork
+18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCars_NoCarsAvailable_ShouldReturn200WithEmptyList
+18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ:  Price filter check
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars?minPrice=8000000&maxPrice=10000000
+Proxy:			<none>
+Request params:	<none>
+Query params:	minPrice=8000000
+				maxPrice=10000000
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars?minPrice=8000000&maxPrice=10000000
+Proxy:			<none>
+Request params:	<none>
+Query params:	minPrice=8000000
+				maxPrice=10000000
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=uxL1pd1rSNCJzlCH0gw72IJbclPDhQsFom0by2kstfKlg69glLsM%2BJP6VC4EHT3ffPZ7E9d%2BPFc0539bg9%2BFnTG21Lh%2FbC9QHjVM4%2FEX%2FA%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f79168defd3a6-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 2,
+        "category_id": 1,
+        "number_plate": "B456ET77",
+        "brand": "Hyundai",
+        "model": "Solaris",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/2/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 7,
+        "category_id": 1,
+        "number_plate": "КА7780ХЕ",
+        "brand": "Honda",
+        "model": "Civic",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/7/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:52:40.281Z",
+        "updated_at": "2026-03-16T20:52:40.281Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 6,
+        "category_id": 2,
+        "number_plate": "ХА5555ОО",
+        "brand": "Mitsubishi",
+        "model": "Lancer",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/6/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:50:40.040Z",
+        "updated_at": "2026-03-16T20:50:40.040Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 3,
+        "category_id": 2,
+        "number_plate": "K777MM77",
+        "brand": "Toyota",
+        "model": "Camry",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/3/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 8,
+        "category_id": 2,
+        "number_plate": "ОО1234КЕ",
+        "brand": "Renault",
+        "model": "Captur",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/8/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:58:21.419Z",
+        "updated_at": "2026-03-16T20:58:21.419Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 9,
+        "category_id": 3,
+        "number_plate": "HE6675KO",
+        "brand": "Mersedes",
+        "model": "S-class",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/9/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:00:07.363Z",
+        "updated_at": "2026-03-16T21:00:07.363Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 10,
+        "category_id": 3,
+        "number_plate": "KA0001AA",
+        "brand": "Rolls Royce ",
+        "model": "Phantom",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/10/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:03:07.683Z",
+        "updated_at": "2026-03-16T21:03:07.683Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 5,
+        "category_id": 3,
+        "number_plate": "АК5567СС",
+        "brand": "BMW",
+        "model": "5",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/5/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:48:29.220Z",
+        "updated_at": "2026-03-16T20:48:29.220Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 4,
+        "category_id": 3,
+        "number_plate": "X001XX77",
+        "brand": "Porsche",
+        "model": "Taycan",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/4/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:38 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=uxL1pd1rSNCJzlCH0gw72IJbclPDhQsFom0by2kstfKlg69glLsM%2BJP6VC4EHT3ffPZ7E9d%2BPFc0539bg9%2BFnTG21Lh%2FbC9QHjVM4%2FEX%2FA%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f79168defd3a6-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 2,
+        "category_id": 1,
+        "number_plate": "B456ET77",
+        "brand": "Hyundai",
+        "model": "Solaris",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/2/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 7,
+        "category_id": 1,
+        "number_plate": "КА7780ХЕ",
+        "brand": "Honda",
+        "model": "Civic",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/7/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:52:40.281Z",
+        "updated_at": "2026-03-16T20:52:40.281Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 6,
+        "category_id": 2,
+        "number_plate": "ХА5555ОО",
+        "brand": "Mitsubishi",
+        "model": "Lancer",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/6/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:50:40.040Z",
+        "updated_at": "2026-03-16T20:50:40.040Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 3,
+        "category_id": 2,
+        "number_plate": "K777MM77",
+        "brand": "Toyota",
+        "model": "Camry",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/3/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 8,
+        "category_id": 2,
+        "number_plate": "ОО1234КЕ",
+        "brand": "Renault",
+        "model": "Captur",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/8/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:58:21.419Z",
+        "updated_at": "2026-03-16T20:58:21.419Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 9,
+        "category_id": 3,
+        "number_plate": "HE6675KO",
+        "brand": "Mersedes",
+        "model": "S-class",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/9/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:00:07.363Z",
+        "updated_at": "2026-03-16T21:00:07.363Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 10,
+        "category_id": 3,
+        "number_plate": "KA0001AA",
+        "brand": "Rolls Royce ",
+        "model": "Phantom",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/10/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:03:07.683Z",
+        "updated_at": "2026-03-16T21:03:07.683Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 5,
+        "category_id": 3,
+        "number_plate": "АК5567СС",
+        "brand": "BMW",
+        "model": "5",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/5/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:48:29.220Z",
+        "updated_at": "2026-03-16T20:48:29.220Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 4,
+        "category_id": 3,
+        "number_plate": "X001XX77",
+        "brand": "Porsche",
+        "model": "Taycan",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/4/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    }
+]
+18:00:38.293 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+18:00:38.299 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ⚠️ БАГ НАЙДЕН: Сервер прислал машину с ценой 50.00, хотя мы просили от 8000000
+18:00:38.304 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetCars_NoCarsAvailable_ShouldReturn200WithEmptyList
+18:00:38.304 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: ФИЛЬТР НЕ РАБОТАЕТ! Ожидался пустой список, но пришло машин: 9 expected [true] but found [false]
+18:00:38.304 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:38.307 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:38.307 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCars_WithDateFilter_ShouldShowCarsFreeOnDates
+18:00:38.307 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:38.307 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Search for available cars by dates
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars?startDate=2024-12-01&endDate=2024-12-05
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars?startDate=2024-12-01&endDate=2024-12-05
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Qh5GWZ1d%2BEWi%2Bdj6jeqJD5LuynaPG7AjYAIGO1nTJXrXdjtBAWv%2Bs7kastAe%2Bu7a4QpnlexdDYuOC%2F0nNa10GXiBrj6q8jRDuc6P%2BMvcfA%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f7917ecd2d3a4-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 2,
+        "category_id": 1,
+        "number_plate": "B456ET77",
+        "brand": "Hyundai",
+        "model": "Solaris",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/2/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 7,
+        "category_id": 1,
+        "number_plate": "КА7780ХЕ",
+        "brand": "Honda",
+        "model": "Civic",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/7/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:52:40.281Z",
+        "updated_at": "2026-03-16T20:52:40.281Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 6,
+        "category_id": 2,
+        "number_plate": "ХА5555ОО",
+        "brand": "Mitsubishi",
+        "model": "Lancer",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/6/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:50:40.040Z",
+        "updated_at": "2026-03-16T20:50:40.040Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 3,
+        "category_id": 2,
+        "number_plate": "K777MM77",
+        "brand": "Toyota",
+        "model": "Camry",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/3/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 8,
+        "category_id": 2,
+        "number_plate": "ОО1234КЕ",
+        "brand": "Renault",
+        "model": "Captur",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/8/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:58:21.419Z",
+        "updated_at": "2026-03-16T20:58:21.419Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 9,
+        "category_id": 3,
+        "number_plate": "HE6675KO",
+        "brand": "Mersedes",
+        "model": "S-class",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/9/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:00:07.363Z",
+        "updated_at": "2026-03-16T21:00:07.363Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 10,
+        "category_id": 3,
+        "number_plate": "KA0001AA",
+        "brand": "Rolls Royce ",
+        "model": "Phantom",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/10/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:03:07.683Z",
+        "updated_at": "2026-03-16T21:03:07.683Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 5,
+        "category_id": 3,
+        "number_plate": "АК5567СС",
+        "brand": "BMW",
+        "model": "5",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/5/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:48:29.220Z",
+        "updated_at": "2026-03-16T20:48:29.220Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 4,
+        "category_id": 3,
+        "number_plate": "X001XX77",
+        "brand": "Porsche",
+        "model": "Taycan",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/4/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Qh5GWZ1d%2BEWi%2Bdj6jeqJD5LuynaPG7AjYAIGO1nTJXrXdjtBAWv%2Bs7kastAe%2Bu7a4QpnlexdDYuOC%2F0nNa10GXiBrj6q8jRDuc6P%2BMvcfA%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f7917ecd2d3a4-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 2,
+        "category_id": 1,
+        "number_plate": "B456ET77",
+        "brand": "Hyundai",
+        "model": "Solaris",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/2/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 7,
+        "category_id": 1,
+        "number_plate": "КА7780ХЕ",
+        "brand": "Honda",
+        "model": "Civic",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/7/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:52:40.281Z",
+        "updated_at": "2026-03-16T20:52:40.281Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 6,
+        "category_id": 2,
+        "number_plate": "ХА5555ОО",
+        "brand": "Mitsubishi",
+        "model": "Lancer",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/6/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:50:40.040Z",
+        "updated_at": "2026-03-16T20:50:40.040Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 3,
+        "category_id": 2,
+        "number_plate": "K777MM77",
+        "brand": "Toyota",
+        "model": "Camry",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/3/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 8,
+        "category_id": 2,
+        "number_plate": "ОО1234КЕ",
+        "brand": "Renault",
+        "model": "Captur",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/8/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:58:21.419Z",
+        "updated_at": "2026-03-16T20:58:21.419Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 9,
+        "category_id": 3,
+        "number_plate": "HE6675KO",
+        "brand": "Mersedes",
+        "model": "S-class",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/9/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:00:07.363Z",
+        "updated_at": "2026-03-16T21:00:07.363Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 10,
+        "category_id": 3,
+        "number_plate": "KA0001AA",
+        "brand": "Rolls Royce ",
+        "model": "Phantom",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/10/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:03:07.683Z",
+        "updated_at": "2026-03-16T21:03:07.683Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 5,
+        "category_id": 3,
+        "number_plate": "АК5567СС",
+        "brand": "BMW",
+        "model": "5",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/5/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:48:29.220Z",
+        "updated_at": "2026-03-16T20:48:29.220Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 4,
+        "category_id": 3,
+        "number_plate": "X001XX77",
+        "brand": "Porsche",
+        "model": "Taycan",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/4/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    }
+]
+18:00:38.495 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Available cars on the dates2024-12-01 - 2024-12-05: 9
+18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCars_WithDateFilter_ShouldShowCarsFreeOnDates
+18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCars_WithPagination_ShouldReturnLimitedResults
+18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Pagination test
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars?page=0&size=5
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/cars?page=0&size=5
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GyTUGnYgSdg7us3IaeJKs9eZBDvVqS7E0LvinH63U9mh5vyaqgL%2F2%2BDS1wjmULrDr8N9bw%2F0jRzfEYYGpgy5oPvryfnJ7sQUMeEQjtShyg%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f79192c4d3a4f-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 2,
+        "category_id": 1,
+        "number_plate": "B456ET77",
+        "brand": "Hyundai",
+        "model": "Solaris",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/2/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 7,
+        "category_id": 1,
+        "number_plate": "КА7780ХЕ",
+        "brand": "Honda",
+        "model": "Civic",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/7/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:52:40.281Z",
+        "updated_at": "2026-03-16T20:52:40.281Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 6,
+        "category_id": 2,
+        "number_plate": "ХА5555ОО",
+        "brand": "Mitsubishi",
+        "model": "Lancer",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/6/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:50:40.040Z",
+        "updated_at": "2026-03-16T20:50:40.040Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 3,
+        "category_id": 2,
+        "number_plate": "K777MM77",
+        "brand": "Toyota",
+        "model": "Camry",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/3/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 8,
+        "category_id": 2,
+        "number_plate": "ОО1234КЕ",
+        "brand": "Renault",
+        "model": "Captur",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/8/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:58:21.419Z",
+        "updated_at": "2026-03-16T20:58:21.419Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 9,
+        "category_id": 3,
+        "number_plate": "HE6675KO",
+        "brand": "Mersedes",
+        "model": "S-class",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/9/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:00:07.363Z",
+        "updated_at": "2026-03-16T21:00:07.363Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 10,
+        "category_id": 3,
+        "number_plate": "KA0001AA",
+        "brand": "Rolls Royce ",
+        "model": "Phantom",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/10/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:03:07.683Z",
+        "updated_at": "2026-03-16T21:03:07.683Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 5,
+        "category_id": 3,
+        "number_plate": "АК5567СС",
+        "brand": "BMW",
+        "model": "5",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/5/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:48:29.220Z",
+        "updated_at": "2026-03-16T20:48:29.220Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 4,
+        "category_id": 3,
+        "number_plate": "X001XX77",
+        "brand": "Porsche",
+        "model": "Taycan",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/4/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GyTUGnYgSdg7us3IaeJKs9eZBDvVqS7E0LvinH63U9mh5vyaqgL%2F2%2BDS1wjmULrDr8N9bw%2F0jRzfEYYGpgy5oPvryfnJ7sQUMeEQjtShyg%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f79192c4d3a4f-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 2,
+        "category_id": 1,
+        "number_plate": "B456ET77",
+        "brand": "Hyundai",
+        "model": "Solaris",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/2/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 7,
+        "category_id": 1,
+        "number_plate": "КА7780ХЕ",
+        "brand": "Honda",
+        "model": "Civic",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/7/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:52:40.281Z",
+        "updated_at": "2026-03-16T20:52:40.281Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
+    {
+        "id": 6,
+        "category_id": 2,
+        "number_plate": "ХА5555ОО",
+        "brand": "Mitsubishi",
+        "model": "Lancer",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/6/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:50:40.040Z",
+        "updated_at": "2026-03-16T20:50:40.040Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 3,
+        "category_id": 2,
+        "number_plate": "K777MM77",
+        "brand": "Toyota",
+        "model": "Camry",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/3/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 8,
+        "category_id": 2,
+        "number_plate": "ОО1234КЕ",
+        "brand": "Renault",
+        "model": "Captur",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/8/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:58:21.419Z",
+        "updated_at": "2026-03-16T20:58:21.419Z",
+        "category_name": "Comfort",
+        "price_per_day": "80.00"
+    },
+    {
+        "id": 9,
+        "category_id": 3,
+        "number_plate": "HE6675KO",
+        "brand": "Mersedes",
+        "model": "S-class",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/9/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:00:07.363Z",
+        "updated_at": "2026-03-16T21:00:07.363Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 10,
+        "category_id": 3,
+        "number_plate": "KA0001AA",
+        "brand": "Rolls Royce ",
+        "model": "Phantom",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/10/image",
+        "status": "available",
+        "created_at": "2026-03-16T21:03:07.683Z",
+        "updated_at": "2026-03-16T21:03:07.683Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 5,
+        "category_id": 3,
+        "number_plate": "АК5567СС",
+        "brand": "BMW",
+        "model": "5",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/5/image",
+        "status": "available",
+        "created_at": "2026-03-16T20:48:29.220Z",
+        "updated_at": "2026-03-16T20:48:29.220Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    },
+    {
+        "id": 4,
+        "category_id": 3,
+        "number_plate": "X001XX77",
+        "brand": "Porsche",
+        "model": "Taycan",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/4/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Lux",
+        "price_per_day": "120.00"
+    }
+]
+18:00:38.703 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+18:00:38.712 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetCars_WithPagination_ShouldReturnLimitedResults
+18:00:38.712 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: No more should return 5 cars expected [true] but found [false]
+18:00:38.712 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

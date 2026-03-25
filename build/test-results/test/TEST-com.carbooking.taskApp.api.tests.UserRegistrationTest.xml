@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.carbooking.taskApp.api.tests.UserRegistrationTest" tests="6" skipped="0" failures="3" errors="0" timestamp="2026-03-25T17:00:39.173Z" hostname="VITROM" time="1.285">
+  <properties/>
+  <testcase name="testLoginNegative[0](AuthRequestDto(email=admin@example.com, password=Password123!))" classname="com.carbooking.taskApp.api.tests.UserRegistrationTest" time="0.198"/>
+  <testcase name="testLoginNegative[1](AuthRequestDto(email=user@test.com, password=Qwerty12345))" classname="com.carbooking.taskApp.api.tests.UserRegistrationTest" time="0.21"/>
+  <testcase name="testLoginNegative[2](AuthRequestDto(email=test_bug@mail.ru, password=12345678))" classname="com.carbooking.taskApp.api.tests.UserRegistrationTest" time="0.196"/>
+  <testcase name="testLoginPositive[0](AuthRequestDto(email=test807@test.me, password=password123))" classname="com.carbooking.taskApp.api.tests.UserRegistrationTest" time="0.188">
+    <failure message="java.lang.AssertionError: Error! The server did not authorise the user. expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error! The server did not authorise the user. expected [200] but found [401]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at com.carbooking.taskApp.api.tests.UserRegistrationTest.testLoginPositive(UserRegistrationTest.java:110)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="testNegativeRegistration[0](UserRegistrationDto(full_name=ест@#$%, email=test@example.com, password=123456passwd, phone=null), +1234567890)" classname="com.carbooking.taskApp.api.tests.UserRegistrationTest" time="0.223">
+    <failure message="java.lang.AssertionError: An error containing the following was expected:+1234567890, but obtained: Captcha token is required expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: An error containing the following was expected:+1234567890, but obtained: Captcha token is required expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.carbooking.taskApp.api.tests.UserRegistrationTest.testNegativeRegistration(UserRegistrationTest.java:86)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="testPositiveRegistration[0](UserRegistrationDto(full_name=Мария Иваноff, email=maria2@example.com, password=12345passwd, phone=null))" classname="com.carbooking.taskApp.api.tests.UserRegistrationTest" time="0.23">
+    <failure message="java.lang.AssertionError: Ожидался статус 201 expected [201] but found [400]" type="java.lang.AssertionError">java.lang.AssertionError: Ожидался статус 201 expected [201] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at com.carbooking.taskApp.api.tests.UserRegistrationTest.testPositiveRegistration(UserRegistrationTest.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[18:00:39.185 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m - ✅ BaseApiTest initialised
+18:00:39.185 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m -  BaseURI: https://dev.pshacks.org/api/v3
+18:00:39.192 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:39.192 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testLoginNegative
+18:00:39.192 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:39.194 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Negative authorisation test: admin@example.com
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "admin@example.com",
+    "password": "Password123!"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "admin@example.com",
+    "password": "Password123!"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "admin@example.com",
+    "password": "Password123!"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "admin@example.com",
+    "password": "Password123!"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "admin@example.com",
+    "password": "Password123!"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xK3bGG09KC1Mc6auyxiV3VxekcBUScOIQ1Cc7%2BbwNS3cwIYNXg9fE6mDn3w0xl2hUhqmfsePUTiX5UNXv5rJ3KySsxmnH15gprrpGEcxOA%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f791d8e684d6d-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xK3bGG09KC1Mc6auyxiV3VxekcBUScOIQ1Cc7%2BbwNS3cwIYNXg9fE6mDn3w0xl2hUhqmfsePUTiX5UNXv5rJ3KySsxmnH15gprrpGEcxOA%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f791d8e684d6d-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xK3bGG09KC1Mc6auyxiV3VxekcBUScOIQ1Cc7%2BbwNS3cwIYNXg9fE6mDn3w0xl2hUhqmfsePUTiX5UNXv5rJ3KySsxmnH15gprrpGEcxOA%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f791d8e684d6d-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xK3bGG09KC1Mc6auyxiV3VxekcBUScOIQ1Cc7%2BbwNS3cwIYNXg9fE6mDn3w0xl2hUhqmfsePUTiX5UNXv5rJ3KySsxmnH15gprrpGEcxOA%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f791d8e684d6d-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xK3bGG09KC1Mc6auyxiV3VxekcBUScOIQ1Cc7%2BbwNS3cwIYNXg9fE6mDn3w0xl2hUhqmfsePUTiX5UNXv5rJ3KySsxmnH15gprrpGEcxOA%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f791d8e684d6d-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+18:00:39.390 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+18:00:39.390 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testLoginNegative
+18:00:39.390 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:39.390 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:39.390 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testLoginNegative
+18:00:39.390 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:39.390 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Negative authorisation test: user@test.com
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "user@test.com",
+    "password": "Qwerty12345"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "user@test.com",
+    "password": "Qwerty12345"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "user@test.com",
+    "password": "Qwerty12345"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "user@test.com",
+    "password": "Qwerty12345"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "user@test.com",
+    "password": "Qwerty12345"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3yRhKARp2FmKBDONcRgnWTab10j6HvFLMcC5XbY2L4bmGm%2B8jET2c6Df4gpwqzDAm0352gmFvlMWX5NQa3BYDOnGMOCIMfOvRiEWGUeogw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f791ecdc87093-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3yRhKARp2FmKBDONcRgnWTab10j6HvFLMcC5XbY2L4bmGm%2B8jET2c6Df4gpwqzDAm0352gmFvlMWX5NQa3BYDOnGMOCIMfOvRiEWGUeogw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f791ecdc87093-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3yRhKARp2FmKBDONcRgnWTab10j6HvFLMcC5XbY2L4bmGm%2B8jET2c6Df4gpwqzDAm0352gmFvlMWX5NQa3BYDOnGMOCIMfOvRiEWGUeogw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f791ecdc87093-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3yRhKARp2FmKBDONcRgnWTab10j6HvFLMcC5XbY2L4bmGm%2B8jET2c6Df4gpwqzDAm0352gmFvlMWX5NQa3BYDOnGMOCIMfOvRiEWGUeogw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f791ecdc87093-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3yRhKARp2FmKBDONcRgnWTab10j6HvFLMcC5XbY2L4bmGm%2B8jET2c6Df4gpwqzDAm0352gmFvlMWX5NQa3BYDOnGMOCIMfOvRiEWGUeogw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f791ecdc87093-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+18:00:39.600 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+18:00:39.600 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testLoginNegative
+18:00:39.600 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:39.615 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:39.615 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testLoginNegative
+18:00:39.615 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:39.615 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Negative authorisation test: test_bug@mail.ru
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "test_bug@mail.ru",
+    "password": "12345678"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "test_bug@mail.ru",
+    "password": "12345678"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "test_bug@mail.ru",
+    "password": "12345678"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "test_bug@mail.ru",
+    "password": "12345678"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "test_bug@mail.ru",
+    "password": "12345678"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6HvYo79n3TYWeBK3gTsr3IeFp3N9fVlLcWynZssqnFAenWxrsgW9mkwCoYbUkT09hrASDhuBbqC10iaMozNVRXLbdOkAIUd%2FV8FcZbT2lA%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79201d80dbe6-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6HvYo79n3TYWeBK3gTsr3IeFp3N9fVlLcWynZssqnFAenWxrsgW9mkwCoYbUkT09hrASDhuBbqC10iaMozNVRXLbdOkAIUd%2FV8FcZbT2lA%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79201d80dbe6-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6HvYo79n3TYWeBK3gTsr3IeFp3N9fVlLcWynZssqnFAenWxrsgW9mkwCoYbUkT09hrASDhuBbqC10iaMozNVRXLbdOkAIUd%2FV8FcZbT2lA%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79201d80dbe6-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6HvYo79n3TYWeBK3gTsr3IeFp3N9fVlLcWynZssqnFAenWxrsgW9mkwCoYbUkT09hrASDhuBbqC10iaMozNVRXLbdOkAIUd%2FV8FcZbT2lA%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79201d80dbe6-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6HvYo79n3TYWeBK3gTsr3IeFp3N9fVlLcWynZssqnFAenWxrsgW9mkwCoYbUkT09hrASDhuBbqC10iaMozNVRXLbdOkAIUd%2FV8FcZbT2lA%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79201d80dbe6-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+18:00:39.796 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+18:00:39.796 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testLoginNegative
+18:00:39.796 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:39.796 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:39.796 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testLoginPositive
+18:00:39.796 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:39.807 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Positive authorization test: test807@test.me
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "test807@test.me",
+    "password": "password123"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "test807@test.me",
+    "password": "password123"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "test807@test.me",
+    "password": "password123"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "test807@test.me",
+    "password": "password123"
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "test807@test.me",
+    "password": "password123"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=sPN%2BYMESv%2BNv0Lck4z5EBwJasUIMsl4QHdw74SnvCkoOjguqB3r61ZLfyEZegBqBkLN6GBWG3e0iSPvY9T8cnWAEVxLj%2BsuzTsIwntV8Lug%2BlURlibrAOVehk7hvaRhpUPo%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79214aea9750-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=sPN%2BYMESv%2BNv0Lck4z5EBwJasUIMsl4QHdw74SnvCkoOjguqB3r61ZLfyEZegBqBkLN6GBWG3e0iSPvY9T8cnWAEVxLj%2BsuzTsIwntV8Lug%2BlURlibrAOVehk7hvaRhpUPo%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79214aea9750-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=sPN%2BYMESv%2BNv0Lck4z5EBwJasUIMsl4QHdw74SnvCkoOjguqB3r61ZLfyEZegBqBkLN6GBWG3e0iSPvY9T8cnWAEVxLj%2BsuzTsIwntV8Lug%2BlURlibrAOVehk7hvaRhpUPo%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79214aea9750-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=sPN%2BYMESv%2BNv0Lck4z5EBwJasUIMsl4QHdw74SnvCkoOjguqB3r61ZLfyEZegBqBkLN6GBWG3e0iSPvY9T8cnWAEVxLj%2BsuzTsIwntV8Lug%2BlURlibrAOVehk7hvaRhpUPo%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79214aea9750-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=sPN%2BYMESv%2BNv0Lck4z5EBwJasUIMsl4QHdw74SnvCkoOjguqB3r61ZLfyEZegBqBkLN6GBWG3e0iSPvY9T8cnWAEVxLj%2BsuzTsIwntV8Lug%2BlURlibrAOVehk7hvaRhpUPo%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79214aea9750-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Invalid email or password"
+}
+18:00:39.984 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+18:00:40.000 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testLoginPositive
+18:00:40.000 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error! The server did not authorise the user. expected [200] but found [401]
+18:00:40.000 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:40.002 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:40.002 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testNegativeRegistration
+18:00:40.002 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:40.007 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Negative registration test
+18:00:40.007 ?[39mDEBUG?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m -  ]]>&#x1f4ce;<![CDATA[ Параметр: FullName = ест@#$%
+18:00:40.007 ?[39mDEBUG?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m -  ]]>&#x1f4ce;<![CDATA[ Параметр: Email = test@example.com
+18:00:40.007 ?[39mDEBUG?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m -  ]]>&#x1f4ce;<![CDATA[ Параметр: Phone = [EMPTY]
+18:00:40.007 ?[39mDEBUG?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m -  ]]>&#x1f4ce;<![CDATA[ Параметр: Expected Error = +1234567890
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "full_name": "ест@#$%",
+    "email": "test@example.com",
+    "password": "123456passwd",
+    "phone": null
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "full_name": "ест@#$%",
+    "email": "test@example.com",
+    "password": "123456passwd",
+    "phone": null
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "full_name": "ест@#$%",
+    "email": "test@example.com",
+    "password": "123456passwd",
+    "phone": null
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "full_name": "ест@#$%",
+    "email": "test@example.com",
+    "password": "123456passwd",
+    "phone": null
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "full_name": "ест@#$%",
+    "email": "test@example.com",
+    "password": "123456passwd",
+    "phone": null
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-Qt3ihk0PBEH8tm+hWHwzuM/Ot64"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=kIOvrO9DyKdEVnEfEg9Qgk%2FfAAcyMMscJZLWumaYsz4gBgaaEjrmCd9%2FKd8%2FLUsD%2FPrrodejY4LNJfpNFtdISrvyZwFijQ77PG0gNEvozw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f792298f7d348-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Captcha token is required"
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-Qt3ihk0PBEH8tm+hWHwzuM/Ot64"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=kIOvrO9DyKdEVnEfEg9Qgk%2FfAAcyMMscJZLWumaYsz4gBgaaEjrmCd9%2FKd8%2FLUsD%2FPrrodejY4LNJfpNFtdISrvyZwFijQ77PG0gNEvozw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f792298f7d348-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Captcha token is required"
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-Qt3ihk0PBEH8tm+hWHwzuM/Ot64"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=kIOvrO9DyKdEVnEfEg9Qgk%2FfAAcyMMscJZLWumaYsz4gBgaaEjrmCd9%2FKd8%2FLUsD%2FPrrodejY4LNJfpNFtdISrvyZwFijQ77PG0gNEvozw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f792298f7d348-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Captcha token is required"
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-Qt3ihk0PBEH8tm+hWHwzuM/Ot64"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=kIOvrO9DyKdEVnEfEg9Qgk%2FfAAcyMMscJZLWumaYsz4gBgaaEjrmCd9%2FKd8%2FLUsD%2FPrrodejY4LNJfpNFtdISrvyZwFijQ77PG0gNEvozw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f792298f7d348-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Captcha token is required"
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 25 Mar 2026 17:00:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-Qt3ihk0PBEH8tm+hWHwzuM/Ot64"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=kIOvrO9DyKdEVnEfEg9Qgk%2FfAAcyMMscJZLWumaYsz4gBgaaEjrmCd9%2FKd8%2FLUsD%2FPrrodejY4LNJfpNFtdISrvyZwFijQ77PG0gNEvozw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f792298f7d348-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Captcha token is required"
+}
+18:00:40.180 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 400
+18:00:40.224 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Error message: Captcha token is required
+18:00:40.226 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testNegativeRegistration
+18:00:40.227 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: An error containing the following was expected:+1234567890, but obtained: Captcha token is required expected [true] but found [false]
+18:00:40.227 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:40.228 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:40.228 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testPositiveRegistration
+18:00:40.228 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:40.230 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Positive registration test
+18:00:40.230 ?[39mDEBUG?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m -  ]]>&#x1f4ce;<![CDATA[ Параметр: full_name = Мария Иваноff
+18:00:40.230 ?[39mDEBUG?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m -  ]]>&#x1f4ce;<![CDATA[ Параметр: email = maria2@example.com
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "full_name": "Мария Иваноff",
+    "email": "maria2@example.com",
+    "password": "12345passwd",
+    "phone": null
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "full_name": "Мария Иваноff",
+    "email": "maria2@example.com",
+    "password": "12345passwd",
+    "phone": null
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "full_name": "Мария Иваноff",
+    "email": "maria2@example.com",
+    "password": "12345passwd",
+    "phone": null
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "full_name": "Мария Иваноff",
+    "email": "maria2@example.com",
+    "password": "12345passwd",
+    "phone": null
+}
+Request method:	POST
+Request URI:	https://dev.pshacks.org/api/v3/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "full_name": "Мария Иваноff",
+    "email": "maria2@example.com",
+    "password": "12345passwd",
+    "phone": null
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 25 Mar 2026 17:00:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-Qt3ihk0PBEH8tm+hWHwzuM/Ot64"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=cOG9WxylCuyvKUbeXQAT57zrXwOo6uVd5hmRPbk96nYF82No%2BvuHwqpJugpqK%2FYZeilfCj5eD15YSukBuo4omHkSfLKAtzWcDXsgumJnGw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79241b849763-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Captcha token is required"
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 25 Mar 2026 17:00:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-Qt3ihk0PBEH8tm+hWHwzuM/Ot64"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=cOG9WxylCuyvKUbeXQAT57zrXwOo6uVd5hmRPbk96nYF82No%2BvuHwqpJugpqK%2FYZeilfCj5eD15YSukBuo4omHkSfLKAtzWcDXsgumJnGw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79241b849763-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Captcha token is required"
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 25 Mar 2026 17:00:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-Qt3ihk0PBEH8tm+hWHwzuM/Ot64"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=cOG9WxylCuyvKUbeXQAT57zrXwOo6uVd5hmRPbk96nYF82No%2BvuHwqpJugpqK%2FYZeilfCj5eD15YSukBuo4omHkSfLKAtzWcDXsgumJnGw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79241b849763-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Captcha token is required"
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 25 Mar 2026 17:00:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-Qt3ihk0PBEH8tm+hWHwzuM/Ot64"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=cOG9WxylCuyvKUbeXQAT57zrXwOo6uVd5hmRPbk96nYF82No%2BvuHwqpJugpqK%2FYZeilfCj5eD15YSukBuo4omHkSfLKAtzWcDXsgumJnGw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79241b849763-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Captcha token is required"
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 25 Mar 2026 17:00:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"25-Qt3ihk0PBEH8tm+hWHwzuM/Ot64"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=cOG9WxylCuyvKUbeXQAT57zrXwOo6uVd5hmRPbk96nYF82No%2BvuHwqpJugpqK%2FYZeilfCj5eD15YSukBuo4omHkSfLKAtzWcDXsgumJnGw%3D%3D"}]}
+Server: cloudflare
+CF-RAY: 9e1f79241b849763-FRA
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Captcha token is required"
+}
+18:00:40.458 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 400
+18:00:40.463 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testPositiveRegistration
+18:00:40.463 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Ожидался статус 201 expected [201] but found [400]
+18:00:40.463 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

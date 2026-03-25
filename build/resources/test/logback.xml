@@ -1,0 +1,54 @@
+<configuration>
+    <!-- Исправленный timestamp с закрывающим тегом -->
+    <timestamp key="bySecond" datePattern="yyyy-MM-dd_HH-mm-ss" />
+
+    <!-- Консольный аппендер (цветной и информативный) -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- Добавил цвета и более понятный формат -->
+            <pattern>%d{HH:mm:ss.SSS} %highlight(%-5level) [%thread] %cyan(%logger{36}) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Файловый аппендер с правильным путем -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <!-- Исправлено: логи в target/logs/ (стандарт для тестов) -->
+        <file>target/test_logs/log-${bySecond}.log</file>
+        <append>true</append>
+        <immediateFlush>true</immediateFlush>
+        <encoder>
+            <!-- Убрал непонятные %KVP и %G, заменил на %msg (сообщение) -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Специальный аппендер для HTTP трафика REST Assured -->
+    <appender name="HTTP_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>target/test_logs/http-traffic.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} - %msg%n%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Логгер для внутренних утилит (как у вас) -->
+    <logger name="org.testing.internal.Utils" level="WARN"/>
+
+    <!-- Логгер для REST Assured - отдельный файл -->
+    <logger name="io.restassured" level="DEBUG" additivity="false">
+        <appender-ref ref="HTTP_FILE"/>
+    </logger>
+
+    <!-- Логгер для ваших тестов - детальный уровень -->
+    <logger name="com.carbooking" level="DEBUG"/>
+
+    <!-- Логгер для тестов регистрации - самый детальный -->
+    <logger name="com.carbooking.api.tests.UserRegistrationTest" level="TRACE"/>
+
+    <!-- Корневой уровень -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>

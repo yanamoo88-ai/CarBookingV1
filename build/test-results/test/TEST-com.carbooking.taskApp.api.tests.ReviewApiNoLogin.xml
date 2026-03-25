@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.carbooking.taskApp.api.tests.ReviewApiNoLogin" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-25T17:00:39.019Z" hostname="VITROM" time="0.16">
+  <properties/>
+  <testcase name="testGetReviews_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.ReviewApiNoLogin" time="0.154"/>
+  <system-out><![CDATA[18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m - ✅ BaseApiTest initialised
+18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m -  BaseURI: https://dev.pshacks.org/api/v3
+18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetReviews_ShouldReturn200
+18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+]]>&#x1f4cc;<![CDATA[ ШАГ: Request for a list of reviews WITHOUT authorization
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/reviews
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/reviews
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/reviews
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://dev.pshacks.org/api/v3/reviews
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"930-hYpCdMkm5UBpnJDKh165Pjiq3Jc"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=43t8rDgIOTUsF5mGwJfgcqiZGvSYKlUpJxP5zFiAhsAaCNzsvTIBVlX%2BsenKRgLsiNnfiXFyp0rOe7jRBJ9omNE%2B%2BUKqqCfksd0B2ES%2FhQ%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f791c7f3680ad-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 52,
+        "user_id": 47,
+        "rating": 5,
+        "content": "fwefwefw",
+        "created_at": "2026-03-25T15:32:56.014Z",
+        "full_name": "TEST2"
+    },
+    {
+        "id": 51,
+        "user_id": 47,
+        "rating": 5,
+        "content": "Хочу выразить огромную благодарность создателям этого сервиса за невероятный уровень комфорта и профессионализма!",
+        "created_at": "2026-03-25T15:32:29.484Z",
+        "full_name": "TEST2"
+    },
+    {
+        "id": 50,
+        "user_id": 1,
+        "rating": 5,
+        "content": "Хочу выразить огромную благодарность создателям этого сервиса за невероятный уровень комфорта и профессионализма! Аренда автомобиля превратилась в сплошное удовольствие. Интерфейс сайта интуитивно понятен, всё работает быстро и без сбоев. Машины в автопарке просто пушка — от практичных городских моделей до роскошных спорткаров. Отдельное спасибо за прозрачные условия аренды и отсутствие скрытых платежей. Это лучший опыт проката авто в моей жизни! Всем советую попробовать этот сервис, не пожалеет",
+        "created_at": "2026-03-25T14:47:55.690Z",
+        "full_name": "Admin"
+    },
+    {
+        "id": 49,
+        "user_id": 39,
+        "rating": 5,
+        "content": "I will definitely use it again",
+        "created_at": "2026-03-24T22:02:31.221Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 48,
+        "user_id": 39,
+        "rating": 5,
+        "content": "gut gemacht",
+        "created_at": "2026-03-24T22:02:07.366Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 47,
+        "user_id": 39,
+        "rating": 5,
+        "content": "like this service",
+        "created_at": "2026-03-24T22:01:47.310Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 46,
+        "user_id": 39,
+        "rating": 2,
+        "content": "na ja gut",
+        "created_at": "2026-03-24T22:01:37.762Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 44,
+        "user_id": 36,
+        "rating": 5,
+        "content": "спасибо)",
+        "created_at": "2026-03-24T17:06:50.244Z",
+        "full_name": "Natalija Istomina"
+    },
+    {
+        "id": 40,
+        "user_id": 39,
+        "rating": 4,
+        "content": "a nice trip",
+        "created_at": "2026-03-20T19:39:16.690Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 26,
+        "user_id": 39,
+        "rating": 5,
+        "content": "Like this service",
+        "created_at": "2026-03-20T12:07:05.015Z",
+        "full_name": "Vitalii"
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"930-hYpCdMkm5UBpnJDKh165Pjiq3Jc"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=43t8rDgIOTUsF5mGwJfgcqiZGvSYKlUpJxP5zFiAhsAaCNzsvTIBVlX%2BsenKRgLsiNnfiXFyp0rOe7jRBJ9omNE%2B%2BUKqqCfksd0B2ES%2FhQ%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f791c7f3680ad-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 52,
+        "user_id": 47,
+        "rating": 5,
+        "content": "fwefwefw",
+        "created_at": "2026-03-25T15:32:56.014Z",
+        "full_name": "TEST2"
+    },
+    {
+        "id": 51,
+        "user_id": 47,
+        "rating": 5,
+        "content": "Хочу выразить огромную благодарность создателям этого сервиса за невероятный уровень комфорта и профессионализма!",
+        "created_at": "2026-03-25T15:32:29.484Z",
+        "full_name": "TEST2"
+    },
+    {
+        "id": 50,
+        "user_id": 1,
+        "rating": 5,
+        "content": "Хочу выразить огромную благодарность создателям этого сервиса за невероятный уровень комфорта и профессионализма! Аренда автомобиля превратилась в сплошное удовольствие. Интерфейс сайта интуитивно понятен, всё работает быстро и без сбоев. Машины в автопарке просто пушка — от практичных городских моделей до роскошных спорткаров. Отдельное спасибо за прозрачные условия аренды и отсутствие скрытых платежей. Это лучший опыт проката авто в моей жизни! Всем советую попробовать этот сервис, не пожалеет",
+        "created_at": "2026-03-25T14:47:55.690Z",
+        "full_name": "Admin"
+    },
+    {
+        "id": 49,
+        "user_id": 39,
+        "rating": 5,
+        "content": "I will definitely use it again",
+        "created_at": "2026-03-24T22:02:31.221Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 48,
+        "user_id": 39,
+        "rating": 5,
+        "content": "gut gemacht",
+        "created_at": "2026-03-24T22:02:07.366Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 47,
+        "user_id": 39,
+        "rating": 5,
+        "content": "like this service",
+        "created_at": "2026-03-24T22:01:47.310Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 46,
+        "user_id": 39,
+        "rating": 2,
+        "content": "na ja gut",
+        "created_at": "2026-03-24T22:01:37.762Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 44,
+        "user_id": 36,
+        "rating": 5,
+        "content": "спасибо)",
+        "created_at": "2026-03-24T17:06:50.244Z",
+        "full_name": "Natalija Istomina"
+    },
+    {
+        "id": 40,
+        "user_id": 39,
+        "rating": 4,
+        "content": "a nice trip",
+        "created_at": "2026-03-20T19:39:16.690Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 26,
+        "user_id": 39,
+        "rating": 5,
+        "content": "Like this service",
+        "created_at": "2026-03-20T12:07:05.015Z",
+        "full_name": "Vitalii"
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"930-hYpCdMkm5UBpnJDKh165Pjiq3Jc"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=43t8rDgIOTUsF5mGwJfgcqiZGvSYKlUpJxP5zFiAhsAaCNzsvTIBVlX%2BsenKRgLsiNnfiXFyp0rOe7jRBJ9omNE%2B%2BUKqqCfksd0B2ES%2FhQ%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f791c7f3680ad-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 52,
+        "user_id": 47,
+        "rating": 5,
+        "content": "fwefwefw",
+        "created_at": "2026-03-25T15:32:56.014Z",
+        "full_name": "TEST2"
+    },
+    {
+        "id": 51,
+        "user_id": 47,
+        "rating": 5,
+        "content": "Хочу выразить огромную благодарность создателям этого сервиса за невероятный уровень комфорта и профессионализма!",
+        "created_at": "2026-03-25T15:32:29.484Z",
+        "full_name": "TEST2"
+    },
+    {
+        "id": 50,
+        "user_id": 1,
+        "rating": 5,
+        "content": "Хочу выразить огромную благодарность создателям этого сервиса за невероятный уровень комфорта и профессионализма! Аренда автомобиля превратилась в сплошное удовольствие. Интерфейс сайта интуитивно понятен, всё работает быстро и без сбоев. Машины в автопарке просто пушка — от практичных городских моделей до роскошных спорткаров. Отдельное спасибо за прозрачные условия аренды и отсутствие скрытых платежей. Это лучший опыт проката авто в моей жизни! Всем советую попробовать этот сервис, не пожалеет",
+        "created_at": "2026-03-25T14:47:55.690Z",
+        "full_name": "Admin"
+    },
+    {
+        "id": 49,
+        "user_id": 39,
+        "rating": 5,
+        "content": "I will definitely use it again",
+        "created_at": "2026-03-24T22:02:31.221Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 48,
+        "user_id": 39,
+        "rating": 5,
+        "content": "gut gemacht",
+        "created_at": "2026-03-24T22:02:07.366Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 47,
+        "user_id": 39,
+        "rating": 5,
+        "content": "like this service",
+        "created_at": "2026-03-24T22:01:47.310Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 46,
+        "user_id": 39,
+        "rating": 2,
+        "content": "na ja gut",
+        "created_at": "2026-03-24T22:01:37.762Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 44,
+        "user_id": 36,
+        "rating": 5,
+        "content": "спасибо)",
+        "created_at": "2026-03-24T17:06:50.244Z",
+        "full_name": "Natalija Istomina"
+    },
+    {
+        "id": 40,
+        "user_id": 39,
+        "rating": 4,
+        "content": "a nice trip",
+        "created_at": "2026-03-20T19:39:16.690Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 26,
+        "user_id": 39,
+        "rating": 5,
+        "content": "Like this service",
+        "created_at": "2026-03-20T12:07:05.015Z",
+        "full_name": "Vitalii"
+    }
+]
+HTTP/1.1 200 OK
+Date: Wed, 25 Mar 2026 17:00:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"930-hYpCdMkm5UBpnJDKh165Pjiq3Jc"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=43t8rDgIOTUsF5mGwJfgcqiZGvSYKlUpJxP5zFiAhsAaCNzsvTIBVlX%2BsenKRgLsiNnfiXFyp0rOe7jRBJ9omNE%2B%2BUKqqCfksd0B2ES%2FhQ%3D%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9e1f791c7f3680ad-FRA
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "id": 52,
+        "user_id": 47,
+        "rating": 5,
+        "content": "fwefwefw",
+        "created_at": "2026-03-25T15:32:56.014Z",
+        "full_name": "TEST2"
+    },
+    {
+        "id": 51,
+        "user_id": 47,
+        "rating": 5,
+        "content": "Хочу выразить огромную благодарность создателям этого сервиса за невероятный уровень комфорта и профессионализма!",
+        "created_at": "2026-03-25T15:32:29.484Z",
+        "full_name": "TEST2"
+    },
+    {
+        "id": 50,
+        "user_id": 1,
+        "rating": 5,
+        "content": "Хочу выразить огромную благодарность создателям этого сервиса за невероятный уровень комфорта и профессионализма! Аренда автомобиля превратилась в сплошное удовольствие. Интерфейс сайта интуитивно понятен, всё работает быстро и без сбоев. Машины в автопарке просто пушка — от практичных городских моделей до роскошных спорткаров. Отдельное спасибо за прозрачные условия аренды и отсутствие скрытых платежей. Это лучший опыт проката авто в моей жизни! Всем советую попробовать этот сервис, не пожалеет",
+        "created_at": "2026-03-25T14:47:55.690Z",
+        "full_name": "Admin"
+    },
+    {
+        "id": 49,
+        "user_id": 39,
+        "rating": 5,
+        "content": "I will definitely use it again",
+        "created_at": "2026-03-24T22:02:31.221Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 48,
+        "user_id": 39,
+        "rating": 5,
+        "content": "gut gemacht",
+        "created_at": "2026-03-24T22:02:07.366Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 47,
+        "user_id": 39,
+        "rating": 5,
+        "content": "like this service",
+        "created_at": "2026-03-24T22:01:47.310Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 46,
+        "user_id": 39,
+        "rating": 2,
+        "content": "na ja gut",
+        "created_at": "2026-03-24T22:01:37.762Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 44,
+        "user_id": 36,
+        "rating": 5,
+        "content": "спасибо)",
+        "created_at": "2026-03-24T17:06:50.244Z",
+        "full_name": "Natalija Istomina"
+    },
+    {
+        "id": 40,
+        "user_id": 39,
+        "rating": 4,
+        "content": "a nice trip",
+        "created_at": "2026-03-20T19:39:16.690Z",
+        "full_name": "Vitalii"
+    },
+    {
+        "id": 26,
+        "user_id": 39,
+        "rating": 5,
+        "content": "Like this service",
+        "created_at": "2026-03-20T12:07:05.015Z",
+        "full_name": "Vitalii"
+    }
+]
+18:00:39.179 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+18:00:39.179 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Reviews successfully received without login
+18:00:39.185 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetReviews_ShouldReturn200
+18:00:39.185 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.carbooking.gui.tests.negative.BookingNegativeTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-03-25T17:00:41.007Z" hostname="VITROM" time="50.235">
+  <properties/>
+  <testcase name="testBookingInPastDates" classname="com.carbooking.gui.tests.negative.BookingNegativeTests" time="23.575"/>
+  <testcase name="testBookingWithoutLogin" classname="com.carbooking.gui.tests.negative.BookingNegativeTests" time="10.182"/>
+  <system-out><![CDATA[18:00:41.018 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+18:00:41.033 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+18:00:42.160 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:42.160 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testBookingInPastDates
+18:00:42.160 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+Кнопки бронирования не появились для дат в прошлом. Тест пройден.
+18:01:05.735 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testBookingInPastDates
+18:01:05.735 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:01:31.242 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testBookingWithoutLogin
+18:01:31.242 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+]]></system-out>
+  <system-err><![CDATA[Mar 25, 2026 6:00:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Mar 25, 2026 6:00:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 146.0.7680.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
