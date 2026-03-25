@@ -38,7 +38,7 @@ dependencies {
 
 test {
     useTestNG()
-    exclude 'com/carbooking/gui/**'
+  //  exclude 'com/carbooking/gui/**'
 }
 
 def qaTask(String taskName) {
