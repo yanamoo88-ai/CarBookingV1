@@ -1,6 +1,7 @@
 plugins {
     id 'java'
- }
+      }
+
 
 group = 'org.example'
 version = '1.0-SNAPSHOT'
@@ -22,16 +23,17 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.11.0'
     testImplementation 'io.qameta.allure:allure-testng:2.24.0'
     implementation 'io.github.bonigarcia:webdrivermanager:6.3.2'
+    testImplementation 'io.qameta.allure:allure-rest-assured:2.24.0'
     }
 //allure {
 //    adapter {
-//        aspectjVersion = '1.9.22' // Важно для перехвата шагов теста
 //        frameworks {
 //            testng {
 //                enabled = true
 //            }
 //        }
 //    }
+//    version = '2.24.0'
 //}
 
 test {
