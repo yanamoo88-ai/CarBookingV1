@@ -23,9 +23,9 @@ public class BookingPositiveTests extends TestBase {
         Thread.sleep(2000);
 
         // Если упадет - сделаем скриншот, чтобы увидеть, что на экране
-        if (!bPage.isBookingSuccessful()) {
-            app.takeScreenshot();
-        }
+//        if (!bPage.isBookingSuccessful()) {
+//            app.takeScreenshot();
+//        }
 
         Assert.assertTrue(bPage.isBookingSuccessful(),
                 "ОШИБКА: Бронирование не подтверждено. Скриншот сделан.");

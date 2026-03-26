@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.carbooking.gui.tests.negative.LoginNegativeTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-03-25T17:01:05.936Z" hostname="VITROM" time="49.353">
+<testsuite name="com.carbooking.gui.tests.negative.LoginNegativeTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-03-25T22:06:53.062Z" hostname="VITROM" time="48.373">
   <properties/>
-  <testcase name="loginWithInvalidPassword" classname="com.carbooking.gui.tests.negative.LoginNegativeTests" time="12.551"/>
-  <testcase name="loginWithEmptyEmail" classname="com.carbooking.gui.tests.negative.LoginNegativeTests" time="10.71"/>
-  <testcase name="loginWithInvalidEmailFormat" classname="com.carbooking.gui.tests.negative.LoginNegativeTests" time="10.503"/>
-  <system-out><![CDATA[18:01:05.952 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-18:01:05.959 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-18:01:07.152 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+  <testcase name="loginWithInvalidPassword" classname="com.carbooking.gui.tests.negative.LoginNegativeTests" time="12.745"/>
+  <testcase name="loginWithEmptyEmail" classname="com.carbooking.gui.tests.negative.LoginNegativeTests" time="10.649"/>
+  <testcase name="loginWithInvalidEmailFormat" classname="com.carbooking.gui.tests.negative.LoginNegativeTests" time="10.675"/>
+  <system-out><![CDATA[23:06:53.090 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+23:06:53.099 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+23:06:53.930 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:01:07.153 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: loginWithInvalidPassword
-18:01:07.153 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:01:19.703 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: loginWithInvalidPassword
-18:01:19.703 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:01:19.930 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-18:01:19.941 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-18:01:21.060 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:53.930 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: loginWithInvalidPassword
+23:06:53.930 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:07:06.678 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: loginWithInvalidPassword
+23:07:06.679 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:07:06.941 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+23:07:06.952 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+23:07:07.662 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:01:21.060 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testBookingWithoutLogin
-18:01:21.060 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:01:43.320 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: loginWithEmptyEmail
-18:01:43.320 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:01:43.563 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-18:01:43.572 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-18:01:44.786 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:07:07.662 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testBookingWithoutLogin
+23:07:07.662 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:07:29.716 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: loginWithEmptyEmail
+23:07:29.716 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:07:29.943 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+23:07:29.959 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+23:07:30.760 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:01:44.786 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: loginWithInvalidEmailFormat
-18:01:44.786 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:01:55.300 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: loginWithInvalidEmailFormat
-18:01:55.300 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:07:30.760 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: loginWithInvalidEmailFormat
+23:07:30.760 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:07:41.437 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: loginWithInvalidEmailFormat
+23:07:41.437 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
 ]]></system-out>
-  <system-err><![CDATA[Mar 25, 2026 6:01:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <system-err><![CDATA[Mar 25, 2026 11:06:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Mar 25, 2026 6:01:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Mar 25, 2026 11:06:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 146.0.7680.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Mar 25, 2026 6:01:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 25, 2026 11:07:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Mar 25, 2026 6:01:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Mar 25, 2026 11:07:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 146.0.7680.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Mar 25, 2026 6:01:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 25, 2026 11:07:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Mar 25, 2026 6:01:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Mar 25, 2026 11:07:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 146.0.7680.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

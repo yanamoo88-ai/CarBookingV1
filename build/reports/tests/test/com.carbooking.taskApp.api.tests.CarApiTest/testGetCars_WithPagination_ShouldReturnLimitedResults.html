@@ -63,7 +63,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">0.215s</div>
+<div class="counter">0.194s</div>
 <p>duration</p>
 </div>
 </td>
@@ -140,7 +140,7 @@
 <div class="tab">
 <h2>standard output</h2>
 <span class="code">
-<pre id="root-0-test-stdout-testGetCars_WithPagination_ShouldReturnLimitedResults">18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+<pre id="root-0-test-stdout-testGetCars_WithPagination_ShouldReturnLimitedResults">23:06:25.526 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 &#x1f4cc; ШАГ: Pagination test
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/cars?page=0&amp;size=5
@@ -167,22 +167,35 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:39 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/&quot;a64-DryI2OYEUGokpoT/usit3kYO9/o&quot;
+etag: W/&quot;b84-EapjJ6yGzPzZHuHNNLTanf0VRBE&quot;
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
-Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=GyTUGnYgSdg7us3IaeJKs9eZBDvVqS7E0LvinH63U9mh5vyaqgL%2F2%2BDS1wjmULrDr8N9bw%2F0jRzfEYYGpgy5oPvryfnJ7sQUMeEQjtShyg%3D%3D&quot;}]}
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=WuF1C3yvWFTzvsrB1SBkcNaqFLWLD3pMWMidyP0HS%2Fxabq22h8QaghjrVj%2FLbuPCIsdCmMLxq4PohE2Hm6z4NmW0SMzZY%2F%2FFVEVo%2BsS84BXuW5pKKP0oEL%2Bdqlt%2BPpdBpSc%3D&quot;}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f79192c4d3a4f-FRA
+CF-RAY: 9e2139077a845c8d-FRA
 alt-svc: h3=&quot;:443&quot;; ma=86400
 
 [
+    {
+        &quot;id&quot;: 1,
+        &quot;category_id&quot;: 1,
+        &quot;number_plate&quot;: &quot;A123BC77&quot;,
+        &quot;brand&quot;: &quot;Kia&quot;,
+        &quot;model&quot;: &quot;Rio&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/1/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;category_name&quot;: &quot;Economy&quot;,
+        &quot;price_per_day&quot;: &quot;50.00&quot;
+    },
     {
         &quot;id&quot;: 2,
         &quot;category_id&quot;: 1,
@@ -302,22 +315,35 @@ alt-svc: h3=&quot;:443&quot;; ma=86400
     }
 ]
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:39 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/&quot;a64-DryI2OYEUGokpoT/usit3kYO9/o&quot;
+etag: W/&quot;b84-EapjJ6yGzPzZHuHNNLTanf0VRBE&quot;
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
-Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=GyTUGnYgSdg7us3IaeJKs9eZBDvVqS7E0LvinH63U9mh5vyaqgL%2F2%2BDS1wjmULrDr8N9bw%2F0jRzfEYYGpgy5oPvryfnJ7sQUMeEQjtShyg%3D%3D&quot;}]}
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=WuF1C3yvWFTzvsrB1SBkcNaqFLWLD3pMWMidyP0HS%2Fxabq22h8QaghjrVj%2FLbuPCIsdCmMLxq4PohE2Hm6z4NmW0SMzZY%2F%2FFVEVo%2BsS84BXuW5pKKP0oEL%2Bdqlt%2BPpdBpSc%3D&quot;}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f79192c4d3a4f-FRA
+CF-RAY: 9e2139077a845c8d-FRA
 alt-svc: h3=&quot;:443&quot;; ma=86400
 
 [
+    {
+        &quot;id&quot;: 1,
+        &quot;category_id&quot;: 1,
+        &quot;number_plate&quot;: &quot;A123BC77&quot;,
+        &quot;brand&quot;: &quot;Kia&quot;,
+        &quot;model&quot;: &quot;Rio&quot;,
+        &quot;image_url&quot;: &quot;https://dev.pshacks.org/api/v3/cars/1/image&quot;,
+        &quot;status&quot;: &quot;available&quot;,
+        &quot;created_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-03-13T12:57:35.806Z&quot;,
+        &quot;category_name&quot;: &quot;Economy&quot;,
+        &quot;price_per_day&quot;: &quot;50.00&quot;
+    },
     {
         &quot;id&quot;: 2,
         &quot;category_id&quot;: 1,
@@ -436,7 +462,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400
         &quot;price_per_day&quot;: &quot;120.00&quot;
     }
 ]
-18:00:38.703 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - &#x1f4e5; API ответ: статус 200
+23:06:25.720 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - &#x1f4e5; API ответ: статус 200
 </pre>
 <button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-testGetCars_WithPagination_ShouldReturnLimitedResults">Copy</button>
 </span>
@@ -451,7 +477,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.3.0</a> at 25 Mar 2026, 18:01:55</p>
+<a href="https://www.gradle.org">Gradle 9.3.0</a> at 25 Mar 2026, 23:07:41</p>
 </div>
 </div>
 </body>

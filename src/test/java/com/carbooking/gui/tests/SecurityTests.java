@@ -33,6 +33,6 @@ public class SecurityTests extends TestBase {
         boolean isProtected = bodyText.contains("403") || bodyText.contains("Access Denied") || bodyText.contains("Forbidden");
 
         Assert.assertTrue(isProtected,
-                "УГРОЗА УТЕЧКИ: Персональные данные других пользователей доступны через манипуляцию ID в URL!");
+                "LEAK THREAT: Personal data of other users can be accessed by manipulating the ID in the URL!");
     }
 }

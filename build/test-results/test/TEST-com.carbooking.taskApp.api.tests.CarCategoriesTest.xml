@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.carbooking.taskApp.api.tests.CarCategoriesTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2026-03-25T17:00:38.701Z" hostname="VITROM" time="0.324">
+<testsuite name="com.carbooking.taskApp.api.tests.CarCategoriesTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2026-03-25T22:06:25.729Z" hostname="VITROM" time="0.309">
   <properties/>
-  <testcase name="testGetCarCategories_ShouldContainExpectedCategories" classname="com.carbooking.taskApp.api.tests.CarCategoriesTest" time="0.163">
+  <testcase name="testGetCarCategories_ShouldContainExpectedCategories" classname="com.carbooking.taskApp.api.tests.CarCategoriesTest" time="0.161">
     <failure message="java.lang.AssertionError: There must be a category Luxury expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: There must be a category Luxury expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -52,14 +52,14 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testGetCarCategories_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.CarCategoriesTest" time="0.146"/>
-  <system-out><![CDATA[18:00:38.716 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m - ✅ BaseApiTest initialised
-18:00:38.716 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m -  BaseURI: https://dev.pshacks.org/api/v3
-18:00:38.716 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+  <testcase name="testGetCarCategories_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.CarCategoriesTest" time="0.14"/>
+  <system-out><![CDATA[23:06:25.731 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m - ✅ BaseApiTest initialised
+23:06:25.731 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m -  BaseURI: https://dev.pshacks.org/api/v3
+23:06:25.733 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:38.716 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarCategories_ShouldContainExpectedCategories
-18:00:38.716 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:38.718 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:25.733 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarCategories_ShouldContainExpectedCategories
+23:06:25.733 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:25.733 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Sending a GET request to  /car-categories
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/car-categories
@@ -98,7 +98,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:39 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -107,10 +107,10 @@ etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pN1ivqLHXEt2%2FTAoRlA5IJpOuixcr9PKMxrzdASzy7pSQdJ2FD5YE5ay3ht7bQvdMgDSTC9ozL8Rb96evSggFBb6M3QkzkCKtwZvUFH8IQ%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=hfopzTJ5TO2by4ddEHPXEABM09TqzxWbR6ehETk8gU%2BLtM91i52%2FQ8yMVObVRV6FPZ9AjLOCoiFzpzQ318ep5fRCYCXirtU780gwUOndmreC%2BAAWic4wS5I0BtCw2gyUIfE%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f791a78d49f4b-FRA
+CF-RAY: 9e213908ad231bcf-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
@@ -140,7 +140,7 @@ alt-svc: h3=":443"; ma=86400
     }
 ]
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:39 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -149,10 +149,10 @@ etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pN1ivqLHXEt2%2FTAoRlA5IJpOuixcr9PKMxrzdASzy7pSQdJ2FD5YE5ay3ht7bQvdMgDSTC9ozL8Rb96evSggFBb6M3QkzkCKtwZvUFH8IQ%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=hfopzTJ5TO2by4ddEHPXEABM09TqzxWbR6ehETk8gU%2BLtM91i52%2FQ8yMVObVRV6FPZ9AjLOCoiFzpzQ318ep5fRCYCXirtU780gwUOndmreC%2BAAWic4wS5I0BtCw2gyUIfE%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f791a78d49f4b-FRA
+CF-RAY: 9e213908ad231bcf-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
@@ -182,7 +182,7 @@ alt-svc: h3=":443"; ma=86400
     }
 ]
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:39 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -191,10 +191,10 @@ etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pN1ivqLHXEt2%2FTAoRlA5IJpOuixcr9PKMxrzdASzy7pSQdJ2FD5YE5ay3ht7bQvdMgDSTC9ozL8Rb96evSggFBb6M3QkzkCKtwZvUFH8IQ%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=hfopzTJ5TO2by4ddEHPXEABM09TqzxWbR6ehETk8gU%2BLtM91i52%2FQ8yMVObVRV6FPZ9AjLOCoiFzpzQ318ep5fRCYCXirtU780gwUOndmreC%2BAAWic4wS5I0BtCw2gyUIfE%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f791a78d49f4b-FRA
+CF-RAY: 9e213908ad231bcf-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
@@ -223,23 +223,23 @@ alt-svc: h3=":443"; ma=86400
         "created_at": "2026-03-13T12:57:35.782Z"
     }
 ]
-18:00:38.879 ?[39mDEBUG?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m -  ]]>&#x1f4c4;<![CDATA[ Тело: [{"id":1,"name":"Economy","description":"Small hatchbacks, low fuel consumption","price_per_day":"50.00","image_url":"https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80","created_at":"2026-03-13T12:57:35.782Z"},{"id":2,"name":"Comfort","description":"Sedans with climate control and soft suspension","price_per_day":"80.00","image_url":"https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80","created_at":"2026-03-13T12:57:35.782Z"},{"id":3,"name":"Lux","description":"Premium SUVs and sports cars","price_per_day":"120.00","image_url":"https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80","created_at":"2026-03-13T12:57:35.782Z"}]
-18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:25.894 ?[39mDEBUG?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m -  ]]>&#x1f4c4;<![CDATA[ Тело: [{"id":1,"name":"Economy","description":"Small hatchbacks, low fuel consumption","price_per_day":"50.00","image_url":"https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80","created_at":"2026-03-13T12:57:35.782Z"},{"id":2,"name":"Comfort","description":"Sedans with climate control and soft suspension","price_per_day":"80.00","image_url":"https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80","created_at":"2026-03-13T12:57:35.782Z"},{"id":3,"name":"Lux","description":"Premium SUVs and sports cars","price_per_day":"120.00","image_url":"https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80","created_at":"2026-03-13T12:57:35.782Z"}]
+23:06:25.894 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Checking the category: Economy
-18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Category found Economy
-18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:25.894 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Category found Economy
+23:06:25.894 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Checking the category: Comfort
-18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Category found Comfort
-18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:25.894 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Category found Comfort
+23:06:25.894 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Checking the category: Luxury
-18:00:38.879 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetCarCategories_ShouldContainExpectedCategories
-18:00:38.879 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: There must be a category Luxury expected [true] but found [false]
-18:00:38.879 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:25.894 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetCarCategories_ShouldContainExpectedCategories
+23:06:25.894 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: There must be a category Luxury expected [true] but found [false]
+23:06:25.894 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:25.898 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarCategories_ShouldReturn200
-18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:38.879 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:25.898 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarCategories_ShouldReturn200
+23:06:25.898 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:25.898 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Sending a GET request to /car-categories
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/car-categories
@@ -278,7 +278,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:39 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -287,10 +287,10 @@ etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YzAeQ7%2BvWVNUmPd7Z%2B9S57RI9zNmEv6po66FJEmWvQQrgNjGUa%2BPp7Sv3gtze5xPrh5u0Bb7M4KjA5SaqYB0JwNgyXxba4LmhxGmZlltyw%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xDbZ8ds54Br8Mc6VoE%2F73087McrFMEiTV%2B9Pvs6SJO1DQT568FV74%2BgLHdrJzgNMvxEC8cEiPERx7CFqvOmg2F2VJXj38M9t0hA5JAB%2FJ5Vs5ML1ISoUoyiiS6c8rmDsFp4%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f791b8f17f65d-FRA
+CF-RAY: 9e213909bb2a37f0-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
@@ -320,7 +320,7 @@ alt-svc: h3=":443"; ma=86400
     }
 ]
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:39 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -329,10 +329,10 @@ etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YzAeQ7%2BvWVNUmPd7Z%2B9S57RI9zNmEv6po66FJEmWvQQrgNjGUa%2BPp7Sv3gtze5xPrh5u0Bb7M4KjA5SaqYB0JwNgyXxba4LmhxGmZlltyw%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xDbZ8ds54Br8Mc6VoE%2F73087McrFMEiTV%2B9Pvs6SJO1DQT568FV74%2BgLHdrJzgNMvxEC8cEiPERx7CFqvOmg2F2VJXj38M9t0hA5JAB%2FJ5Vs5ML1ISoUoyiiS6c8rmDsFp4%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f791b8f17f65d-FRA
+CF-RAY: 9e213909bb2a37f0-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
@@ -362,7 +362,7 @@ alt-svc: h3=":443"; ma=86400
     }
 ]
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:39 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -371,10 +371,10 @@ etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YzAeQ7%2BvWVNUmPd7Z%2B9S57RI9zNmEv6po66FJEmWvQQrgNjGUa%2BPp7Sv3gtze5xPrh5u0Bb7M4KjA5SaqYB0JwNgyXxba4LmhxGmZlltyw%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xDbZ8ds54Br8Mc6VoE%2F73087McrFMEiTV%2B9Pvs6SJO1DQT568FV74%2BgLHdrJzgNMvxEC8cEiPERx7CFqvOmg2F2VJXj38M9t0hA5JAB%2FJ5Vs5ML1ISoUoyiiS6c8rmDsFp4%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f791b8f17f65d-FRA
+CF-RAY: 9e213909bb2a37f0-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
@@ -403,11 +403,11 @@ alt-svc: h3=":443"; ma=86400
         "created_at": "2026-03-13T12:57:35.782Z"
     }
 ]
-18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
-18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Response length: 753
-18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Test good!
-18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarCategories_ShouldReturn200
-18:00:39.025 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:26.038 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+23:06:26.038 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Response length: 753
+23:06:26.038 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Test good!
+23:06:26.038 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarCategories_ShouldReturn200
+23:06:26.038 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

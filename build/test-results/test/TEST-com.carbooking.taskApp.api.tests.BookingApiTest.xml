@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.carbooking.taskApp.api.tests.BookingApiTest" tests="13" skipped="0" failures="13" errors="0" timestamp="2026-03-25T17:00:30.500Z" hostname="VITROM" time="5.001">
+<testsuite name="com.carbooking.taskApp.api.tests.BookingApiTest" tests="13" skipped="0" failures="13" errors="0" timestamp="2026-03-25T22:06:18.229Z" hostname="VITROM" time="4.432">
   <properties/>
-  <testcase name="testCreateBooking_InvalidDateRange_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="1.751">
+  <testcase name="testCreateBooking_InvalidDateRange_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="1.617">
     <failure message="java.lang.AssertionError: Error during login attempt! expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error during login attempt! expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -56,7 +56,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testCreateBooking_PastDates_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.237">
+  <testcase name="testCreateBooking_PastDates_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.21">
     <failure message="java.lang.AssertionError: Error during login attempt! expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error during login attempt! expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -111,7 +111,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testCreateBooking_ValidData_ShouldReturn201" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.215">
+  <testcase name="testCreateBooking_ValidData_ShouldReturn201" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.2">
     <failure message="java.lang.AssertionError: Error during login attempt! expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error during login attempt! expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -166,7 +166,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testCreateBooking_WithoutUserId_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.227">
+  <testcase name="testCreateBooking_WithoutUserId_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.193">
     <failure message="java.lang.AssertionError: Error during login attempt! expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error during login attempt! expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -221,7 +221,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testDeleteBooking_ExistingBooking_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.194">
+  <testcase name="testDeleteBooking_ExistingBooking_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.164">
     <failure message="java.lang.AssertionError: Error during login attempt! expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error during login attempt! expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -276,7 +276,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testDeleteBooking_NonExistingId_ShouldReturn404" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.209">
+  <testcase name="testDeleteBooking_NonExistingId_ShouldReturn404" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.168">
     <failure message="java.lang.AssertionError: Error during login attempt! expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error during login attempt! expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -331,7 +331,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testGetAllBookings_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.196">
+  <testcase name="testGetAllBookings_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.242">
     <failure message="java.lang.AssertionError: Error during login attempt! expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error during login attempt! expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -386,7 +386,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testGetBookingById_ExistingBooking_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.171">
+  <testcase name="testGetBookingById_ExistingBooking_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.161">
     <failure message="java.lang.AssertionError: Error during login attempt! expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error during login attempt! expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -441,7 +441,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testGetBookingById_InvalidIdFormat_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.18">
+  <testcase name="testGetBookingById_InvalidIdFormat_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.172">
     <failure message="java.lang.AssertionError: Error during login attempt! expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error during login attempt! expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -496,7 +496,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testGetBookingById_NonExistingId_ShouldReturn404" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.198">
+  <testcase name="testGetBookingById_NonExistingId_ShouldReturn404" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.182">
     <failure message="java.lang.AssertionError: Error during login attempt! expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error during login attempt! expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -551,7 +551,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testGetBookings_ByUserId_ShouldReturnFilteredList" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.196">
+  <testcase name="testGetBookings_ByUserId_ShouldReturnFilteredList" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.175">
     <failure message="java.lang.AssertionError: Error during login attempt! expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error during login attempt! expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -606,7 +606,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testUpdateBooking_ChangeDates_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.351">
+  <testcase name="testUpdateBooking_ChangeDates_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.154">
     <failure message="java.lang.AssertionError: Error during login attempt! expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error during login attempt! expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -661,7 +661,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testUpdateBooking_NonExistingId_ShouldReturn404" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.191">
+  <testcase name="testUpdateBooking_NonExistingId_ShouldReturn404" classname="com.carbooking.taskApp.api.tests.BookingApiTest" time="0.192">
     <failure message="java.lang.AssertionError: Error during login attempt! expected [200] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: Error during login attempt! expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -716,15 +716,15 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <system-out><![CDATA[18:00:31.134 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m - ✅ BaseApiTest initialised
-18:00:31.136 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m -  BaseURI: https://dev.pshacks.org/api/v3
-18:00:31.136 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+  <system-out><![CDATA[23:06:18.730 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m - ✅ BaseApiTest initialised
+23:06:18.730 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m -  BaseURI: https://dev.pshacks.org/api/v3
+23:06:18.730 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:31.136 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCreateBooking_InvalidDateRange_ShouldReturn400
-18:00:31.136 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:31.139 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:18.730 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCreateBooking_InvalidDateRange_ShouldReturn400
+23:06:18.730 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:18.740 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Negative: end date is earlier than start date
-18:00:31.139 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:18.740 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Logging in
 Request method:	POST
 Request URI:	https://dev.pshacks.org/api/v3/auth/login
@@ -759,7 +759,7 @@ Body:
     "password": "password123"
 }
 HTTP/1.1 401 Unauthorized
-Date: Wed, 25 Mar 2026 17:00:33 GMT
+Date: Wed, 25 Mar 2026 22:06:21 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 37
 Connection: keep-alive
@@ -768,23 +768,23 @@ etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=vrBl6ww%2B7%2Bt2cZW2j13uOkjL4FCL3QX65zvGTjy7qt5D2ijAXmUel347fjeo8RVm0yTArEMN8ikav%2BNLc9mTwa%2B0Ffb5yiqZ%2FNXnB%2Bl2YA%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=7Q1NS6fquZKBCxOCxfNE0lk9ZlQleKt7r1lA0PwTuQnaqP6di%2FF2StgdEAZVbnPTO8h5yZEsHQbI%2FYmhHeOV76TYscZYN4z9GWLNf2qad0ojOAf5XlsRpjLkv%2B7DFAu4yts%3D"}]}
 Server: cloudflare
-CF-RAY: 9e1f78f32921d2de-FRA
+CF-RAY: 9e2138e46f0ad2a1-FRA
 alt-svc: h3=":443"; ma=86400
 
 {
     "error": "Invalid email or password"
 }
-18:00:32.887 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
-18:00:32.887 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testCreateBooking_InvalidDateRange_ShouldReturn400
-18:00:32.887 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
-18:00:32.887 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:32.887 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:20.347 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+23:06:20.363 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testCreateBooking_InvalidDateRange_ShouldReturn400
+23:06:20.363 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+23:06:20.363 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:20.364 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:32.887 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCreateBooking_PastDates_ShouldReturn400
-18:00:32.895 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:32.899 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:20.364 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCreateBooking_PastDates_ShouldReturn400
+23:06:20.364 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:20.365 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Logging in
 Request method:	POST
 Request URI:	https://dev.pshacks.org/api/v3/auth/login
@@ -819,7 +819,7 @@ Body:
     "password": "password123"
 }
 HTTP/1.1 401 Unauthorized
-Date: Wed, 25 Mar 2026 17:00:33 GMT
+Date: Wed, 25 Mar 2026 22:06:21 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 37
 Connection: keep-alive
@@ -828,23 +828,23 @@ etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=knOZuSdDvHTJm0LjYb51zJlDo1T80%2FuLJVQvo0P09inCkglRSmVk8LgYb1SJe00Tj7migchJsuhgiEG1rpJcvhf8gZ5YkRauuIBu4wwk1g%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=lb%2Fj54H0Nx8FsIaxmhyM9Qz42kfPB3izTRyRzajcbmNC2R7oCxaOXsizEjULXF6ELCo7rAD7z0xLLUw0cH%2B41j%2Fpbhux4ukTSlw0EBzdgQlt96GAl%2BYegy7qWdWFXzfwlf8%3D"}]}
 Server: cloudflare
-CF-RAY: 9e1f78f65fc9d355-FRA
+CF-RAY: 9e2138e72bd114f9-FRA
 alt-svc: h3=":443"; ma=86400
 
 {
     "error": "Invalid email or password"
 }
-18:00:33.124 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
-18:00:33.124 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testCreateBooking_PastDates_ShouldReturn400
-18:00:33.124 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
-18:00:33.124 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:33.124 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:20.574 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+23:06:20.581 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testCreateBooking_PastDates_ShouldReturn400
+23:06:20.582 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+23:06:20.582 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:20.586 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:33.124 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCreateBooking_ValidData_ShouldReturn201
-18:00:33.124 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:33.131 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:20.586 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCreateBooking_ValidData_ShouldReturn201
+23:06:20.586 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:20.590 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Logging in
 Request method:	POST
 Request URI:	https://dev.pshacks.org/api/v3/auth/login
@@ -879,7 +879,7 @@ Body:
     "password": "password123"
 }
 HTTP/1.1 401 Unauthorized
-Date: Wed, 25 Mar 2026 17:00:33 GMT
+Date: Wed, 25 Mar 2026 22:06:21 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 37
 Connection: keep-alive
@@ -888,23 +888,23 @@ etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2Fdt3tVyFQCNy9rK8wpm2naEmDqZkk0TmmJFKBHV6DN2rhk2MFoxWbMWDh72WtTjJES2pk2Msa1oG0crRIk3OADz1Z8eD973Gt%2B%2FQQbBnKQ%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=AqEoU2D84A0noXiuF%2FGOBbShJJXlp4iDVUfDt7i8NHrHuMHz%2FMyq7AoaJVtp5a921lDRhgXPIvbS5T165eItTdvk3xTxv6a9hA49AXsVzqaMRlth6MRi20DuSPHwzg%2FbXqo%3D"}]}
 Server: cloudflare
-CF-RAY: 9e1f78f7a87133e8-FRA
+CF-RAY: 9e2138e8bda9d27e-FRA
 alt-svc: h3=":443"; ma=86400
 
 {
     "error": "Invalid email or password"
 }
-18:00:33.339 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
-18:00:33.341 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testCreateBooking_ValidData_ShouldReturn201
-18:00:33.341 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
-18:00:33.341 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:33.341 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:20.784 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+23:06:20.789 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testCreateBooking_ValidData_ShouldReturn201
+23:06:20.792 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+23:06:20.792 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:20.794 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:33.341 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCreateBooking_WithoutUserId_ShouldReturn400
-18:00:33.341 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:33.341 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:20.794 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCreateBooking_WithoutUserId_ShouldReturn400
+23:06:20.794 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:20.798 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Logging in
 Request method:	POST
 Request URI:	https://dev.pshacks.org/api/v3/auth/login
@@ -939,7 +939,7 @@ Body:
     "password": "password123"
 }
 HTTP/1.1 401 Unauthorized
-Date: Wed, 25 Mar 2026 17:00:34 GMT
+Date: Wed, 25 Mar 2026 22:06:21 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 37
 Connection: keep-alive
@@ -948,23 +948,23 @@ etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=gI3wAAN0Xzt8kMROsmfJ13KBAnlWkRn1jQxuGOdNCTRFMn6T%2F7eyHhB7F1sOXoietvFIRBkd7%2BVck%2FQl30iagfqdKge8Zhs6JIIF8xogtw%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=aKwkw2mkUtZ2D5muptLfL7X0BZ2NJtXiGOcrDKyj1vB3I%2FVeEBvpEoFVbD2X0oAGbbqsIeR%2FNTEf06U51jCaZ7TSIvN44qA6B8N0oxtU2F5R9ZtXFswKsPU3gtbXtLZU0b4%3D"}]}
 Server: cloudflare
-CF-RAY: 9e1f78f8fc393618-FRA
+CF-RAY: 9e2138e9fb92557f-FRA
 alt-svc: h3=":443"; ma=86400
 
 {
     "error": "Invalid email or password"
 }
-18:00:33.566 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
-18:00:33.574 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testCreateBooking_WithoutUserId_ShouldReturn400
-18:00:33.574 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
-18:00:33.574 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:33.577 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:20.987 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+23:06:20.989 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testCreateBooking_WithoutUserId_ShouldReturn400
+23:06:20.989 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+23:06:20.989 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:20.990 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:33.577 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testDeleteBooking_ExistingBooking_ShouldReturn200
-18:00:33.577 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:33.579 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:20.990 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testDeleteBooking_ExistingBooking_ShouldReturn200
+23:06:20.990 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:20.990 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Logging in
 Request method:	POST
 Request URI:	https://dev.pshacks.org/api/v3/auth/login
@@ -999,7 +999,7 @@ Body:
     "password": "password123"
 }
 HTTP/1.1 401 Unauthorized
-Date: Wed, 25 Mar 2026 17:00:34 GMT
+Date: Wed, 25 Mar 2026 22:06:22 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 37
 Connection: keep-alive
@@ -1008,23 +1008,23 @@ etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=CcTo%2FfmHG1dCLstHPVjzVrESUD7Rkt0mbCEWSKh4lLRx%2FuHDMAPDuIi9fCBvdwBuTpqqwAs66dMR5uLYYKTUbVWKROxCNhesyC6xLIXctw%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=cZnRViqZXHCA2ZUgXv%2BBqOddRn8DuF8dlWWcX12Br9U3P1bQGpb7KAEDDMxYI5FhRdkM8A34mMlpdCvtY2kaQ1Oto3KDYywKkvb0Q6tvh6PTRnQkeHexUCNHyGkPHKlpv90%3D"}]}
 Server: cloudflare
-CF-RAY: 9e1f78fa782cdc8c-FRA
+CF-RAY: 9e2138eb1ffcdcb8-FRA
 alt-svc: h3=":443"; ma=86400
 
 {
     "error": "Invalid email or password"
 }
-18:00:33.768 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
-18:00:33.784 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testDeleteBooking_ExistingBooking_ShouldReturn200
-18:00:33.784 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
-18:00:33.784 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:33.784 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:21.154 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+23:06:21.154 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testDeleteBooking_ExistingBooking_ShouldReturn200
+23:06:21.154 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+23:06:21.154 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:21.158 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:33.784 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testDeleteBooking_NonExistingId_ShouldReturn404
-18:00:33.784 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:33.784 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:21.158 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testDeleteBooking_NonExistingId_ShouldReturn404
+23:06:21.158 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:21.158 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Logging in
 Request method:	POST
 Request URI:	https://dev.pshacks.org/api/v3/auth/login
@@ -1059,7 +1059,7 @@ Body:
     "password": "password123"
 }
 HTTP/1.1 401 Unauthorized
-Date: Wed, 25 Mar 2026 17:00:34 GMT
+Date: Wed, 25 Mar 2026 22:06:22 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 37
 Connection: keep-alive
@@ -1068,23 +1068,23 @@ etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Gwd564y8wn0XLdk3HVBSh%2Bt%2F9FYw%2FpNAHgB2Fotg2jdUhi1dx%2FmRtoB5pCfurHxfs4fYOvcdcsgAN3Uy8zeBveu9wmuCozfte4cHMWQU2A%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=G%2BLWAcp%2F%2F4SDJkXmc%2BpSb%2FWXmrMKzneYrT3TAb5zTDLGhLzmu3VCCj47ar0Zdt0RZ7F%2F6MLYERImIRX32w10x1i8x4A%2ForDXJYx3Gt4LQR4HvQOLYviJmjPcesyB8fWJYs4%3D"}]}
 Server: cloudflare
-CF-RAY: 9e1f78fbab813665-FRA
+CF-RAY: 9e2138ec1e86dba5-FRA
 alt-svc: h3=":443"; ma=86400
 
 {
     "error": "Invalid email or password"
 }
-18:00:33.993 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
-18:00:34.004 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testDeleteBooking_NonExistingId_ShouldReturn404
-18:00:34.006 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
-18:00:34.006 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:34.006 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:21.326 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+23:06:21.329 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testDeleteBooking_NonExistingId_ShouldReturn404
+23:06:21.329 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+23:06:21.329 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:21.329 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:34.006 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetAllBookings_ShouldReturn200
-18:00:34.008 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:34.012 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:21.329 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetAllBookings_ShouldReturn200
+23:06:21.329 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:21.329 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Logging in
 Request method:	POST
 Request URI:	https://dev.pshacks.org/api/v3/auth/login
@@ -1119,7 +1119,7 @@ Body:
     "password": "password123"
 }
 HTTP/1.1 401 Unauthorized
-Date: Wed, 25 Mar 2026 17:00:34 GMT
+Date: Wed, 25 Mar 2026 22:06:22 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 37
 Connection: keep-alive
@@ -1128,23 +1128,23 @@ etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=E%2Bmpwk7rwMRZmrP8g8GQgnB8Aad20Vgg1%2BP4%2F4j1%2FhHFCpcs5Ff4keK1ezI3UJuq%2FksH8LFzS1EgpklJbP3EqN%2F6jSmaVkucUb2ID%2Fo6hA%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ZFNLKaBxaCT5edIEmqK0MCFIfa0FEvp34doJ7z6GgKrunHaFzCcnJ7frxj2FIr1uflDeorPQ4E%2F4r4OpQt5xy5mjs%2B7bnpYHFfBaK836HJfYKjCcGyIYtZfU%2B987MZvAnW4%3D"}]}
 Server: cloudflare
-CF-RAY: 9e1f78fd2aa8d2ea-FRA
+CF-RAY: 9e2138ed3ec75d4d-FRA
 alt-svc: h3=":443"; ma=86400
 
 {
     "error": "Invalid email or password"
 }
-18:00:34.202 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
-18:00:34.206 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetAllBookings_ShouldReturn200
-18:00:34.206 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
-18:00:34.206 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:34.206 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:21.571 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+23:06:21.571 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetAllBookings_ShouldReturn200
+23:06:21.571 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+23:06:21.571 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:21.578 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:34.206 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetBookingById_ExistingBooking_ShouldReturn200
-18:00:34.206 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:34.206 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:21.578 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetBookingById_ExistingBooking_ShouldReturn200
+23:06:21.578 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:21.578 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Logging in
 Request method:	POST
 Request URI:	https://dev.pshacks.org/api/v3/auth/login
@@ -1179,7 +1179,7 @@ Body:
     "password": "password123"
 }
 HTTP/1.1 401 Unauthorized
-Date: Wed, 25 Mar 2026 17:00:35 GMT
+Date: Wed, 25 Mar 2026 22:06:22 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 37
 Connection: keep-alive
@@ -1188,23 +1188,23 @@ etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=U7uWPWn6truGWN9flMQ2G5FicSmgrt48gyr%2Fapta4j%2FZmkd5ZrpIytJIEeHgV01GSt8SS5Obzfy0Z9lN9Dt7NtVE8I9oUHfibuRt563kqg%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=7m%2FvFf1e9iimoQuEgvweyBzJsndzQJd2W802Bpuv2D%2FM55tqn%2BsM76wy9PxjbFuBr95DO5YJVQhyzh2hD%2Fz0mRRBC4jU4CRtJwUyRUeT6sJCqCfMAh2kCVJftWtjRtaoKg8%3D"}]}
 Server: cloudflare
-CF-RAY: 9e1f78fe4cc3d3b5-FRA
+CF-RAY: 9e2138eeabd8dbbd-FRA
 alt-svc: h3=":443"; ma=86400
 
 {
     "error": "Invalid email or password"
 }
-18:00:34.377 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
-18:00:34.377 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetBookingById_ExistingBooking_ShouldReturn200
-18:00:34.377 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
-18:00:34.377 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:34.377 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:21.739 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+23:06:21.739 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetBookingById_ExistingBooking_ShouldReturn200
+23:06:21.739 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+23:06:21.739 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:21.745 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:34.377 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetBookingById_InvalidIdFormat_ShouldReturn400
-18:00:34.377 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:34.377 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:21.745 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetBookingById_InvalidIdFormat_ShouldReturn400
+23:06:21.745 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:21.745 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Logging in
 Request method:	POST
 Request URI:	https://dev.pshacks.org/api/v3/auth/login
@@ -1239,7 +1239,7 @@ Body:
     "password": "password123"
 }
 HTTP/1.1 401 Unauthorized
-Date: Wed, 25 Mar 2026 17:00:35 GMT
+Date: Wed, 25 Mar 2026 22:06:22 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 37
 Connection: keep-alive
@@ -1248,23 +1248,23 @@ etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ZdP4Gz128G2ibkddIVsr7E8uMHyZrdJ8RiGvECHI9x%2B91Sx%2FzpG9iJ8Ye9VoEdkG6jKe7ygciTconKeDT60qwM0nLlYWxSKffPJP0Rb%2Fhg%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=HuMPvDyo1QUj4spcxpHtJzYdgrrrIAnK8iXIB5D8rxsHtS%2FlvXPND%2BmdhecuVqXSVfmz9Jn3JcldUXsnjtssi9rWy%2F%2FGgMWzYvA73wA1%2FGUljVrxHsevFn4%2FAMDW61VDXlU%3D"}]}
 Server: cloudflare
-CF-RAY: 9e1f78ff5fd6590f-FRA
+CF-RAY: 9e2138efced81e26-FRA
 alt-svc: h3=":443"; ma=86400
 
 {
     "error": "Invalid email or password"
 }
-18:00:34.557 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
-18:00:34.560 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetBookingById_InvalidIdFormat_ShouldReturn400
-18:00:34.560 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
-18:00:34.560 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:34.560 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:21.917 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+23:06:21.920 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetBookingById_InvalidIdFormat_ShouldReturn400
+23:06:21.920 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+23:06:21.920 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:21.920 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:34.560 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetBookingById_NonExistingId_ShouldReturn404
-18:00:34.560 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:34.560 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:21.920 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetBookingById_NonExistingId_ShouldReturn404
+23:06:21.920 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:21.920 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Logging in
 Request method:	POST
 Request URI:	https://dev.pshacks.org/api/v3/auth/login
@@ -1299,7 +1299,7 @@ Body:
     "password": "password123"
 }
 HTTP/1.1 401 Unauthorized
-Date: Wed, 25 Mar 2026 17:00:35 GMT
+Date: Wed, 25 Mar 2026 22:06:22 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 37
 Connection: keep-alive
@@ -1308,23 +1308,23 @@ etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=FJZbkauyxi1wntMG7vr1bNGqzK%2BE%2BL3D9mxW0XT7t2exP5YOuW3PLashBqNhU%2BAQcbsJoYoIqsrwYw5d%2Fx%2F8mxsf6hlNiCftyegBCiCwRAniaRVVPrQ71qXkPv3XD3Qp02A%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=FisHaTQ%2Fg9KzoDowhshczMRSx3egU9mIOQLniREaVt%2FbNOWIlO66Gs5IRavFl5HbqwjBhLA49G1pIDstnTyzDCQ1HqVHjhzZBO6zBOuOt%2FcdFwgoEFv5Ok9eJIa%2B1TgQeRI%3D"}]}
 Server: cloudflare
-CF-RAY: 9e1f79008fa6dbcd-FRA
+CF-RAY: 9e2138f0e9d8d9d8-FRA
 alt-svc: h3=":443"; ma=86400
 
 {
     "error": "Invalid email or password"
 }
-18:00:34.758 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
-18:00:34.763 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetBookingById_NonExistingId_ShouldReturn404
-18:00:34.763 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
-18:00:34.763 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:34.763 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:22.100 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+23:06:22.108 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetBookingById_NonExistingId_ShouldReturn404
+23:06:22.108 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+23:06:22.108 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:22.112 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:34.763 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetBookings_ByUserId_ShouldReturnFilteredList
-18:00:34.763 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:34.772 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:22.112 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetBookings_ByUserId_ShouldReturnFilteredList
+23:06:22.112 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:22.114 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Logging in
 Request method:	POST
 Request URI:	https://dev.pshacks.org/api/v3/auth/login
@@ -1359,7 +1359,7 @@ Body:
     "password": "password123"
 }
 HTTP/1.1 401 Unauthorized
-Date: Wed, 25 Mar 2026 17:00:35 GMT
+Date: Wed, 25 Mar 2026 22:06:23 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 37
 Connection: keep-alive
@@ -1368,23 +1368,23 @@ etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=m0hv%2BefY7S6nb3o%2BSNNiTYH3M0JKByXttxAuGJ844foqPYiGe%2FfZfcQBAwkDTWRdXnLKiBB7WBNp6q2KZP%2FXLA1zDcRFiRQSOYHV%2Fr59YQ%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9ZA%2Fpsfme%2F9QcF1CetE2AqU86ZnY%2FXZLf8%2FH2HjcfdkzUaTBssRI9RP3mUM1NVFce6y80nZpXx9OkwQ5h3nQlpccm6TbACLZU6BxH45k7LTj3vS9CB62%2B5cqWK60Ue%2Fel7Q%3D"}]}
 Server: cloudflare
-CF-RAY: 9e1f7901d893dc7a-FRA
+CF-RAY: 9e2138f23beed9d7-FRA
 alt-svc: h3=":443"; ma=86400
 
 {
     "error": "Invalid email or password"
 }
-18:00:34.959 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
-18:00:34.959 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetBookings_ByUserId_ShouldReturnFilteredList
-18:00:34.959 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
-18:00:34.959 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:34.959 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:22.287 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+23:06:22.287 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetBookings_ByUserId_ShouldReturnFilteredList
+23:06:22.287 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+23:06:22.299 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:22.300 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:34.959 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testUpdateBooking_ChangeDates_ShouldReturn200
-18:00:34.959 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:34.959 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:22.300 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testUpdateBooking_ChangeDates_ShouldReturn200
+23:06:22.300 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:22.301 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Logging in
 Request method:	POST
 Request URI:	https://dev.pshacks.org/api/v3/auth/login
@@ -1419,7 +1419,7 @@ Body:
     "password": "password123"
 }
 HTTP/1.1 401 Unauthorized
-Date: Wed, 25 Mar 2026 17:00:35 GMT
+Date: Wed, 25 Mar 2026 22:06:23 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 37
 Connection: keep-alive
@@ -1428,23 +1428,23 @@ etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BnlUS2eZ7EfRTKA2YWMKuDjAsq%2BZlbmXbsvcNRR8I0nNIacBGud4T%2Fj2fZLOhbjm%2BBjOqbiQ7UNcA24N%2FDmlJEvPfxQJaADLiNE6W6x%2Fdg%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=AiRRrSPpfrCxPTq%2FYLCckBnKp9B4FAp6Zh%2FIFmH5TXOdhx6tEKLElrrQPi%2F%2FtYnoUfVD%2F2I2TzITEMvGZmP4IMXQOtGqQKt%2BLrVleJ5p4D6KrdGJQTCQG6XPLsYL7rylxLk%3D"}]}
 Server: cloudflare
-CF-RAY: 9e1f7902ff94ae55-FRA
+CF-RAY: 9e2138f34b1cd25d-FRA
 alt-svc: h3=":443"; ma=86400
 
 {
     "error": "Invalid email or password"
 }
-18:00:35.310 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
-18:00:35.310 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testUpdateBooking_ChangeDates_ShouldReturn200
-18:00:35.310 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
-18:00:35.310 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:35.310 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:22.453 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+23:06:22.469 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testUpdateBooking_ChangeDates_ShouldReturn200
+23:06:22.469 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+23:06:22.469 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:22.469 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:35.310 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testUpdateBooking_NonExistingId_ShouldReturn404
-18:00:35.310 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:35.310 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:22.469 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testUpdateBooking_NonExistingId_ShouldReturn404
+23:06:22.469 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:22.473 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Logging in
 Request method:	POST
 Request URI:	https://dev.pshacks.org/api/v3/auth/login
@@ -1479,7 +1479,7 @@ Body:
     "password": "password123"
 }
 HTTP/1.1 401 Unauthorized
-Date: Wed, 25 Mar 2026 17:00:36 GMT
+Date: Wed, 25 Mar 2026 22:06:23 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 37
 Connection: keep-alive
@@ -1488,18 +1488,18 @@ etag: W/"25-3YG4LRpklFolV4uVOnUIRm2hZA0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=BxoVfLDYsFyvgOEUzy48%2FJsesu86K9yho31oQcJE%2FNx9Tl%2Fjtjrw1qFkbt9GiXWkfuxaZNHlaKHCJkigqMFFKeuYMoGTvXuimCgxxp6rsQ%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=28K5D30i5CPyK11cjWDniKiKfRmTk9cDbrB68LKQSRghZNo5reKmsZOm%2BYMvTat6gczsLCGBS%2B7f0g2rthA4lrfyWshpFVLlrVlqmLhBCQKD7ls2ApJT4drJCgLihZIDy4I%3D"}]}
 Server: cloudflare
-CF-RAY: 9e1f79053ad0d9d8-FRA
+CF-RAY: 9e2138f459c25c85-FRA
 alt-svc: h3=":443"; ma=86400
 
 {
     "error": "Invalid email or password"
 }
-18:00:35.501 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
-18:00:35.501 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testUpdateBooking_NonExistingId_ShouldReturn404
-18:00:35.501 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
-18:00:35.501 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:22.661 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 401
+23:06:22.673 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testUpdateBooking_NonExistingId_ShouldReturn404
+23:06:22.673 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+23:06:22.677 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

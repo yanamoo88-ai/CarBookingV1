@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.carbooking.taskApp.api.tests.CarApiTest" tests="12" skipped="0" failures="2" errors="0" timestamp="2026-03-25T17:00:35.507Z" hostname="VITROM" time="3.205">
+<testsuite name="com.carbooking.taskApp.api.tests.CarApiTest" tests="12" skipped="0" failures="2" errors="0" timestamp="2026-03-25T22:06:22.676Z" hostname="VITROM" time="3.044">
   <properties/>
-  <testcase name="testGetAllCars_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.971"/>
-  <testcase name="testGetCarById_InvalidIdFormat_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.51"/>
-  <testcase name="testGetCarById_NegativeId_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.13"/>
-  <testcase name="testGetCarById_NonExistingId_ShouldReturn404" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.167"/>
-  <testcase name="testGetCarById_WithoutAuth_ShouldWork" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.142"/>
-  <testcase name="testGetCarById_ZeroId_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.152"/>
-  <testcase name="testGetCarByNonExistentId_ShouldReturn404" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.128"/>
-  <testcase name="testGetCarTypes_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.145"/>
-  <testcase name="testGetCars_CombinedFilters_ShouldWork" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.199"/>
-  <testcase name="testGetCars_NoCarsAvailable_ShouldReturn200WithEmptyList" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.217">
-    <failure message="java.lang.AssertionError: ФИЛЬТР НЕ РАБОТАЕТ! Ожидался пустой список, но пришло машин: 9 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: ФИЛЬТР НЕ РАБОТАЕТ! Ожидался пустой список, но пришло машин: 9 expected [true] but found [false]
+  <testcase name="testGetAllCars_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.898"/>
+  <testcase name="testGetCarById_InvalidIdFormat_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.556"/>
+  <testcase name="testGetCarById_NegativeId_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.128"/>
+  <testcase name="testGetCarById_NonExistingId_ShouldReturn404" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.134"/>
+  <testcase name="testGetCarById_WithoutAuth_ShouldWork" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.128"/>
+  <testcase name="testGetCarById_ZeroId_ShouldReturn400" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.102"/>
+  <testcase name="testGetCarByNonExistentId_ShouldReturn404" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.091"/>
+  <testcase name="testGetCarTypes_ShouldReturn200" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.151"/>
+  <testcase name="testGetCars_CombinedFilters_ShouldWork" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.193"/>
+  <testcase name="testGetCars_NoCarsAvailable_ShouldReturn200WithEmptyList" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.223">
+    <failure message="java.lang.AssertionError: ФИЛЬТР НЕ РАБОТАЕТ! Ожидался пустой список, но пришло машин: 10 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: ФИЛЬТР НЕ РАБОТАЕТ! Ожидался пустой список, но пришло машин: 10 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
@@ -61,8 +61,8 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testGetCars_WithDateFilter_ShouldShowCarsFreeOnDates" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.19"/>
-  <testcase name="testGetCars_WithPagination_ShouldReturnLimitedResults" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.215">
+  <testcase name="testGetCars_WithDateFilter_ShouldShowCarsFreeOnDates" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.203"/>
+  <testcase name="testGetCars_WithPagination_ShouldReturnLimitedResults" classname="com.carbooking.taskApp.api.tests.CarApiTest" time="0.194">
     <failure message="java.lang.AssertionError: No more should return 5 cars expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: No more should return 5 cars expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -113,13 +113,13 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <system-out><![CDATA[18:00:35.501 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m - ✅ BaseApiTest initialised
-18:00:35.501 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m -  BaseURI: https://dev.pshacks.org/api/v3
-18:00:35.501 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+  <system-out><![CDATA[23:06:22.679 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m - ✅ BaseApiTest initialised
+23:06:22.679 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m -  BaseURI: https://dev.pshacks.org/api/v3
+23:06:22.683 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:35.501 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetAllCars_ShouldReturn200
-18:00:35.501 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:35.501 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:22.683 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetAllCars_ShouldReturn200
+23:06:22.683 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:22.683 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Request for a list of all cars
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/cars
@@ -146,22 +146,35 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:36 GMT
+Date: Wed, 25 Mar 2026 22:06:23 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+etag: W/"b84-EapjJ6yGzPzZHuHNNLTanf0VRBE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=NuGOEBZVghB9nSBshPCxVx91iXwffy%2BO5VZlSOfObW%2FVuwBy3TZT1ZC4XuNd1tOqAU07xTPqr4Hobs2PvRSnrhsZ19Wzdk%2B3gxoI%2Fw3dRQ%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=aZhRCs9cZuHRwawJQ6u13oClTpseF11CZ%2F6T8a%2BtgfcHv9RURJZujW87Aq1zGI0ukJwIbiiFo%2BY0E1pS%2B3emRbbxHzi0d%2BfvJkjCHSjwhuKZCH7igbAGZM77YQEnpeMaFJI%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f790679f8dbbd-FRA
+CF-RAY: 9e2138f5d8a5d3bd-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
+    {
+        "id": 1,
+        "category_id": 1,
+        "number_plate": "A123BC77",
+        "brand": "Kia",
+        "model": "Rio",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/1/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
     {
         "id": 2,
         "category_id": 1,
@@ -281,22 +294,35 @@ alt-svc: h3=":443"; ma=86400
     }
 ]
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:36 GMT
+Date: Wed, 25 Mar 2026 22:06:23 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+etag: W/"b84-EapjJ6yGzPzZHuHNNLTanf0VRBE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=NuGOEBZVghB9nSBshPCxVx91iXwffy%2BO5VZlSOfObW%2FVuwBy3TZT1ZC4XuNd1tOqAU07xTPqr4Hobs2PvRSnrhsZ19Wzdk%2B3gxoI%2Fw3dRQ%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=aZhRCs9cZuHRwawJQ6u13oClTpseF11CZ%2F6T8a%2BtgfcHv9RURJZujW87Aq1zGI0ukJwIbiiFo%2BY0E1pS%2B3emRbbxHzi0d%2BfvJkjCHSjwhuKZCH7igbAGZM77YQEnpeMaFJI%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f790679f8dbbd-FRA
+CF-RAY: 9e2138f5d8a5d3bd-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
+    {
+        "id": 1,
+        "category_id": 1,
+        "number_plate": "A123BC77",
+        "brand": "Kia",
+        "model": "Rio",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/1/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
     {
         "id": 2,
         "category_id": 1,
@@ -415,15 +441,15 @@ alt-svc: h3=":443"; ma=86400
         "price_per_day": "120.00"
     }
 ]
-18:00:35.725 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
-18:00:36.472 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Car with ID is available: 2
-18:00:36.485 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetAllCars_ShouldReturn200
-18:00:36.485 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:36.485 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:22.924 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+23:06:23.581 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Car with ID is available: 1
+23:06:23.581 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetAllCars_ShouldReturn200
+23:06:23.581 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:23.581 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:36.485 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_InvalidIdFormat_ShouldReturn400
-18:00:36.485 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:36.489 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:23.581 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_InvalidIdFormat_ShouldReturn400
+23:06:23.581 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:23.581 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Negative test: incorrect ID format
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/cars/abc123
@@ -450,7 +476,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 Not Found
-Date: Wed, 25 Mar 2026 17:00:37 GMT
+Date: Wed, 25 Mar 2026 22:06:24 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -460,10 +486,10 @@ x-content-type-options: nosniff
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ewZj9l6VD%2B8AhYCRrs55nBTKsMnyNoW77d34rcNiwiXex2Mk4%2FNWDoQNFvTDWkZ1I5VO7pn9MAPditqQeEz393omBxQPibagOzfvtXtfPg%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=s%2BFMaUouyT4UFIHV2R%2BvkOwqici52ubqOxHrVs7CwjXTyDouycFw%2Bh%2FcXFZvh48DFinAjaE4VodQ8a%2BE8CkAupCpFLHIdCikaywNv1a9GW%2FHPJhS1CtHXCcNP5ScicONg3c%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f790c89b319af-FRA
+CF-RAY: 9e2138fb486cdb12-FRA
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
@@ -476,7 +502,7 @@ alt-svc: h3=":443"; ma=86400
   </body>
 </html>
 HTTP/1.1 404 Not Found
-Date: Wed, 25 Mar 2026 17:00:37 GMT
+Date: Wed, 25 Mar 2026 22:06:24 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -486,10 +512,10 @@ x-content-type-options: nosniff
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ewZj9l6VD%2B8AhYCRrs55nBTKsMnyNoW77d34rcNiwiXex2Mk4%2FNWDoQNFvTDWkZ1I5VO7pn9MAPditqQeEz393omBxQPibagOzfvtXtfPg%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=s%2BFMaUouyT4UFIHV2R%2BvkOwqici52ubqOxHrVs7CwjXTyDouycFw%2Bh%2FcXFZvh48DFinAjaE4VodQ8a%2BE8CkAupCpFLHIdCikaywNv1a9GW%2FHPJhS1CtHXCcNP5ScicONg3c%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f790c89b319af-FRA
+CF-RAY: 9e2138fb486cdb12-FRA
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
@@ -501,15 +527,15 @@ alt-svc: h3=":443"; ma=86400
     <pre>Cannot GET /api/v3/cars/abc123</pre>
   </body>
 </html>
-18:00:36.995 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
-18:00:36.995 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ℹ️ The API returned 404 – that is acceptable too
-18:00:37.007 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_InvalidIdFormat_ShouldReturn400
-18:00:37.007 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:37.007 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:24.128 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
+23:06:24.137 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ℹ️ The API returned 404 – that is acceptable too
+23:06:24.138 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_InvalidIdFormat_ShouldReturn400
+23:06:24.138 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:24.138 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:37.007 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_NegativeId_ShouldReturn400
-18:00:37.007 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:37.009 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:24.139 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_NegativeId_ShouldReturn400
+23:06:24.139 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:24.141 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Negative test: negative ID
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/cars/-5
@@ -536,7 +562,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 Not Found
-Date: Wed, 25 Mar 2026 17:00:37 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -546,10 +572,10 @@ x-content-type-options: nosniff
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UfcCquIaYoIte5m7%2Bzqv3KMabWHwiEoJ3Cxjz%2BckGiMEj7JB%2BXkrU21Ns13kboojUm7nd44OruNom9X5SzN7uAy99lGbQ7x8PuQCE3pobA%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=lXjKnMDnUd2QVMt6EZeTcQxmYoiwubr%2FMuT%2FMcBg6aR%2Bpd0m2NuLWhuJElGRPYuhZxKGoy%2FqxtCLWKFkdzfPlNsJNOMdDTH2WPfnpCK%2FXUMpHqzVsXdKOoJBYuTYMfJq2Pc%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f790fd9a84f70-FRA
+CF-RAY: 9e2138fec9ad1f99-FRA
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
@@ -562,7 +588,7 @@ alt-svc: h3=":443"; ma=86400
   </body>
 </html>
 HTTP/1.1 404 Not Found
-Date: Wed, 25 Mar 2026 17:00:37 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -572,10 +598,10 @@ x-content-type-options: nosniff
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UfcCquIaYoIte5m7%2Bzqv3KMabWHwiEoJ3Cxjz%2BckGiMEj7JB%2BXkrU21Ns13kboojUm7nd44OruNom9X5SzN7uAy99lGbQ7x8PuQCE3pobA%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=lXjKnMDnUd2QVMt6EZeTcQxmYoiwubr%2FMuT%2FMcBg6aR%2Bpd0m2NuLWhuJElGRPYuhZxKGoy%2FqxtCLWKFkdzfPlNsJNOMdDTH2WPfnpCK%2FXUMpHqzVsXdKOoJBYuTYMfJq2Pc%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f790fd9a84f70-FRA
+CF-RAY: 9e2138fec9ad1f99-FRA
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
@@ -587,15 +613,15 @@ alt-svc: h3=":443"; ma=86400
     <pre>Cannot GET /api/v3/cars/-5</pre>
   </body>
 </html>
-18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
-18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Test Good!
-18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_NegativeId_ShouldReturn400
-18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:24.266 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
+23:06:24.266 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Test Good!
+23:06:24.266 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_NegativeId_ShouldReturn400
+23:06:24.266 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:24.266 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_NonExistingId_ShouldReturn404
-18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:37.137 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:24.266 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_NonExistingId_ShouldReturn404
+23:06:24.266 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:24.266 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Negative test: request for a non-existent machine
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/cars/999999
@@ -622,7 +648,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 Not Found
-Date: Wed, 25 Mar 2026 17:00:37 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -632,10 +658,10 @@ x-content-type-options: nosniff
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=SSIolzL4UMniZI8KzxGPPlJhUmKjgGnvqb40kqHstBcooIR%2FPUCy2Dl7RgIYjJzhU%2B%2BoVuO1qgWW%2Fe6SyYZYchXdMwGpbHKM2B0Bf7eXwj8Bj22xc2IcSaoC7czVnoRbYmw%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BcthxWah3bHi5MNnookFsp4C9%2Fkyx4dtfb4Pdlj7MYo6TVM4vK6XJRfRby2pjYlRsiT6l7qtWdlSk%2F2tws5t9H12h1QNmlEW%2BTOB7T9lWuYjX4sJElu6ST6VCfDD6zeOmek%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f7910ad885d4d-FRA
+CF-RAY: 9e2138ff9f863825-FRA
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
@@ -648,7 +674,7 @@ alt-svc: h3=":443"; ma=86400
   </body>
 </html>
 HTTP/1.1 404 Not Found
-Date: Wed, 25 Mar 2026 17:00:37 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -658,10 +684,10 @@ x-content-type-options: nosniff
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=SSIolzL4UMniZI8KzxGPPlJhUmKjgGnvqb40kqHstBcooIR%2FPUCy2Dl7RgIYjJzhU%2B%2BoVuO1qgWW%2Fe6SyYZYchXdMwGpbHKM2B0Bf7eXwj8Bj22xc2IcSaoC7czVnoRbYmw%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BcthxWah3bHi5MNnookFsp4C9%2Fkyx4dtfb4Pdlj7MYo6TVM4vK6XJRfRby2pjYlRsiT6l7qtWdlSk%2F2tws5t9H12h1QNmlEW%2BTOB7T9lWuYjX4sJElu6ST6VCfDD6zeOmek%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f7910ad885d4d-FRA
+CF-RAY: 9e2138ff9f863825-FRA
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
@@ -673,15 +699,15 @@ alt-svc: h3=":443"; ma=86400
     <pre>Cannot GET /api/v3/cars/999999</pre>
   </body>
 </html>
-18:00:37.304 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
-18:00:37.304 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ API Returned 404 - correct
-18:00:37.309 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_NonExistingId_ShouldReturn404
-18:00:37.309 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:37.309 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:24.400 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
+23:06:24.400 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ API Returned 404 - correct
+23:06:24.400 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_NonExistingId_ShouldReturn404
+23:06:24.400 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:24.400 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:37.309 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_WithoutAuth_ShouldWork
-18:00:37.309 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:37.311 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:24.400 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_WithoutAuth_ShouldWork
+23:06:24.400 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:24.400 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Check: is authorisation required to view the car
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/cars/1
@@ -708,7 +734,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 Not Found
-Date: Wed, 25 Mar 2026 17:00:38 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -718,10 +744,10 @@ x-content-type-options: nosniff
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=PGNeJIE%2BuxoloeWf4mlXHSQ%2BDo8TjljqZe%2FpupCDZae7XohjaVg45tzkiC2MFtaFyE9ZW%2Fznkv1aLfJ%2Bn5tFGpmsqo3N3ZdB8c1EIY%2BKIw%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=PfdQh6WhaK2rz%2Foiw%2BbGHWSAYOm3iGSfK6pXEMQilIChfcG%2F51KqplNui1V9SvjDjQ6DBk94sbx5yIPk0f%2FzAzo4qKq2vejKzZ4D6Me9OJPTkTXFigtgDzvHeo9QEOxXRuE%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f7911ce80d385-FRA
+CF-RAY: 9e2139007899dc52-FRA
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
@@ -734,7 +760,7 @@ alt-svc: h3=":443"; ma=86400
   </body>
 </html>
 HTTP/1.1 404 Not Found
-Date: Wed, 25 Mar 2026 17:00:38 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -744,10 +770,10 @@ x-content-type-options: nosniff
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=PGNeJIE%2BuxoloeWf4mlXHSQ%2BDo8TjljqZe%2FpupCDZae7XohjaVg45tzkiC2MFtaFyE9ZW%2Fznkv1aLfJ%2Bn5tFGpmsqo3N3ZdB8c1EIY%2BKIw%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=PfdQh6WhaK2rz%2Foiw%2BbGHWSAYOm3iGSfK6pXEMQilIChfcG%2F51KqplNui1V9SvjDjQ6DBk94sbx5yIPk0f%2FzAzo4qKq2vejKzZ4D6Me9OJPTkTXFigtgDzvHeo9QEOxXRuE%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f7911ce80d385-FRA
+CF-RAY: 9e2139007899dc52-FRA
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
@@ -759,14 +785,14 @@ alt-svc: h3=":443"; ma=86400
     <pre>Cannot GET /api/v3/cars/1</pre>
   </body>
 </html>
-18:00:37.451 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
-18:00:37.451 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_WithoutAuth_ShouldWork
-18:00:37.451 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:37.451 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:24.528 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
+23:06:24.530 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_WithoutAuth_ShouldWork
+23:06:24.530 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:24.531 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:37.451 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_ZeroId_ShouldReturn400
-18:00:37.451 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:37.456 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:24.531 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarById_ZeroId_ShouldReturn400
+23:06:24.531 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:24.532 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Negative test: ID = 0
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/cars/0
@@ -793,7 +819,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 Not Found
-Date: Wed, 25 Mar 2026 17:00:38 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -803,10 +829,10 @@ x-content-type-options: nosniff
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=iMBVCdFzAvWRk%2Ft%2F3YaRTj74hUzdnLegL3vo3aD4IRoAmVNH2%2BFthzb4JdUEleNG80Hi5BnnIOhwjbPCG84BSKeiAnDyQ%2FW2gG%2BI5DxRVw%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=QH5jS8nH6MhZAPDzOCk5a7GHoHNzzmHZyGHn0EprSK8AmyFXMZ7PbrMzofYUFOVi%2FcT8HzE1%2BVYsuFdy9iat3ZKNZMcjDNDQsNyFz8S9vlnVvqnad98JrlfV%2BGRFKeHouIg%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f7912a96d77d1-FRA
+CF-RAY: 9e2139012de2dbb9-FRA
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
@@ -819,7 +845,7 @@ alt-svc: h3=":443"; ma=86400
   </body>
 </html>
 HTTP/1.1 404 Not Found
-Date: Wed, 25 Mar 2026 17:00:38 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -829,10 +855,10 @@ x-content-type-options: nosniff
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=iMBVCdFzAvWRk%2Ft%2F3YaRTj74hUzdnLegL3vo3aD4IRoAmVNH2%2BFthzb4JdUEleNG80Hi5BnnIOhwjbPCG84BSKeiAnDyQ%2FW2gG%2BI5DxRVw%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=QH5jS8nH6MhZAPDzOCk5a7GHoHNzzmHZyGHn0EprSK8AmyFXMZ7PbrMzofYUFOVi%2FcT8HzE1%2BVYsuFdy9iat3ZKNZMcjDNDQsNyFz8S9vlnVvqnad98JrlfV%2BGRFKeHouIg%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f7912a96d77d1-FRA
+CF-RAY: 9e2139012de2dbb9-FRA
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
@@ -844,15 +870,15 @@ alt-svc: h3=":443"; ma=86400
     <pre>Cannot GET /api/v3/cars/0</pre>
   </body>
 </html>
-18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
-18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Test OK
-18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_ZeroId_ShouldReturn400
-18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:24.633 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
+23:06:24.633 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ✅ Test OK
+23:06:24.649 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarById_ZeroId_ShouldReturn400
+23:06:24.649 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:24.649 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarByNonExistentId_ShouldReturn404
-18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:37.603 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:24.649 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarByNonExistentId_ShouldReturn404
+23:06:24.649 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:24.649 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Negative test: request for the machine with ID 999999
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/cars/999999
@@ -879,7 +905,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 Not Found
-Date: Wed, 25 Mar 2026 17:00:38 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -889,10 +915,10 @@ x-content-type-options: nosniff
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=l4E5lvSagF5%2Fiz8Qpvm0H77tyYsJWxaG3zwR0pixavHVyewSCXFR2r1Gjn%2BGJ2GtQ3EWY5YiLpP3quT6sSjoZ5vtOAGz15wi%2FRGV%2BvN9%2FQ%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=80rtfO1oCYb16YIZXUNKmqTICLG0bjH5Ju9oBv8ZYbSWL1qcTiAzVDqsURmVCH9ctm76TEj12G3fkfrCwzCFbj1Q60doqGv4sQpafuBPMg0qVV%2F%2BiJfcut1j8qsAuUBw2jk%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f79139b3a755e-FRA
+CF-RAY: 9e213901d9d6dc92-FRA
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
@@ -905,7 +931,7 @@ alt-svc: h3=":443"; ma=86400
   </body>
 </html>
 HTTP/1.1 404 Not Found
-Date: Wed, 25 Mar 2026 17:00:38 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -915,10 +941,10 @@ x-content-type-options: nosniff
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=l4E5lvSagF5%2Fiz8Qpvm0H77tyYsJWxaG3zwR0pixavHVyewSCXFR2r1Gjn%2BGJ2GtQ3EWY5YiLpP3quT6sSjoZ5vtOAGz15wi%2FRGV%2BvN9%2FQ%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=80rtfO1oCYb16YIZXUNKmqTICLG0bjH5Ju9oBv8ZYbSWL1qcTiAzVDqsURmVCH9ctm76TEj12G3fkfrCwzCFbj1Q60doqGv4sQpafuBPMg0qVV%2F%2BiJfcut1j8qsAuUBw2jk%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f79139b3a755e-FRA
+CF-RAY: 9e213901d9d6dc92-FRA
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
@@ -930,14 +956,14 @@ alt-svc: h3=":443"; ma=86400
     <pre>Cannot GET /api/v3/cars/999999</pre>
   </body>
 </html>
-18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
-18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarByNonExistentId_ShouldReturn404
-18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:24.740 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 404
+23:06:24.740 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarByNonExistentId_ShouldReturn404
+23:06:24.740 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:24.740 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarTypes_ShouldReturn200
-18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:37.731 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:24.740 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarTypes_ShouldReturn200
+23:06:24.740 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:24.740 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Obtaining vehicle categories
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/car-categories
@@ -964,7 +990,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:38 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -973,10 +999,10 @@ etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4rCfoUauFi2wDdrwy7LBOAowiJlrWMcQ4%2BQRj84VFyw87IIaC%2B2vcoCGyKF0CfbCIXi7H7M6HOjVFR2Rb9bQiOq5CcgNZ%2F4Vv9VsN940KQ%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=KWk%2FSLxiWpb7hvEJbN8PR7XslrMWx%2FFBB3kFy6mJmVn6jee%2BtAzRBY5MLm4Pm8OEDUJEatPOfRDk3hjFCvP1OuO9OW2ks5SI5oNTdQL3MyhRcgrnyc7O1oe7dJCCFecMJtk%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f79145a81d2a1-FRA
+CF-RAY: 9e21390289ed7c0a-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
@@ -1006,7 +1032,7 @@ alt-svc: h3=":443"; ma=86400
     }
 ]
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:38 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1015,10 +1041,10 @@ etag: W/"2f1-KgzNXR13iiZsGd9vGUR8VPpVUm8"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4rCfoUauFi2wDdrwy7LBOAowiJlrWMcQ4%2BQRj84VFyw87IIaC%2B2vcoCGyKF0CfbCIXi7H7M6HOjVFR2Rb9bQiOq5CcgNZ%2F4Vv9VsN940KQ%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=KWk%2FSLxiWpb7hvEJbN8PR7XslrMWx%2FFBB3kFy6mJmVn6jee%2BtAzRBY5MLm4Pm8OEDUJEatPOfRDk3hjFCvP1OuO9OW2ks5SI5oNTdQL3MyhRcgrnyc7O1oe7dJCCFecMJtk%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f79145a81d2a1-FRA
+CF-RAY: 9e21390289ed7c0a-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
@@ -1047,15 +1073,15 @@ alt-svc: h3=":443"; ma=86400
         "created_at": "2026-03-13T12:57:35.782Z"
     }
 ]
-18:00:37.876 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
-18:00:37.876 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Categories: 3
-18:00:37.883 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarTypes_ShouldReturn200
-18:00:37.883 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:37.883 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:24.891 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+23:06:24.891 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Categories: 3
+23:06:24.891 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarTypes_ShouldReturn200
+23:06:24.891 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:24.891 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:37.883 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCars_CombinedFilters_ShouldWork
-18:00:37.883 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:37.883 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:24.891 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCars_CombinedFilters_ShouldWork
+23:06:24.891 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:24.891 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Comb filter
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/cars?type=SEDAN&minPrice=30&maxPrice=150&available=true
@@ -1082,22 +1108,35 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:38 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+etag: W/"b84-EapjJ6yGzPzZHuHNNLTanf0VRBE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=IqF5zy%2BulHEWQhnmdk9YimzP6vOMKJn2Dd0Oy74Lc%2Fk%2BxygjLbeJAESo61FPAV1Xa3BSllifbRWkTldcm52oPhlUOPAZmXFjDIdbKiSLhw%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dbggh3ZSx6oHWRVWgreIsJZqusYxIxlTZdiTlsyX%2FjyCFSvOl1876rxr8QjRZY33e16VpUZpzDNk4IB%2FRTo8yGYa8cJn3HSFs1JaV%2F0DA8hIai1vrYczOmKUZbWUTczcqJw%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f7915493d71d0-FRA
+CF-RAY: 9e2139038973d9d7-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
+    {
+        "id": 1,
+        "category_id": 1,
+        "number_plate": "A123BC77",
+        "brand": "Kia",
+        "model": "Rio",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/1/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
     {
         "id": 2,
         "category_id": 1,
@@ -1217,22 +1256,35 @@ alt-svc: h3=":443"; ma=86400
     }
 ]
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:38 GMT
+Date: Wed, 25 Mar 2026 22:06:25 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+etag: W/"b84-EapjJ6yGzPzZHuHNNLTanf0VRBE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=IqF5zy%2BulHEWQhnmdk9YimzP6vOMKJn2Dd0Oy74Lc%2Fk%2BxygjLbeJAESo61FPAV1Xa3BSllifbRWkTldcm52oPhlUOPAZmXFjDIdbKiSLhw%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dbggh3ZSx6oHWRVWgreIsJZqusYxIxlTZdiTlsyX%2FjyCFSvOl1876rxr8QjRZY33e16VpUZpzDNk4IB%2FRTo8yGYa8cJn3HSFs1JaV%2F0DA8hIai1vrYczOmKUZbWUTczcqJw%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f7915493d71d0-FRA
+CF-RAY: 9e2139038973d9d7-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
+    {
+        "id": 1,
+        "category_id": 1,
+        "number_plate": "A123BC77",
+        "brand": "Kia",
+        "model": "Rio",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/1/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
     {
         "id": 2,
         "category_id": 1,
@@ -1351,15 +1403,15 @@ alt-svc: h3=":443"; ma=86400
         "price_per_day": "120.00"
     }
 ]
-18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
-18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Result: 9
-18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCars_CombinedFilters_ShouldWork
-18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:25.084 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+23:06:25.084 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Result: 10
+23:06:25.100 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCars_CombinedFilters_ShouldWork
+23:06:25.100 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:25.100 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCars_NoCarsAvailable_ShouldReturn200WithEmptyList
-18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:38.082 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:25.100 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCars_NoCarsAvailable_ShouldReturn200WithEmptyList
+23:06:25.100 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:25.100 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ:  Price filter check
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/cars?minPrice=8000000&maxPrice=10000000
@@ -1388,22 +1440,35 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:38 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+etag: W/"b84-EapjJ6yGzPzZHuHNNLTanf0VRBE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=uxL1pd1rSNCJzlCH0gw72IJbclPDhQsFom0by2kstfKlg69glLsM%2BJP6VC4EHT3ffPZ7E9d%2BPFc0539bg9%2BFnTG21Lh%2FbC9QHjVM4%2FEX%2FA%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ehpzkJ3QR5OTkl%2Bbb8BFjhLoZjB6UvVf44vG%2BzNOdDTL%2B7bT9M3ZP3QLAYayfcIjin2lRYg7wfeGZ6sMVoxW9lOvv%2BXfv96aKTnASVgE74NRfsSOEioLaSbl1zL%2FEkNPKFY%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f79168defd3a6-FRA
+CF-RAY: 9e213904efc89752-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
+    {
+        "id": 1,
+        "category_id": 1,
+        "number_plate": "A123BC77",
+        "brand": "Kia",
+        "model": "Rio",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/1/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
     {
         "id": 2,
         "category_id": 1,
@@ -1523,22 +1588,35 @@ alt-svc: h3=":443"; ma=86400
     }
 ]
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:38 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+etag: W/"b84-EapjJ6yGzPzZHuHNNLTanf0VRBE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=uxL1pd1rSNCJzlCH0gw72IJbclPDhQsFom0by2kstfKlg69glLsM%2BJP6VC4EHT3ffPZ7E9d%2BPFc0539bg9%2BFnTG21Lh%2FbC9QHjVM4%2FEX%2FA%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ehpzkJ3QR5OTkl%2Bbb8BFjhLoZjB6UvVf44vG%2BzNOdDTL%2B7bT9M3ZP3QLAYayfcIjin2lRYg7wfeGZ6sMVoxW9lOvv%2BXfv96aKTnASVgE74NRfsSOEioLaSbl1zL%2FEkNPKFY%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f79168defd3a6-FRA
+CF-RAY: 9e213904efc89752-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
+    {
+        "id": 1,
+        "category_id": 1,
+        "number_plate": "A123BC77",
+        "brand": "Kia",
+        "model": "Rio",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/1/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
     {
         "id": 2,
         "category_id": 1,
@@ -1657,16 +1735,16 @@ alt-svc: h3=":443"; ma=86400
         "price_per_day": "120.00"
     }
 ]
-18:00:38.293 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
-18:00:38.299 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ⚠️ БАГ НАЙДЕН: Сервер прислал машину с ценой 50.00, хотя мы просили от 8000000
-18:00:38.304 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetCars_NoCarsAvailable_ShouldReturn200WithEmptyList
-18:00:38.304 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: ФИЛЬТР НЕ РАБОТАЕТ! Ожидался пустой список, но пришло машин: 9 expected [true] but found [false]
-18:00:38.304 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:38.307 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:25.318 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+23:06:25.323 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ ⚠️ БАГ НАЙДЕН: Сервер прислал машину с ценой 50.00, хотя мы просили от 8000000
+23:06:25.323 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetCars_NoCarsAvailable_ShouldReturn200WithEmptyList
+23:06:25.323 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: ФИЛЬТР НЕ РАБОТАЕТ! Ожидался пустой список, но пришло машин: 10 expected [true] but found [false]
+23:06:25.323 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:25.323 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:38.307 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCars_WithDateFilter_ShouldShowCarsFreeOnDates
-18:00:38.307 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:38.307 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:25.323 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCars_WithDateFilter_ShouldShowCarsFreeOnDates
+23:06:25.323 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:25.335 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Search for available cars by dates
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/cars?startDate=2024-12-01&endDate=2024-12-05
@@ -1693,22 +1771,35 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:39 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+etag: W/"b84-EapjJ6yGzPzZHuHNNLTanf0VRBE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Qh5GWZ1d%2BEWi%2Bdj6jeqJD5LuynaPG7AjYAIGO1nTJXrXdjtBAWv%2Bs7kastAe%2Bu7a4QpnlexdDYuOC%2F0nNa10GXiBrj6q8jRDuc6P%2BMvcfA%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mroR8r92ncLpoBJWAfYT6g5F4%2Bi0QA4wXkkhua8dx2wOHgwyrrpsJ9kC4s6MrNnssd7kp0snaF5rqQjzWwz2NNX3aQlWXs%2F%2Be6fflP0R%2B9w%2FYWUJjajrWWikpQ6hZeKV1ww%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f7917ecd2d3a4-FRA
+CF-RAY: 9e2139062d986d26-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
+    {
+        "id": 1,
+        "category_id": 1,
+        "number_plate": "A123BC77",
+        "brand": "Kia",
+        "model": "Rio",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/1/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
     {
         "id": 2,
         "category_id": 1,
@@ -1828,22 +1919,35 @@ alt-svc: h3=":443"; ma=86400
     }
 ]
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:39 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+etag: W/"b84-EapjJ6yGzPzZHuHNNLTanf0VRBE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Qh5GWZ1d%2BEWi%2Bdj6jeqJD5LuynaPG7AjYAIGO1nTJXrXdjtBAWv%2Bs7kastAe%2Bu7a4QpnlexdDYuOC%2F0nNa10GXiBrj6q8jRDuc6P%2BMvcfA%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mroR8r92ncLpoBJWAfYT6g5F4%2Bi0QA4wXkkhua8dx2wOHgwyrrpsJ9kC4s6MrNnssd7kp0snaF5rqQjzWwz2NNX3aQlWXs%2F%2Be6fflP0R%2B9w%2FYWUJjajrWWikpQ6hZeKV1ww%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f7917ecd2d3a4-FRA
+CF-RAY: 9e2139062d986d26-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
+    {
+        "id": 1,
+        "category_id": 1,
+        "number_plate": "A123BC77",
+        "brand": "Kia",
+        "model": "Rio",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/1/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
     {
         "id": 2,
         "category_id": 1,
@@ -1962,15 +2066,15 @@ alt-svc: h3=":443"; ma=86400
         "price_per_day": "120.00"
     }
 ]
-18:00:38.495 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
-18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Available cars on the dates2024-12-01 - 2024-12-05: 9
-18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCars_WithDateFilter_ShouldShowCarsFreeOnDates
-18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:06:25.514 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+23:06:25.526 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ✅ Available cars on the dates2024-12-01 - 2024-12-05: 10
+23:06:25.526 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCars_WithDateFilter_ShouldShowCarsFreeOnDates
+23:06:25.526 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:25.526 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCars_WithPagination_ShouldReturnLimitedResults
-18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:38.497 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
+23:06:25.526 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCars_WithPagination_ShouldReturnLimitedResults
+23:06:25.526 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:25.526 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - 
 ]]>&#x1f4cc;<![CDATA[ ШАГ: Pagination test
 Request method:	GET
 Request URI:	https://dev.pshacks.org/api/v3/cars?page=0&size=5
@@ -1997,22 +2101,35 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:39 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+etag: W/"b84-EapjJ6yGzPzZHuHNNLTanf0VRBE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GyTUGnYgSdg7us3IaeJKs9eZBDvVqS7E0LvinH63U9mh5vyaqgL%2F2%2BDS1wjmULrDr8N9bw%2F0jRzfEYYGpgy5oPvryfnJ7sQUMeEQjtShyg%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=WuF1C3yvWFTzvsrB1SBkcNaqFLWLD3pMWMidyP0HS%2Fxabq22h8QaghjrVj%2FLbuPCIsdCmMLxq4PohE2Hm6z4NmW0SMzZY%2F%2FFVEVo%2BsS84BXuW5pKKP0oEL%2Bdqlt%2BPpdBpSc%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f79192c4d3a4f-FRA
+CF-RAY: 9e2139077a845c8d-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
+    {
+        "id": 1,
+        "category_id": 1,
+        "number_plate": "A123BC77",
+        "brand": "Kia",
+        "model": "Rio",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/1/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
     {
         "id": 2,
         "category_id": 1,
@@ -2132,22 +2249,35 @@ alt-svc: h3=":443"; ma=86400
     }
 ]
 HTTP/1.1 200 OK
-Date: Wed, 25 Mar 2026 17:00:39 GMT
+Date: Wed, 25 Mar 2026 22:06:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"a64-DryI2OYEUGokpoT/usit3kYO9/o"
+etag: W/"b84-EapjJ6yGzPzZHuHNNLTanf0VRBE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GyTUGnYgSdg7us3IaeJKs9eZBDvVqS7E0LvinH63U9mh5vyaqgL%2F2%2BDS1wjmULrDr8N9bw%2F0jRzfEYYGpgy5oPvryfnJ7sQUMeEQjtShyg%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=WuF1C3yvWFTzvsrB1SBkcNaqFLWLD3pMWMidyP0HS%2Fxabq22h8QaghjrVj%2FLbuPCIsdCmMLxq4PohE2Hm6z4NmW0SMzZY%2F%2FFVEVo%2BsS84BXuW5pKKP0oEL%2Bdqlt%2BPpdBpSc%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: 9e1f79192c4d3a4f-FRA
+CF-RAY: 9e2139077a845c8d-FRA
 alt-svc: h3=":443"; ma=86400
 
 [
+    {
+        "id": 1,
+        "category_id": 1,
+        "number_plate": "A123BC77",
+        "brand": "Kia",
+        "model": "Rio",
+        "image_url": "https://dev.pshacks.org/api/v3/cars/1/image",
+        "status": "available",
+        "created_at": "2026-03-13T12:57:35.806Z",
+        "updated_at": "2026-03-13T12:57:35.806Z",
+        "category_name": "Economy",
+        "price_per_day": "50.00"
+    },
     {
         "id": 2,
         "category_id": 1,
@@ -2266,10 +2396,10 @@ alt-svc: h3=":443"; ma=86400
         "price_per_day": "120.00"
     }
 ]
-18:00:38.703 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
-18:00:38.712 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetCars_WithPagination_ShouldReturnLimitedResults
-18:00:38.712 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: No more should return 5 cars expected [true] but found [false]
-18:00:38.712 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:25.720 ?[34mINFO ?[0;39m [Test worker] ?[36mc.carbooking.taskApp.utils.LogUtil?[0;39m - ]]>&#x1f4e5;<![CDATA[ API ответ: статус 200
+23:06:25.720 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetCars_WithPagination_ShouldReturnLimitedResults
+23:06:25.720 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: No more should return 5 cars expected [true] but found [false]
+23:06:25.720 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

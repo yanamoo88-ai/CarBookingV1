@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.carbooking.taskApp.database.tests.CarTypeDatabaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-25T17:00:40.952Z" hostname="VITROM" time="0.018">
+<testsuite name="com.carbooking.taskApp.database.tests.CarTypeDatabaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-25T22:06:27.642Z" hostname="VITROM" time="0.012">
   <properties/>
-  <testcase name="testGetCarTypeByIdFromDb" classname="com.carbooking.taskApp.database.tests.CarTypeDatabaseTest" time="0.009"/>
-  <system-out><![CDATA[18:00:40.961 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+  <testcase name="testGetCarTypeByIdFromDb" classname="com.carbooking.taskApp.database.tests.CarTypeDatabaseTest" time="0.017"/>
+  <system-out><![CDATA[23:06:27.637 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:40.961 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarTypeByIdFromDb
-18:00:40.961 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:27.637 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetCarTypeByIdFromDb
+23:06:27.637 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
 Car type: Luxury, Price per day: 120.00
-18:00:40.970 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarTypeByIdFromDb
-18:00:40.970 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:27.654 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetCarTypeByIdFromDb
+23:06:27.654 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -270,7 +270,7 @@ public class BookingApiTest extends BaseApiTest {
 
     @Test
     public void testUpdateBooking_NonExistingId_ShouldReturn404() {
-        String token = login();
+        //String token = login();
         LogUtil.step("Negative: updating a non-existent booking");
 
         BookingRequestDto updatedBooking = BookingRequestDto.builder()

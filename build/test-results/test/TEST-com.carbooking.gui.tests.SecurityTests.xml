@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.carbooking.gui.tests.SecurityTests" tests="2" skipped="0" failures="1" errors="0" timestamp="2026-03-25T16:57:12.165Z" hostname="VITROM" time="7.549">
+<testsuite name="com.carbooking.gui.tests.SecurityTests" tests="2" skipped="0" failures="1" errors="0" timestamp="2026-03-25T22:03:01.549Z" hostname="VITROM" time="3.175">
   <properties/>
-  <testcase name="findIdorThreat" classname="com.carbooking.gui.tests.SecurityTests" time="1.034">
-    <failure message="java.lang.AssertionError: УГРОЗА УТЕЧКИ: Персональные данные других пользователей доступны через манипуляцию ID в URL! expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: УГРОЗА УТЕЧКИ: Персональные данные других пользователей доступны через манипуляцию ID в URL! expected [true] but found [false]
+  <testcase name="findIdorThreat" classname="com.carbooking.gui.tests.SecurityTests" time="0.814">
+    <failure message="java.lang.AssertionError: LEAK THREAT: Personal data of other users can be accessed by manipulating the ID in the URL! expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: LEAK THREAT: Personal data of other users can be accessed by manipulating the ID in the URL! expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
@@ -52,90 +52,32 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="findSqlInjectionThreat" classname="com.carbooking.gui.tests.SecurityTests" time="0.794"/>
-  <system-out><![CDATA[17:57:12.193 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-17:57:12.206 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-17:57:14.784 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+  <testcase name="findSqlInjectionThreat" classname="com.carbooking.gui.tests.SecurityTests" time="0.65"/>
+  <system-out><![CDATA[23:03:01.566 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+23:03:01.573 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+23:03:02.310 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-17:57:14.792 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: findIdorThreat
-17:57:14.794 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-17:57:15.827 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: findIdorThreat
-17:57:15.827 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: УГРОЗА УТЕЧКИ: Персональные данные других пользователей доступны через манипуляцию ID в URL! expected [true] but found [false]
-17:57:15.827 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
-17:57:16.227 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-17:57:16.236 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-17:57:18.920 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+23:03:02.311 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: findIdorThreat
+23:03:02.311 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:03:03.130 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: findIdorThreat
+23:03:03.131 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: LEAK THREAT: Personal data of other users can be accessed by manipulating the ID in the URL! expected [true] but found [false]
+23:03:03.131 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:03:03.327 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+23:03:03.348 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+23:03:04.074 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-17:57:18.922 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: findSqlInjectionThreat
-17:57:18.924 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-17:57:19.718 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: findSqlInjectionThreat
-17:57:19.718 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:03:04.074 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: findSqlInjectionThreat
+23:03:04.075 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:03:04.725 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: findSqlInjectionThreat
+23:03:04.725 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
 ]]></system-out>
-  <system-err><![CDATA[Mar 25, 2026 5:57:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <system-err><![CDATA[Mar 25, 2026 11:03:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Mar 25, 2026 5:57:13 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Mar 25, 2026 11:03:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 146.0.7680.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-java.io.FileNotFoundException: screenshots\screen-1774457835942.png (The system cannot find the path specified)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
-	at com.google.common.io.Files$FileByteSink.openStream(Files.java:195)
-	at com.google.common.io.Files$FileByteSink.openStream(Files.java:183)
-	at com.google.common.io.ByteSource.copyTo(ByteSource.java:278)
-	at com.google.common.io.Files.copy(Files.java:326)
-	at com.carbooking.gui.fw.ApplicationManager.takeScreenshot(ApplicationManager.java:50)
-	at com.carbooking.gui.core.TestBase.tearDown(TestBase.java:31)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
-	at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Mar 25, 2026 5:57:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 25, 2026 11:03:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Mar 25, 2026 5:57:17 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Mar 25, 2026 11:03:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 146.0.7680.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

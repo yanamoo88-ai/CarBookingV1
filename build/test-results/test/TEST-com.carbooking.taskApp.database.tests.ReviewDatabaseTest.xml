@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.carbooking.taskApp.database.tests.ReviewDatabaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-25T17:00:40.970Z" hostname="VITROM" time="0.026">
+<testsuite name="com.carbooking.taskApp.database.tests.ReviewDatabaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-25T22:06:27.656Z" hostname="VITROM" time="0.013">
   <properties/>
-  <testcase name="testGetReviewByIdFromDb" classname="com.carbooking.taskApp.database.tests.ReviewDatabaseTest" time="0.026"/>
-  <system-out><![CDATA[18:00:40.970 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+  <testcase name="testGetReviewByIdFromDb" classname="com.carbooking.taskApp.database.tests.ReviewDatabaseTest" time="0.015"/>
+  <system-out><![CDATA[23:06:27.654 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:40.970 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetReviewByIdFromDb
-18:00:40.970 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:06:27.654 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetReviewByIdFromDb
+23:06:27.654 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
 Review found! Left by user with ID: 1
-18:00:40.998 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetReviewByIdFromDb
-18:00:40.998 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:06:27.669 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetReviewByIdFromDb
+23:06:27.669 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -3,6 +3,13 @@
 <suite name="Failed suite [Command line suite]">
   <test thread-count="5" name="Command line test(failed)">
     <classes>
+      <class name="com.carbooking.gui.tests.positive.LoginPositiveTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginPositiveTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.carbooking.gui.tests.positive.LoginPositiveTests -->
       <class name="com.carbooking.gui.tests.positive.RegistrationPositiveTests">
         <methods>
           <include name="setUp"/>

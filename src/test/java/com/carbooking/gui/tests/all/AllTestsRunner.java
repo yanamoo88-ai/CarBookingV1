@@ -14,14 +14,14 @@ public class AllTestsRunner {
     @Test
     public void runEverything() {
         TestNG testng = new TestNG();
-       
+        // Добавляем сюда все классы тестов
         testng.setTestClasses(new Class[] {
                 LoginPositiveTests.class,
                 BookingPositiveTests.class,
                 RegistrationPositiveTests.class,
                 LoginNegativeTests.class,
                 BookingNegativeTests.class,
-                SecurityTests.class, // Добавили новый класс в запуск
+                SecurityTests.class,
                 FullWorkflowTest.class
         });
         testng.run();

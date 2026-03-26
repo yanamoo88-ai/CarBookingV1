@@ -1,7 +1,7 @@
 plugins {
     id 'java'
+//    id 'io.qameta.allure' version '2.11.2'
       }
-
 
 group = 'org.example'
 version = '1.0-SNAPSHOT'
@@ -9,8 +9,14 @@ version = '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+//allure {
+//    version = '2.24.0'
+//    autoconfigure = true
+//    aspectjweaver = true
+//}
 
 dependencies {
+
     implementation 'org.seleniumhq.selenium:selenium-java:4.31.0'
     implementation 'org.testng:testng:7.10.2'
     implementation 'ch.qos.logback:logback-classic:1.5.18'
@@ -24,7 +30,9 @@ dependencies {
     testImplementation 'io.qameta.allure:allure-testng:2.24.0'
     implementation 'io.github.bonigarcia:webdrivermanager:6.3.2'
     testImplementation 'io.qameta.allure:allure-rest-assured:2.24.0'
+    testImplementation 'org.testng:testng:7.4.0'
     }
+
 //allure {
 //    adapter {
 //        frameworks {
@@ -38,9 +46,7 @@ dependencies {
 
 test {
     useTestNG()
-    reports.html.required = false
-    reports.junitXml.required = true
-    //  exclude 'com/carbooking/gui/**'
+       //  exclude 'com/carbooking/gui/**'
 }
 
 def qaTask(String taskName) {

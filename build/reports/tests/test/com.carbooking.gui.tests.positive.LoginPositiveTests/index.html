@@ -17,7 +17,7 @@
 <div class="tab-container">
 <ul class="tabLinks">
 <li>
-<a class="successGroup" href="#">Gradle Test Run :test</a>
+<a class="failureGroup" href="#">Gradle Test Run :test</a>
 </li>
 </ul>
 <div class="tab">
@@ -53,7 +53,7 @@
 </td>
 <td>
 <div class="infoBox">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -65,7 +65,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">5.382s</div>
+<div class="counter">11.027s</div>
 <p>duration</p>
 </div>
 </td>
@@ -74,14 +74,25 @@
 </div>
 </td>
 <td>
-<div class="infoBox success successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a class="" href="#">Failed</a>
+</li>
+<li>
+<a class="" href="#">All</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Failed</h2>
 <table class="test-results">
 <thead>
 <tr>
@@ -95,28 +106,68 @@
 </tr>
 </thead>
 <tr>
-<td class="success">loginPositiveTest</td>
+<td class="failures">
+<a href="loginPositiveTest.html">loginPositiveTest</a>
+</td>
 <td class="path" hidden="">loginPositiveTest</td>
 <td>1</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>4.254s</td>
-<td class="success">100%</td>
+<td>10.046s</td>
+<td class="failures">0%</td>
 </tr>
 </table>
+</div>
+<div class="tab">
+<h2>All</h2>
+<table class="test-results">
+<thead>
+<tr>
+<th>Child</th>
+<th hidden="">Name</th>
+<th>Tests</th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Duration</th>
+<th>Success rate</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">
+<a href="loginPositiveTest.html">loginPositiveTest</a>
+</td>
+<td class="path" hidden="">loginPositiveTest</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>10.046s</td>
+<td class="failures">0%</td>
+</tr>
+</table>
+</div>
+</div>
 </div>
 </div>
 <div class="tab">
 <h2>standard output</h2>
 <span class="code">
-<pre id="root-0-test-stdout-com.carbooking.gui.tests.positive.LoginPositiveTests">18:00:02.271 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-18:00:02.280 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-18:00:03.174 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+<pre id="root-0-test-stdout-com.carbooking.gui.tests.positive.LoginPositiveTests">23:05:44.927 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+23:05:44.934 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+23:05:45.726 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-18:00:03.174 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: loginPositiveTest
-18:00:03.175 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:07.428 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: loginPositiveTest
-18:00:07.428 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:05:45.726 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: loginPositiveTest
+23:05:45.726 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:05:55.772 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: loginPositiveTest
+23:05:55.772 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(translate(text(), 'login', 'LOGIN'), 'LOG IN')]&quot;}
+  (Session info: chrome=146.0.7680.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aab45f501c5d8177d31c98c3cb076ea2, findElement {value=//*[contains(translate(text(), 'login', 'LOGIN'), 'LOG IN')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.80, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\vitro\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49858}, goog:processID: 10868, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49858/devtoo..., se:cdpVersion: 146.0.7680.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aab45f501c5d8177d31c98c3cb076ea2
+23:05:55.772 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
 </pre>
 <button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-com.carbooking.gui.tests.positive.LoginPositiveTests">Copy</button>
 </span>
@@ -124,9 +175,9 @@
 <div class="tab">
 <h2>error output</h2>
 <span class="code">
-<pre id="root-0-test-stderr-com.carbooking.gui.tests.positive.LoginPositiveTests">Mar 25, 2026 6:00:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+<pre id="root-0-test-stderr-com.carbooking.gui.tests.positive.LoginPositiveTests">Mar 25, 2026 11:05:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Mar 25, 2026 6:00:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Mar 25, 2026 11:05:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 146.0.7680.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 </pre>
 <button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stderr-com.carbooking.gui.tests.positive.LoginPositiveTests">Copy</button>
@@ -142,7 +193,7 @@ WARNING: Unable to find version of CDP to use for 146.0.7680.80. You may need to
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.3.0</a> at 25 Mar 2026, 18:01:55</p>
+<a href="https://www.gradle.org">Gradle 9.3.0</a> at 25 Mar 2026, 23:07:41</p>
 </div>
 </div>
 </body>

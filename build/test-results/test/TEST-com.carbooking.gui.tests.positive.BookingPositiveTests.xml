@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.carbooking.gui.tests.positive.BookingPositiveTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-25T16:59:52.630Z" hostname="VITROM" time="9.378">
+<testsuite name="com.carbooking.gui.tests.positive.BookingPositiveTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-25T22:05:36.650Z" hostname="VITROM" time="8.024">
   <properties/>
-  <testcase name="testCarBookingSuccess" classname="com.carbooking.gui.tests.positive.BookingPositiveTests" time="7.28"/>
-  <system-out><![CDATA[17:59:52.641 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-17:59:52.651 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-17:59:54.728 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+  <testcase name="testCarBookingSuccess" classname="com.carbooking.gui.tests.positive.BookingPositiveTests" time="7.274"/>
+  <system-out><![CDATA[23:05:36.649 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+23:05:36.665 ?[34mINFO ?[0;39m [Test worker] ?[36mi.g.bonigarcia.wdm.WebDriverManager?[0;39m - Exporting webdriver.chrome.driver as C:\Users\vitro\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+23:05:37.400 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
 ======================================================================
-17:59:54.728 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCarBookingSuccess
-17:59:54.728 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
-18:00:02.008 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testCarBookingSuccess
-18:00:02.008 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+23:05:37.401 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCarBookingSuccess
+23:05:37.401 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+23:05:44.674 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testCarBookingSuccess
+23:05:44.674 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
 ]]></system-out>
-  <system-err><![CDATA[Mar 25, 2026 5:59:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <system-err><![CDATA[Mar 25, 2026 11:05:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Mar 25, 2026 5:59:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Mar 25, 2026 11:05:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 146.0.7680.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

@@ -126,8 +126,7 @@ public class CarApiTest extends BaseApiTest {
     @Test
     public void testGetCars_NoCarsAvailable_ShouldReturn200WithEmptyList() {
         LogUtil.step(" Price filter check");
-
-        // Задаем диапазон цен, в котором заведомо нет машин
+        // No Cars
         int minPrice = 8000000;
         int maxPrice = 10000000;
 
@@ -140,28 +139,22 @@ public class CarApiTest extends BaseApiTest {
                 .then()
                 .extract()
                 .response();
-
         LogUtil.apiResponse(response.getStatusCode());
-
-        // 1. Базовая проверка: сервер должен быть доступен (200 OK)
-        assertEquals(response.getStatusCode(), 200, "Сервер должен вернуть 200, даже если ничего не найдено");
-
+           assertEquals(response.getStatusCode(), 200, "The server should return 200, even if nothing is found");
         // 2. Извлекаем список машин из ответа
         List<Map<String, Object>> cars = response.jsonPath().getList("$");
-
         // 3. Логика QA: Проверяем, пуст ли список
         if (cars != null && !cars.isEmpty()) {
             // Если список НЕ пустой, проверяем цену первой машины
             Object firstCarPrice = cars.get(0).get("price_per_day");
 
-            LogUtil.info("⚠️ БАГ НАЙДЕН: Сервер прислал машину с ценой " + firstCarPrice +
-                    ", хотя мы просили от " + minPrice);
-
+            LogUtil.info("⚠️ BUG FOUND: The server sent a machine with a price" + firstCarPrice +
+                    ",although we asked for " + minPrice);
             // Этот ассерт упадет и официально зафиксирует баг в отчете
             assertTrue(cars.isEmpty(),
-                    "ФИЛЬТР НЕ РАБОТАЕТ! Ожидался пустой список, но пришло машин: " + cars.size());
+                    "THE FILTER DOES NOT WORK! An empty list was expected, but machines arrived: " + cars.size());
         } else {
-            LogUtil.info("✅ Тест пройден: фильтрация работает, список пуст");
+            LogUtil.info("✅ Test passed: filtering works, the list is empty");
             assertTrue(true);
         }
     }

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
+                    <span class="method-stats">11 methods, 3 failed,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.carbooking.gui.tests.SecurityTests" class="method navigator-link" hash-for-method="findIdorThreat">findIdorThreat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.carbooking.gui.tests.positive.LoginPositiveTests" class="method navigator-link" hash-for-method="loginPositiveTest">loginPositiveTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -123,11 +128,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.carbooking.gui.tests.SecurityTests" class="method navigator-link" hash-for-method="findSqlInjectionThreat">findSqlInjectionThreat</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.carbooking.gui.tests.positive.LoginPositiveTests" class="method navigator-link" hash-for-method="loginPositiveTest">loginPositiveTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -180,6 +180,52 @@
           <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">com.carbooking.gui.tests.positive.LoginPositiveTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPositiveTest">
+                  </a> <!-- loginPositiveTest -->
+                  <span class="method-name">loginPositiveTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(translate(text(), &apos;login&apos;, &apos;LOGIN&apos;), &apos;LOG IN&apos;)]&quot;}
+  (Session info: chrome=146.0.7680.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a4bc050b59c20d06be5c35693567012d, findElement {value=//*[contains(translate(text(), &apos;login&apos;, &apos;LOGIN&apos;), &apos;LOG IN&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.80, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\vitro\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56634}, goog:processID: 24332, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56634/devtoo..., se:cdpVersion: 146.0.7680.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a4bc050b59c20d06be5c35693567012d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy3/jdk.proxy3.$Proxy21.click(Unknown Source)
+	at com.carbooking.gui.pages.HomePage.clickOnLoginLink(HomePage.java:24)
+	at com.carbooking.gui.tests.positive.LoginPositiveTests.loginPositiveTest(LoginPositiveTests.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.carbooking.gui.tests.all.AllTestsRunner.runEverything(AllTestsRunner.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 66 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.carbooking.gui.tests.positive.RegistrationPositiveTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -211,7 +257,7 @@
                   <a name="findIdorThreat">
                   </a> <!-- findIdorThreat -->
                   <span class="method-name">findIdorThreat</span>
-                  <div class="stack-trace">java.lang.AssertionError: УГРОЗА УТЕЧКИ: Персональные данные других пользователей доступны через манипуляцию ID в URL! expected [true] but found [false]
+                  <div class="stack-trace">java.lang.AssertionError: LEAK THREAT: Personal data of other users can be accessed by manipulating the ID in the URL! expected [true] but found [false]
 	at com.carbooking.gui.tests.SecurityTests.findIdorThreat(SecurityTests.java:35)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at com.carbooking.gui.tests.all.AllTestsRunner.runEverything(AllTestsRunner.java:27)
@@ -243,21 +289,6 @@
                   <a name="testBookingWithoutLogin">
                   </a> <!-- testBookingWithoutLogin -->
                   <span class="method-name">testBookingWithoutLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
-          <div class="suite-Command_line_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.carbooking.gui.tests.positive.LoginPositiveTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginPositiveTest">
-                  </a> <!-- loginPositiveTest -->
-                  <span class="method-name">loginPositiveTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -401,47 +432,47 @@ data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testBookingInPastDates')
 data.setCell(0, 2, 'com.carbooking.gui.tests.negative.BookingNegativeTests')
-data.setCell(0, 3, 23497);
+data.setCell(0, 3, 23709);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testUserRegistration')
 data.setCell(1, 2, 'com.carbooking.gui.tests.positive.RegistrationPositiveTests')
-data.setCell(1, 3, 22366);
+data.setCell(1, 3, 21283);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginWithInvalidPassword')
 data.setCell(2, 2, 'com.carbooking.gui.tests.negative.LoginNegativeTests')
-data.setCell(2, 3, 12586);
+data.setCell(2, 3, 12779);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginWithInvalidEmailFormat')
 data.setCell(3, 2, 'com.carbooking.gui.tests.negative.LoginNegativeTests')
-data.setCell(3, 3, 10599);
+data.setCell(3, 3, 11161);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'loginWithEmptyEmail')
 data.setCell(4, 2, 'com.carbooking.gui.tests.negative.LoginNegativeTests')
-data.setCell(4, 3, 10476);
+data.setCell(4, 3, 10661);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testBookingWithoutLogin')
 data.setCell(5, 2, 'com.carbooking.gui.tests.negative.BookingNegativeTests')
-data.setCell(5, 3, 10162);
+data.setCell(5, 3, 10442);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testCarBookingSuccess')
-data.setCell(6, 2, 'com.carbooking.gui.tests.positive.BookingPositiveTests')
-data.setCell(6, 3, 7441);
+data.setCell(6, 1, 'loginPositiveTest')
+data.setCell(6, 2, 'com.carbooking.gui.tests.positive.LoginPositiveTests')
+data.setCell(6, 3, 10101);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testFullCarBookingWorkflow')
-data.setCell(7, 2, 'com.carbooking.gui.tests.all.FullWorkflowTest')
-data.setCell(7, 3, 6084);
+data.setCell(7, 1, 'testCarBookingSuccess')
+data.setCell(7, 2, 'com.carbooking.gui.tests.positive.BookingPositiveTests')
+data.setCell(7, 3, 7807);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'loginPositiveTest')
-data.setCell(8, 2, 'com.carbooking.gui.tests.positive.LoginPositiveTests')
-data.setCell(8, 3, 3967);
+data.setCell(8, 1, 'testFullCarBookingWorkflow')
+data.setCell(8, 2, 'com.carbooking.gui.tests.all.FullWorkflowTest')
+data.setCell(8, 3, 6727);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'findIdorThreat')
+data.setCell(9, 1, 'findSqlInjectionThreat')
 data.setCell(9, 2, 'com.carbooking.gui.tests.SecurityTests')
-data.setCell(9, 3, 912);
+data.setCell(9, 3, 1060);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'findSqlInjectionThreat')
+data.setCell(10, 1, 'findIdorThreat')
 data.setCell(10, 2, 'com.carbooking.gui.tests.SecurityTests')
-data.setCell(10, 3, 486);
+data.setCell(10, 3, 953);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
@@ -474,158 +505,160 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.carbooking.gui.tests.positive.LoginPositiveTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginPositiveTest</span>
-                <span class="method-start">2231 ms</span>
+                <span class="method-start">758 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginPositiveTest status=SUCCESS method=LoginPositiveTests.loginPositiveTest()[pri:...)</span>
-                <span class="method-start">6200 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10865 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.carbooking.gui.tests.positive.BookingPositiveTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">6415 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">11030 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCarBookingSuccess</span>
-                <span class="method-start">8476 ms</span>
+                <span class="method-start">11847 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testCarBookingSuccess status=SUCCESS method=BookingPositiveTests.testCarBookingSucc...)</span>
-                <span class="method-start">15917 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19654 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.carbooking.gui.tests.positive.RegistrationPositiveTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">16150 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">19886 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testUserRegistration</span>
-                <span class="method-start">17077 ms</span>
+                <span class="method-start">20745 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testUserRegistration status=FAILURE method=RegistrationPositiveTests.testUserRegist...)</span>
-                <span class="method-start">39450 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">42044 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.carbooking.gui.tests.negative.LoginNegativeTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">39830 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">42253 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithInvalidPassword</span>
-                <span class="method-start">41297 ms</span>
+                <span class="method-start">43111 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginWithInvalidPassword status=SUCCESS method=LoginNegativeTests.loginWithInvalidP...)</span>
-                <span class="method-start">53883 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">55890 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">54107 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">56079 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithEmptyEmail</span>
-                <span class="method-start">55522 ms</span>
+                <span class="method-start">56829 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginWithEmptyEmail status=SUCCESS method=LoginNegativeTests.loginWithEmptyEmail()[...)</span>
-                <span class="method-start">66004 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67493 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">66271 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">67669 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithInvalidEmailFormat</span>
-                <span class="method-start">67843 ms</span>
+                <span class="method-start">68636 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginWithInvalidEmailFormat status=SUCCESS method=LoginNegativeTests.loginWithInval...)</span>
-                <span class="method-start">78442 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">79797 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.carbooking.gui.tests.negative.BookingNegativeTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">78702 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">79988 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testBookingInPastDates</span>
-                <span class="method-start">80113 ms</span>
+                <span class="method-start">80718 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testBookingInPastDates status=SUCCESS method=BookingNegativeTests.testBookingInPast...)</span>
-                <span class="method-start">103618 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">104430 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">104137 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">104643 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testBookingWithoutLogin</span>
-                <span class="method-start">105734 ms</span>
+                <span class="method-start">105466 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testBookingWithoutLogin status=SUCCESS method=BookingNegativeTests.testBookingWitho...)</span>
-                <span class="method-start">115898 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">115910 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.carbooking.gui.tests.SecurityTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">116106 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">116071 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">findIdorThreat</span>
-                <span class="method-start">117033 ms</span>
+                <span class="method-start">116853 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=findIdorThreat status=FAILURE method=SecurityTests.findIdorThreat()[pri:0, instance...)</span>
-                <span class="method-start">117947 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">117808 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">118206 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">117967 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findSqlInjectionThreat</span>
-                <span class="method-start">119970 ms</span>
+                <span class="method-start">118824 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=findSqlInjectionThreat status=SUCCESS method=SecurityTests.findSqlInjectionThreat()...)</span>
-                <span class="method-start">120457 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">119888 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.carbooking.gui.tests.all.FullWorkflowTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">120641 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">120119 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testFullCarBookingWorkflow</span>
-                <span class="method-start">122075 ms</span>
+                <span class="method-start">121246 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testFullCarBookingWorkflow status=SUCCESS method=FullWorkflowTest.testFullCarBookin...)</span>
-                <span class="method-start">128159 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">127974 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
